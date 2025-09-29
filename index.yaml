@@ -1,0 +1,140 @@
+metadata:
+  generated_at: '2025-09-29T18:58:27.052450'
+  version: '1.0'
+  description: ChangeLog Radar - Open Source Release Tracker
+repositories:
+  kubernetes_kubernetes:
+    name: kubernetes/kubernetes
+    total_releases: 3
+    latest_releases:
+    - tag: v1.34.1
+      name: Kubernetes v1.34.1
+      published_at: '2025-09-10T03:28:09+00:00'
+      url: https://github.com/kubernetes/kubernetes/releases/tag/v1.34.1
+      is_prerelease: false
+      body_preview: See [kubernetes-announce@](https://groups.google.com/forum/#!forum/kubernetes-announce).
+        Additional binary downloads are linked in the...
+    - tag: v1.33.5
+      name: Kubernetes v1.33.5
+      published_at: '2025-09-10T01:38:50+00:00'
+      url: https://github.com/kubernetes/kubernetes/releases/tag/v1.33.5
+      is_prerelease: false
+      body_preview: See [kubernetes-announce@](https://groups.google.com/forum/#!forum/kubernetes-announce).
+        Additional binary downloads are linked in the...
+    - tag: v1.32.9
+      name: Kubernetes v1.32.9
+      published_at: '2025-09-10T00:19:23+00:00'
+      url: https://github.com/kubernetes/kubernetes/releases/tag/v1.32.9
+      is_prerelease: false
+      body_preview: See [kubernetes-announce@](https://groups.google.com/forum/#!forum/kubernetes-announce).
+        Additional binary downloads are linked in the...
+  vllm-project_vllm:
+    name: vllm-project/vllm
+    total_releases: 3
+    latest_releases:
+    - tag: v0.10.2
+      name: v0.10.2
+      published_at: '2025-09-13T06:37:01+00:00'
+      url: https://github.com/vllm-project/vllm/releases/tag/v0.10.2
+      is_prerelease: false
+      body_preview: '## Highlights This release contains 740 commits from 266 contributors
+        (97 new)! **Breaking Changes**: This release includes PyTorch 2.8.0 upgrade,
+        V0 deprecations, and API changes - please review the...'
+    - tag: v0.10.1.1
+      name: v0.10.1.1
+      published_at: '2025-08-20T21:20:50+00:00'
+      url: https://github.com/vllm-project/vllm/releases/tag/v0.10.1.1
+      is_prerelease: false
+      body_preview: 'This is a critical bugfix and security release: * Fix CUTLASS
+        MLA Full CUDAGraph (#23200) * Limit HTTP header count and size (#23267):...'
+    - tag: v0.10.1
+      name: v0.10.1
+      published_at: '2025-08-18T04:39:12+00:00'
+      url: https://github.com/vllm-project/vllm/releases/tag/v0.10.1
+      is_prerelease: false
+      body_preview: '## Highlights v0.10.1 release includes 727 commits, 245 committers
+        (105 new contributors). **NOTE: This release deprecates V0 FA3 support and
+        as a result FP8 kv-cache in V0 may have issues** ###...'
+  tensorflow_tensorflow:
+    name: tensorflow/tensorflow
+    total_releases: 3
+    latest_releases:
+    - tag: v2.19.1
+      name: TensorFlow 2.19.1
+      published_at: '2025-08-13T17:45:03+00:00'
+      url: https://github.com/tensorflow/tensorflow/releases/tag/v2.19.1
+      is_prerelease: false
+      body_preview: '# Release 2.19.1 ### Bug Fixes and Other Changes * Fix save_model.save
+        for Serving embedding and add SparseCore Reshard.'
+    - tag: v2.20.0
+      name: TensorFlow 2.20.0
+      published_at: '2025-08-13T17:45:14+00:00'
+      url: https://github.com/tensorflow/tensorflow/releases/tag/v2.20.0
+      is_prerelease: false
+      body_preview: '# Release 2.20.0 ## TensorFlow ### Breaking Changes * The `tensorflow-io-gcs-filesystem`
+        package is now optional, due its uncertain, and limited support. To install
+        it alongside `tensorflow`, run...'
+    - tag: v2.20.0-rc0
+      name: TensorFlow 2.20.0-rc0
+      published_at: '2025-07-28T22:12:31+00:00'
+      url: https://github.com/tensorflow/tensorflow/releases/tag/v2.20.0-rc0
+      is_prerelease: true
+      body_preview: '# Release 2.20.0 ## TensorFlow ### Breaking Changes * The `tensorflow-io-gcs-filesystem`
+        package is now optional, due its uncertain, and limited support. To install
+        it alongside `tensorflow`, run...'
+  astral-sh_ruff:
+    name: astral-sh/ruff
+    total_releases: 3
+    latest_releases:
+    - tag: 0.13.2
+      name: 0.13.2
+      published_at: '2025-09-25T15:01:26+00:00'
+      url: https://github.com/astral-sh/ruff/releases/tag/0.13.2
+      is_prerelease: false
+      body_preview: '## Release Notes Released on 2025-09-25. ### Preview features
+        - \[`flake8-async`\] Implement `blocking-path-method` (`ASYNC240`) ([#20264](https://github.com/astral-sh/ruff/pull/20264))
+        -...'
+    - tag: 0.13.1
+      name: 0.13.1
+      published_at: '2025-09-18T20:00:24+00:00'
+      url: https://github.com/astral-sh/ruff/releases/tag/0.13.1
+      is_prerelease: false
+      body_preview: '## Release Notes Released on 2025-09-18. ### Preview features
+        - \[`flake8-simplify`\] Detect unnecessary `None` default for additional key
+        expression types (`SIM910`)...'
+    - tag: 0.13.0
+      name: 0.13.0
+      published_at: '2025-09-10T16:31:51+00:00'
+      url: https://github.com/astral-sh/ruff/releases/tag/0.13.0
+      is_prerelease: false
+      body_preview: '## Release Notes Check out the [blog post](https://astral.sh/blog/ruff-v0.13.0)
+        for a migration guide and overview of the changes! ### Breaking changes -
+        **Several rules can now add `from __future__...'
+  astral-sh_uv:
+    name: astral-sh/uv
+    total_releases: 3
+    latest_releases:
+    - tag: 0.8.22
+      name: 0.8.22
+      published_at: '2025-09-23T20:35:51+00:00'
+      url: https://github.com/astral-sh/uv/releases/tag/0.8.22
+      is_prerelease: false
+      body_preview: '## Release Notes Released on 2025-09-23. ### Python - Upgrade
+        Pyodide to 0.28.3 ([#15999](https://github.com/astral-sh/uv/pull/15999)) ###
+        Security - Upgrade `astral-tokio-tar` to 0.5.5 which...'
+    - tag: 0.8.21
+      name: 0.8.21
+      published_at: '2025-09-23T14:25:27+00:00'
+      url: https://github.com/astral-sh/uv/releases/tag/0.8.21
+      is_prerelease: false
+      body_preview: '## Release Notes +Released on 2025-09-23. ### Enhancements -
+        Refresh lockfile when `--refresh` is provided ([#15994](https://github.com/astral-sh/uv/pull/15994))
+        ### Preview features Add support for...'
+    - tag: 0.8.20
+      name: 0.8.20
+      published_at: '2025-09-22T23:03:03+00:00'
+      url: https://github.com/astral-sh/uv/releases/tag/0.8.20
+      is_prerelease: false
+      body_preview: '## Release Notes Released on 2025-09-22. ### Enhancements - Add
+        `--force` flag for `uv cache clean` ([#15992](https://github.com/astral-sh/uv/pull/15992))
+        - Improve resolution errors with proxied...'

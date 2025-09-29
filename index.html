@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChangeLog Radar - Open Source Release Tracker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header .subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .metadata {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .metadata-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .repositories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .repo-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .repo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+        }
+
+        .repo-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .repo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .repo-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .repo-info .repo-meta {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .releases-list {
+            margin-top: 10px;
+        }
+
+        .release-item {
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .release-item:hover {
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.1);
+        }
+
+        .release-header {
+            display: flex;
+            justify-content: between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .release-tag {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        .release-name {
+            font-weight: 600;
+            color: #333;
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .release-date {
+            font-size: 0.8rem;
+            color: #666;
+            white-space: nowrap;
+        }
+
+        .release-preview {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+
+        .release-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .release-link:hover {
+            text-decoration: underline;
+        }
+
+        .prerelease-badge {
+            background: #ffc107;
+            color: #000;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .metadata {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .repositories-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .release-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 ChangeLog Radar</h1>
+            <div class="subtitle">Open Source Release Tracker</div>
+            <div class="metadata">
+                <div class="metadata-item">
+                    <span>📅</span>
+                    <span id="generated-at">Loading...</span>
+                </div>
+                <div class="metadata-item">
+                    <span>📦</span>
+                    <span id="repo-count">Loading...</span>
+                </div>
+                <div class="metadata-item">
+                    <span>🏷️</span>
+                    <span id="total-releases">Loading...</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="loading" class="loading">
+            Loading release data...
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="repositories" class="repositories-grid" style="display: none;"></div>
+
+        <div class="footer">
+            <p>Data refreshed daily via GitHub Actions • Built with ❤️ for the open source community</p>
+        </div>
+    </div>
+
+    <script>
+        async function loadReleaseData() {
+            try {
+                const response = await fetch('index.yaml');
+                const yamlText = await response.text();
+                
+                // Simple YAML parser for our specific structure
+                const data = parseYAML(yamlText);
+                
+                displayData(data);
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').style.display = 'block';
+                document.getElementById('error').textContent = 
+                    'Failed to load release data. Please ensure index.yaml is available.';
+            }
+        }
+
+        function parseYAML(yamlText) {
+            // Simple YAML parser for our specific structure
+            const lines = yamlText.split('\n');
+            const data = { metadata: {}, repositories: {} };
+            
+            let currentSection = null;
+            let currentRepo = null;
+            let currentRelease = null;
+            let inReleases = false;
+            
+            for (const line of lines) {
+                const trimmed = line.trim();
+                if (!trimmed || trimmed.startsWith('#')) continue;
+                
+                if (trimmed === 'metadata:') {
+                    currentSection = 'metadata';
+                } else if (trimmed === 'repositories:') {
+                    currentSection = 'repositories';
+                } else if (currentSection === 'metadata' && trimmed.includes(':')) {
+                    const [key, value] = trimmed.split(':').map(s => s.trim());
+                    data.metadata[key] = value.replace(/['"]/g, '');
+                } else if (currentSection === 'repositories') {
+                    if (trimmed.endsWith(':') && !trimmed.startsWith('-') && !trimmed.includes('latest_releases')) {
+                        currentRepo = trimmed.slice(0, -1);
+                        data.repositories[currentRepo] = { latest_releases: [] };
+                        inReleases = false;
+                    } else if (trimmed === 'latest_releases:') {
+                        inReleases = true;
+                    } else if (trimmed.startsWith('- ') && inReleases) {
+                        currentRelease = {};
+                        data.repositories[currentRepo].latest_releases.push(currentRelease);
+                        const [key, value] = trimmed.substring(2).split(':').map(s => s.trim());
+                        if (value) currentRelease[key] = value.replace(/['"]/g, '');
+                    } else if (trimmed.includes(':') && currentRelease && inReleases) {
+                        const [key, value] = trimmed.split(':').map(s => s.trim());
+                        if (value) currentRelease[key] = value.replace(/['"]/g, '');
+                    } else if (trimmed.includes(':') && currentRepo && !inReleases) {
+                        const [key, value] = trimmed.split(':').map(s => s.trim());
+                        if (value) data.repositories[currentRepo][key] = value.replace(/['"]/g, '');
+                    }
+                }
+            }
+            
+            return data;
+        }
+
+        function displayData(data) {
+            // Update metadata
+            const generatedAt = new Date(data.metadata.generated_at).toLocaleString();
+            document.getElementById('generated-at').textContent = `Generated ${generatedAt}`;
+            
+            const repoCount = Object.keys(data.repositories).length;
+            document.getElementById('repo-count').textContent = `${repoCount} repositories`;
+            
+            const totalReleases = Object.values(data.repositories)
+                .reduce((sum, repo) => sum + (repo.latest_releases?.length || 0), 0);
+            document.getElementById('total-releases').textContent = `${totalReleases} releases tracked`;
+            
+            // Create repository cards
+            const repositoriesContainer = document.getElementById('repositories');
+            repositoriesContainer.innerHTML = '';
+            
+            for (const [repoKey, repo] of Object.entries(data.repositories)) {
+                const repoCard = createRepoCard(repo);
+                repositoriesContainer.appendChild(repoCard);
+            }
+            
+            // Hide loading, show content
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('repositories').style.display = 'grid';
+        }
+
+        function createRepoCard(repo) {
+            const card = document.createElement('div');
+            card.className = 'repo-card';
+            
+            const repoName = repo.name || 'Unknown Repository';
+            const repoIcon = repoName.charAt(0).toUpperCase();
+            
+            card.innerHTML = `
+                <div class="repo-header">
+                    <div class="repo-icon">${repoIcon}</div>
+                    <div class="repo-info">
+                        <h3>${repoName}</h3>
+                        <div class="repo-meta">${repo.total_releases || 0} releases tracked</div>
+                    </div>
+                </div>
+                <div class="releases-list">
+                    ${(repo.latest_releases || []).map(release => createReleaseItem(release)).join('')}
+                </div>
+            `;
+            
+            return card;
+        }
+
+        function createReleaseItem(release) {
+            const publishedDate = new Date(release.published_at).toLocaleDateString();
+            const prereleaseBadge = release.is_prerelease === 'true' ? 
+                '<span class="prerelease-badge">Pre-release</span>' : '';
+            
+            return `
+                <div class="release-item">
+                    <div class="release-header">
+                        <div style="display: flex; align-items: center; flex: 1;">
+                            <span class="release-tag">${release.tag}</span>
+                            <span class="release-name">${release.name}${prereleaseBadge}</span>
+                        </div>
+                        <span class="release-date">${publishedDate}</span>
+                    </div>
+                    ${release.body_preview ? `<div class="release-preview">${release.body_preview}</div>` : ''}
+                    <a href="${release.url}" target="_blank" class="release-link">View on GitHub →</a>
+                </div>
+            `;
+        }
+
+        // Load data when page loads
+        window.addEventListener('DOMContentLoaded', loadReleaseData);
+    </script>
+</body>
+</html>

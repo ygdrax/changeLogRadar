@@ -1,0 +1,14 @@
+[project]
+name = "changelogradar"
+version = "0.1.0"
+description = "Git scrapper for tracking release notes from open source projects"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ruff>=0.13.2",
+    "typer>=0.19.2",
+    "requests>=2.31.0",
+    "pyyaml>=6.0.1",
+    "pygithub>=2.1.1",
+    "rich>=13.7.0",
+]
