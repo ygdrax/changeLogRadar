@@ -2,121 +2,115 @@
 HTML generator for creating the ChangeLog Radar index page.
 """
 
-from jinja2 import Template
-from typing import Dict, List
-from datetime import datetime, timezone
 import re
+from datetime import UTC, datetime
+
 import markdown
+from jinja2 import Template
 
 
 class HTMLGenerator:
     """Generates HTML pages for displaying release information."""
-    
+
     def __init__(self):
         """Initialize the HTML generator."""
         self.template = self._get_template()
-    
-    def generate_index_page(self, projects_data: Dict) -> str:
+
+    def generate_index_page(self, projects_data: dict) -> str:
         """
         Generate the main index HTML page.
-        
+
         Args:
             projects_data: Dictionary containing project release data
-            
+
         Returns:
             HTML content as string
         """
         # Sort projects by name
         sorted_projects = dict(sorted(projects_data.items()))
-        
+
         # Process markdown in release bodies
-        for project_name, project_data in sorted_projects.items():
+        for _project_name, project_data in sorted_projects.items():
             if "releases" in project_data:
                 for release in project_data["releases"]:
                     if "body" in release and release["body"]:
                         release["body_html"] = self._markdown_to_html(release["body"])
-        
+
         # Calculate statistics
         stats = self._calculate_stats(sorted_projects)
-        
+
         # Generate HTML
         html = self.template.render(
             projects=sorted_projects,
             stats=stats,
-            generated_at=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-            title="ChangeLog Radar - Open Source Release Notes"
+            generated_at=datetime.now(UTC).strftime("%Y-%m-%d %H:%M UTC"),
+            title="ChangeLog Radar - Open Source Release Notes",
         )
-        
+
         return html
-    
-    def _calculate_stats(self, projects_data: Dict) -> Dict:
+
+    def _calculate_stats(self, projects_data: dict) -> dict:
         """Calculate statistics from the projects data."""
         total_projects = len(projects_data)
         total_releases = sum(len(data["releases"]) for data in projects_data.values())
-        projects_with_errors = sum(1 for data in projects_data.values() if "error" in data)
-        
+        projects_with_errors = sum(
+            1 for data in projects_data.values() if "error" in data
+        )
+
         return {
             "total_projects": total_projects,
             "total_releases": total_releases,
             "projects_with_errors": projects_with_errors,
-            "success_rate": ((total_projects - projects_with_errors) / total_projects * 100) if total_projects > 0 else 0
+            "success_rate": (
+                (total_projects - projects_with_errors) / total_projects * 100
+            )
+            if total_projects > 0
+            else 0,
         }
-    
+
     def _markdown_to_html(self, markdown_text: str) -> str:
         """Convert markdown text to HTML."""
         if not markdown_text:
             return ""
-        
+
         # Pre-process GitHub-specific markdown features
         markdown_text = self._preprocess_github_markdown(markdown_text)
-        
+
         # Configure markdown with extensions for better formatting
         md = markdown.Markdown(
-            extensions=[
-                'fenced_code',
-                'tables',
-                'toc',
-                'nl2br',
-                'sane_lists'
-            ],
+            extensions=["fenced_code", "tables", "toc", "nl2br", "sane_lists"],
             extension_configs={
-                'toc': {
-                    'baselevel': 3,  # Start TOC from h3
-                    'anchorlink': True
+                "toc": {
+                    "baselevel": 3,  # Start TOC from h3
+                    "anchorlink": True,
                 }
-            }
+            },
         )
-        
+
         # Limit content length for display
         if len(markdown_text) > 2000:
             markdown_text = markdown_text[:2000] + "\n\n... (content truncated)"
-        
+
         return md.convert(markdown_text)
-    
+
     def _preprocess_github_markdown(self, text: str) -> str:
         """Pre-process GitHub-specific markdown features."""
         # Convert GitHub issue/PR references to links
         text = re.sub(
-            r'#(\d+)',
-            r'[#\1](https://github.com/owner/repo/issues/\1)',
-            text
+            r"#(\d+)", r"[#\1](https://github.com/owner/repo/issues/\1)", text
         )
-        
+
         # Convert GitHub user mentions to links (simple version)
-        text = re.sub(
-            r'@(\w+)',
-            r'[@\1](https://github.com/\1)',
-            text
-        )
-        
+        text = re.sub(r"@(\w+)", r"[@\1](https://github.com/\1)", text)
+
         # Clean up HTML comments that appear in some releases
-        text = re.sub(r'<!--.*?-->', '', text, flags=re.DOTALL)
-        
+        text = re.sub(r"<!--.*?-->", "", text, flags=re.DOTALL)
+
         # Handle GitHub's diff syntax
-        text = re.sub(r'^```diff\n', '```\n', text, flags=re.MULTILINE)
-        
+        text = re.sub(r"^```diff\n", "```\n", text, flags=re.MULTILINE)
+
         return text.strip()
-    
+
     def _get_template(self) -> Template:
         """Get the Jinja2 template for the HTML page."""
         template_content = """
@@ -450,22 +444,22 @@ class HTMLGenerator:
             .header h1 {
                 font-size: 2rem;
             }
-            
+
             .project-header {
                 flex-direction: column;
                 align-items: flex-start;
             }
-            
+
             .release-header {
                 flex-direction: column;
                 align-items: flex-start;
             }
-            
+
             .projects-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
             }
-            
+
             .project-card {
                 padding: 20px;
             }
@@ -502,7 +496,7 @@ class HTMLGenerator:
                         {{ project_name }}
                     </a>
                 </div>
-                
+
                 {% if project_data.description %}
                 <div class="project-description">
                     {{ project_data.description }}
@@ -516,7 +510,7 @@ class HTMLGenerator:
                 {% elif project_data.releases %}
                 <div class="releases">
                     <h3 class="releases-title">Latest Releases</h3>
-                    
+
                     {% for release in project_data.releases %}
                     <div class="release">
                         <div class="release-header">
@@ -526,15 +520,15 @@ class HTMLGenerator:
                                 {% if release.prerelease %} (Pre-release){% endif %}
                             </div>
                         </div>
-                        
+
                         <div class="release-date">
                             Published: {{ release.published_at_str }}
                         </div>
-                        
+
                         {% if release.body_html %}
                         <div class="release-body">{{ release.body_html|safe }}</div>
                         {% endif %}
-                        
+
                         <div class="release-meta">
                             <span>Author: {{ release.author.login }}</span>
                             <a href="{{ release.html_url }}" class="release-link" target="_blank">View Release →</a>
@@ -563,5 +557,5 @@ class HTMLGenerator:
 </body>
 </html>
         """
-        
+
         return Template(template_content)
