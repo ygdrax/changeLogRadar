@@ -2038,6 +2038,57 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.9.1</div>
+                            <div class="release-version ">
+                                0.9.1
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-10-09 19:11 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2025-10-09.</p>
+<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
+<ul>
+<li>Log Python choice in <code>uv init</code> (<a href="https://github.com/astral-sh/uv/pull/16182">[#16182](https://github.com/owner/repo/issues/16182)</a>)</li>
+<li>Fix <code>pylock.toml</code> config conflict error messages (<a href="https://github.com/astral-sh/uv/pull/16211">[#16211](https://github.com/owner/repo/issues/16211)</a>)</li>
+</ul>
+<h5 id="configuration"><a class="toclink" href="#configuration">Configuration</a></h5>
+<ul>
+<li>Add <code>UV_UPLOAD_HTTP_TIMEOUT</code> and respect <code>UV_HTTP_TIMEOUT</code> in uploads (<a href="https://github.com/astral-sh/uv/pull/16040">[#16040](https://github.com/owner/repo/issues/16040)</a>)</li>
+<li>Support <code>UV_WORKING_DIRECTORY</code> for setting <code>--directory</code> (<a href="https://github.com/astral-sh/uv/pull/16125">[#16125](https://github.com/owner/repo/issues/16125)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>Allow missing <code>Scripts</code> directory (<a href="https://github.com/astral-sh/uv/pull/16206">[#16206](https://github.com/owner/repo/issues/16206)</a>)</li>
+<li>Fix handling of Python requests with pre-releases in ranges (<a href="https://github.com/astral-sh/uv/pull/16208">[#16208](https://github.com/owner/repo/issues/16208)</a>)</li>
+<li>Preserve comments on version bump (<a href="https://github.com/astral-sh/uv/pull/16141">[#16141](https://github.com/owner/repo/issues/16141)</a>)</li>
+<li>Retry all HTTP/2 errors (<a href="https://github.com/astral-sh/uv/pull/16038">[#16038](https://github.com/owner/repo/issues/16038)</a>)</li>
+<li>Treat deleted Windows registry keys as equivalent to missing ones (<a href="https://github.com/astral-sh/uv/pull/16194">[#16194](https://github.com/owner/repo/issues/16194)</a>)</li>
+<li>Ignore pre-release Python versions when a patch version is requested (<a href="https://github.com/astral-sh/uv/pull/16210">[#16210](https://github.com/owner/repo/issues/16210)</a>)</li>
+</ul>
+<h5 id="documentation"><a class="toclink" href="#documentation">Documentation</a></h5>
+<ul>
+<li>Document why uv discards upper bounds on <code>requires-python</code> (<a href="https://github.com/astral-sh/uv/pull/15927">[#15927](https://github.com/owner/repo/issues/15927)</a>)</li>
+<li>Document uv version environment variables were added in (<a href="https://github.com/astral-sh/uv/pull/15196">[#15196](https://github.com/owner/repo/issues/15196)</a>)</li>
+</ul>
+<h4 id="install-uv-091"><a class="toclink" href="#install-uv-091">Install uv 0.9.1</a></h4>
+<h5 id="install-preb"><a class="toclink" href="#install-preb">Install preb</a></h5>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.1" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.9.0</div>
                             <div class="release-version ">
                                 0.9.0
@@ -2270,81 +2321,6 @@
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.8.21</div>
-                            <div class="release-version ">
-                                0.8.21
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-09-23 14:25 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>+Released on 2025-09-23.</p>
-<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
-<ul>
-<li>Refresh lockfile when <code>--refresh</code> is provided (<a href="https://github.com/astral-sh/uv/pull/15994">[#15994](https://github.com/owner/repo/issues/15994)</a>)</li>
-</ul>
-<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
-<p>Add support for S3 request signing (<a href="https://github.com/astral-sh/uv/pull/15925">[#15925](https://github.com/owner/repo/issues/15925)</a>)</p>
-<h4 id="install-uv-0821"><a class="toclink" href="#install-uv-0821">Install uv 0.8.21</a></h4>
-<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
-<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.8.21/uv-installer.sh | sh
-</code></pre>
-<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
-<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -c &quot;irm https://github.com/astral-sh/uv/releases/download/0.8.21/uv-installer.ps1 | iex&quot;
-</code></pre>
-<h4 id="download-uv-0821"><a class="toclink" href="#download-uv-0821">Download uv 0.8.21</a></h4>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Platform</th>
-<th>Checksum</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.8.21/uv-aarch64-apple-darwin.tar.gz">uv-aarch64-apple-darwin.tar.gz</a></td>
-<td>Apple Silicon macOS</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.8.21/uv-aarch64-apple-darwin.tar.gz.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.8.21/uv-x86_64-apple-darwin.tar.gz">uv-x86_64-apple-darwin.tar.gz</a></td>
-<td>Intel macOS</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.8.21/uv-x86_64-apple-darwin.tar.gz.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.8.21/uv-aarch64-pc-windows-msvc.zip">uv-aarch64-pc-windows-msvc.zip</a></td>
-<td>ARM64 Windows</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.8.21/uv-aarch64-pc-windows-msvc.zip.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.8.21/uv-i686-pc-windows-msvc.zip">uv-i686-pc-windows-msvc.zip</a></td>
-<td>x86 Windows</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.8.21/uv-i686-pc-windows-msvc.zip.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.8.21/uv-x86_64-pc-windows-msvc.zip">uv-x86_64-pc-windows-msvc.zip</a></td>
-<td>x64 Windows</td>
-<td>[checksum](https://gith</td>
-</tr>
-</tbody>
-</table>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/uv/releases/tag/0.8.21" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -2546,7 +2522,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-10-09 11:15 UTC
+                Last updated: 2025-10-10 06:09 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
