@@ -395,6 +395,59 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.119.0</div>
+                            <div class="release-version ">
+                                0.119.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-10-11 17:13 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><p>FastAPI now (temporarily) supports both Pydantic v2 models and <code>pydantic.v1</code> models at the same time in the same app, to make it easier for any FastAPI apps still using Pydantic v1 to gradually but quickly <strong>migrate to Pydantic v2</strong>.</p>
+<pre><code class="language-Python">from fastapi import FastAPI
+from pydantic import BaseModel as BaseModelV2
+from pydantic.v1 import BaseModel
+
+
+class Item(BaseModel):
+    name: str
+    description: str | None = None
+
+
+class ItemV2(BaseModelV2):
+    title: str
+    summary: str | None = None
+
+
+app = FastAPI()
+
+
+[@app](https://github.com/app).post(&quot;/items/&quot;, response_model=ItemV2)
+def create_item(item: Item):
+    return {&quot;title&quot;: item.name, &quot;summary&quot;: item.description}
+</code></pre>
+<p>Adding this feature was a big effort with the main objective of making it easier for the few applications still stuck in Pydantic v1 to migrate to Pydantic v2.</p>
+<p>And with this, support for <strong>Pydantic v1 is now deprecated</strong> and will be <strong>removed</strong> from FastAPI in a future version soon.</p>
+<p><strong>Note</strong>: have in mind that the Pydantic team already stopped supporting Pydantic v1 for recent versions of Python, starting with Python 3.14.</p>
+<p>You can read in the docs more about how to <a href="https://fastapi.tiangolo.com/how-to/migrate-from-pydantic-v1-to-pydantic-v2/">Migrate from Pydantic v1 to Pydantic v2</a>.</p>
+<h5 id="features"><a class="toclink" href="#features">Features</a></h5>
+<ul>
+<li>✨ Add support for <code>from pydantic.v1 import BaseModel</code>, mixed Pydantic v1 and v2 models in the same app. PR <a href="https://github.com/fastapi/fastapi/pull/14168">[#14168](https://github.com/owner/repo/issues/14168)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+</ul></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.119.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.118.3</div>
                             <div class="release-version ">
                                 0.118.3
@@ -529,32 +582,6 @@
                         <div class="release-meta">
                             <span>Author: tiangolo</span>
                             <a href="https://github.com/fastapi/fastapi/releases/tag/0.118.0" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.117.1</div>
-                            <div class="release-version ">
-                                0.117.1
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-09-20 20:16 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
-<ul>
-<li>🐛 Fix validation error when <code>File</code> is declared after <code>Form</code> parameter. PR <a href="https://github.com/fastapi/fastapi/pull/11194">[#11194](https://github.com/owner/repo/issues/11194)</a> by <a href="https://github.com/thomasleveil">[@thomasleveil](https://github.com/thomasleveil)</a>.</li>
-</ul></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.117.1" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2514,7 +2541,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-10-11 06:07 UTC
+                Last updated: 2025-10-12 06:07 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
