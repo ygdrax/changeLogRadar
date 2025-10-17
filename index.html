@@ -1452,6 +1452,48 @@ def create_item(item: Item):
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.14.1</div>
+                            <div class="release-version ">
+                                0.14.1
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-10-16 18:12 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2025-10-16.</p>
+<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
+<ul>
+<li>[formatter] Remove parentheses around multiple exception types on Python 3.14+ (<a href="https://github.com/astral-sh/ruff/pull/20768">[#20768](https://github.com/owner/repo/issues/20768)</a>)</li>
+<li>[<code>flake8-bugbear</code>] Omit annotation in preview fix for <code>B006</code> (<a href="https://github.com/astral-sh/ruff/pull/20877">[#20877](https://github.com/owner/repo/issues/20877)</a>)</li>
+<li>[<code>flake8-logging-format</code>] Avoid dropping implicitly concatenated pieces in the <code>G004</code> fix (<a href="https://github.com/astral-sh/ruff/pull/20793">[#20793](https://github.com/owner/repo/issues/20793)</a>)</li>
+<li>[<code>pydoclint</code>] Implement <code>docstring-extraneous-parameter</code> (<code>DOC102</code>) (<a href="https://github.com/astral-sh/ruff/pull/20376">[#20376](https://github.com/owner/repo/issues/20376)</a>)</li>
+<li>[<code>pyupgrade</code>] Extend <code>UP019</code> to detect <code>typing_extensions.Text</code> (<code>UP019</code>) (<a href="https://github.com/astral-sh/ruff/pull/20825">[#20825](https://github.com/owner/repo/issues/20825)</a>)</li>
+<li>[<code>pyupgrade</code>] Fix false negative for <code>TypeVar</code> with default argument in <code>non-pep695-generic-class</code> (<code>UP046</code>) (<a href="https://github.com/astral-sh/ruff/pull/20660">[#20660](https://github.com/owner/repo/issues/20660)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>Fix false negatives in <code>Truthiness::from_expr</code> for lambdas, generators, and f-strings (<a href="https://github.com/astral-sh/ruff/pull/20704">[#20704](https://github.com/owner/repo/issues/20704)</a>)</li>
+<li>Fix syntax error false positives for escapes and quotes in f-strings (<a href="https://github.com/astral-sh/ruff/pull/20867">[#20867](https://github.com/owner/repo/issues/20867)</a>)</li>
+<li>Fix syntax error false positives on parenthesized context managers (<a href="https://github.com/astral-sh/ruff/pull/20846">[#20846](https://github.com/owner/repo/issues/20846)</a>)</li>
+<li>[<code>fastapi</code>] Fix false positives for path parameters that FastAPI doesn't recognize (<code>FAST003</code>) (<a href="https://github.com/astral-sh/ruff/pull/20687">[#20687](https://github.com/owner/repo/issues/20687)</a>)</li>
+<li>[<code>flake8-pyi</code>] Fix operator precedence by adding parent</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.1" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.14.0</div>
                             <div class="release-version ">
                                 0.14.0
@@ -1628,50 +1670,6 @@ def create_item(item: Item):
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/astral-sh/ruff/releases/tag/0.13.1" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.13.0</div>
-                            <div class="release-version ">
-                                0.13.0
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-09-10 16:31 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Check out the <a href="https://astral.sh/blog/ruff-v0.13.0">blog post</a> for a migration guide and overview of the changes!</p>
-<h5 id="breaking-changes"><a class="toclink" href="#breaking-changes">Breaking changes</a></h5>
-<ul>
-<li>
-<p><strong>Several rules can now add <code>from __future__ import annotations</code> automatically</strong></p>
-<p><code>TC001</code>, <code>TC002</code>, <code>TC003</code>, <code>RUF013</code>, and <code>UP037</code> now add <code>from __future__ import annotations</code> as part of their fixes when the <code>lint.future-annotations</code> setting is enabled. This allows the rules to move more imports into <code>TYPE_CHECKING</code> blocks (<code>TC001</code>, <code>TC002</code>, and <code>TC003</code>), use PEP 604 union syntax on Python versions before 3.10 (<code>RUF013</code>), and unquote more annotations (<code>UP037</code>).</p>
-</li>
-<li>
-<p><strong>Full module paths are now used to verify first-party modules</strong></p>
-<p>Ruff now checks that the full path to a module exists on disk before categorizing it as a first-party import. This change makes first-party import detection more accurate, helping to avoid false positives on local directories with the same name as a third-party dependency, for example. See the <a href="https://docs.astral.sh/ruff/faq/#how-does-ruff-determine-which-of-my-imports-are-first-party-third-party-etc">FAQ section</a> on import categorization for more details.</p>
-</li>
-<li>
-<p><strong>Deprecated rules must now be selected by exact rule code</strong></p>
-<p>Ruff will no longer activate deprecated rules selected by their group name or prefix. As noted below, the two remaining deprecated rules were also removed in this release, so this won't affect any current rules, but it will still affect any deprecations in the future.</p>
-</li>
-<li>
-<p><strong>The deprecated macOS configuration directory fallback has been removed</strong></p>
-<p>Ruff will no longer look for a user-level configuration file at <code>~/Library/Application Support/ruff/ruff.toml</code> on macOS. This feature was deprecated in v0.5 in favor of using the <a href="https://specifications.freedesktop.org/basedir-spec/latest/">XDG specification</a> (usually resolving to <code>~/.config/ruff/ruff.toml</code>), like on Linux. The fallback and accompanying deprecation warning have now been removed</p>
-</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.13.0" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2570,7 +2568,7 @@ def create_item(item: Item):
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-10-16 06:09 UTC
+                Last updated: 2025-10-17 06:09 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
