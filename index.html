@@ -2046,6 +2046,80 @@ def create_item(item: Item):
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.9.4</div>
+                            <div class="release-version ">
+                                0.9.4
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-10-18 21:35 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2025-10-17.</p>
+<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
+<ul>
+<li>Add CUDA 13.0 support (<a href="https://github.com/astral-sh/uv/pull/16321">[#16321](https://github.com/owner/repo/issues/16321)</a>)</li>
+<li>Add auto-detection for Intel GPU on Windows (<a href="https://github.com/astral-sh/uv/pull/16280">[#16280](https://github.com/owner/repo/issues/16280)</a>)</li>
+<li>Implement display of RFC 9457 HTTP error contexts (<a href="https://github.com/astral-sh/uv/pull/16199">[#16199](https://github.com/owner/repo/issues/16199)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>Avoid obfuscating pyx tokens in <code>uv auth token</code> output (<a href="https://github.com/astral-sh/uv/pull/16345">[#16345](https://github.com/owner/repo/issues/16345)</a>)</li>
+</ul>
+<h4 id="install-uv-094"><a class="toclink" href="#install-uv-094">Install uv 0.9.4</a></h4>
+<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
+<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.9.4/uv-installer.sh | sh
+</code></pre>
+<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
+<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -c &quot;irm https://github.com/astral-sh/uv/releases/download/0.9.4/uv-installer.ps1 | iex&quot;
+</code></pre>
+<h4 id="download-uv-094"><a class="toclink" href="#download-uv-094">Download uv 0.9.4</a></h4>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Platform</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.4/uv-aarch64-apple-darwin.tar.gz">uv-aarch64-apple-darwin.tar.gz</a></td>
+<td>Apple Silicon macOS</td>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.4/uv-aarch64-apple-darwin.tar.gz.sha256">checksum</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.4/uv-x86_64-apple-darwin.tar.gz">uv-x86_64-apple-darwin.tar.gz</a></td>
+<td>Intel macOS</td>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.4/uv-x86_64-apple-darwin.tar.gz.sha256">checksum</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.4/uv-aarch64-pc-windows-msvc.zip">uv-aarch64-pc-windows-msvc.zip</a></td>
+<td>ARM64 Windows</td>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.4/uv-aarch64-pc-windows-msvc.zip.sha256">checksum</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.4/uv-i686-pc-windows-msvc.zip">uv-i686-pc-windows-msvc.zip</a></td>
+<td>x8</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.4" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.9.3</div>
                             <div class="release-version ">
                                 0.9.3
@@ -2294,79 +2368,6 @@ def create_item(item: Item):
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.8.24</div>
-                            <div class="release-version ">
-                                0.8.24
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-07 03:35 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2025-10-06.</p>
-<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
-<ul>
-<li>Emit a message on <code>cache clean</code> and <code>prune</code> when lock is held (<a href="https://github.com/astral-sh/uv/pull/16138">[#16138](https://github.com/owner/repo/issues/16138)</a>)</li>
-<li>Add <code>--force</code> flag for <code>uv cache prune</code> (<a href="https://github.com/astral-sh/uv/pull/16137">[#16137](https://github.com/owner/repo/issues/16137)</a>)</li>
-</ul>
-<h5 id="documentation"><a class="toclink" href="#documentation">Documentation</a></h5>
-<ul>
-<li>Fix example of bumping beta version without patch bump (<a href="https://github.com/astral-sh/uv/pull/16132">[#16132](https://github.com/owner/repo/issues/16132)</a>)</li>
-</ul>
-<h4 id="install-uv-0824"><a class="toclink" href="#install-uv-0824">Install uv 0.8.24</a></h4>
-<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
-<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.8.24/uv-installer.sh | sh
-</code></pre>
-<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
-<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -c &quot;irm https://github.com/astral-sh/uv/releases/download/0.8.24/uv-installer.ps1 | iex&quot;
-</code></pre>
-<h4 id="download-uv-0824"><a class="toclink" href="#download-uv-0824">Download uv 0.8.24</a></h4>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Platform</th>
-<th>Checksum</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.8.24/uv-aarch64-apple-darwin.tar.gz">uv-aarch64-apple-darwin.tar.gz</a></td>
-<td>Apple Silicon macOS</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.8.24/uv-aarch64-apple-darwin.tar.gz.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.8.24/uv-x86_64-apple-darwin.tar.gz">uv-x86_64-apple-darwin.tar.gz</a></td>
-<td>Intel macOS</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.8.24/uv-x86_64-apple-darwin.tar.gz.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.8.24/uv-aarch64-pc-windows-msvc.zip">uv-aarch64-pc-windows-msvc.zip</a></td>
-<td>ARM64 Windows</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.8.24/uv-aarch64-pc-windows-msvc.zip.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.8.24/uv-i686-pc-windows-msvc.zip">uv-i686-pc-windows-msvc.zip</a></td>
-<td>x86 Windows</td>
-<td>[checksum](https://github.com/astral-sh/uv/releases/download/0.8.24/uv-i686-pc-windows-msv</td>
-</tr>
-</tbody>
-</table>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/uv/releases/tag/0.8.24" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -2568,7 +2569,7 @@ def create_item(item: Item):
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-10-18 06:08 UTC
+                Last updated: 2025-10-19 06:08 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
