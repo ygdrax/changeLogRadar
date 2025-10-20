@@ -1179,6 +1179,53 @@ def create_item(item: Item):
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">Python Polars 1.35.0-beta.1</div>
+                            <div class="release-version prerelease">
+                                py-1.35.0-beta.1
+                                 (Pre-release)
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-10-19 15:18 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="performance-improvements"><a class="toclink" href="#performance-improvements">🚀 Performance improvements</a></h4>
+<ul>
+<li>Address <code>group_by_dynamic</code> slowness in sparse data (<a href="https://github.com/owner/repo/issues/24916">#24916</a>)</li>
+<li>Push filters to PyIceberg (<a href="https://github.com/owner/repo/issues/24910">#24910</a>)</li>
+<li>Native <code>filter/drop_nulls/drop_nans</code> in group-by context (<a href="https://github.com/owner/repo/issues/24897">#24897</a>)</li>
+<li>Implement <code>cumulative_eval</code> using the group-by engine (<a href="https://github.com/owner/repo/issues/24889">#24889</a>)</li>
+<li>Prevent generation of copies of <code>Dataframe</code>s in <code>DslPlan</code> serialization (<a href="https://github.com/owner/repo/issues/24852">#24852</a>)</li>
+<li>Implement native <code>null_count</code>, <code>any</code> and <code>all</code> group-by aggregations (<a href="https://github.com/owner/repo/issues/24859">#24859</a>)</li>
+<li>Speed up <code>reverse</code> in group-by context (<a href="https://github.com/owner/repo/issues/24855">#24855</a>)</li>
+<li>Prune unused categorical values when exporting to arrow/parquet/IPC/pickle (<a href="https://github.com/owner/repo/issues/24829">#24829</a>)</li>
+<li>Don't check duplicates on streaming simple projection in release mode (<a href="https://github.com/owner/repo/issues/24830">#24830</a>)</li>
+<li>Lower approx_n_unique to the streaming engine (<a href="https://github.com/owner/repo/issues/24821">#24821</a>)</li>
+<li>Duration/interval string parsing optimisation (2-5x faster) (<a href="https://github.com/owner/repo/issues/24771">#24771</a>)</li>
+<li>Use native reducer for <code>first/last</code> on Decimals, Categoricals and Enums (<a href="https://github.com/owner/repo/issues/24786">#24786</a>)</li>
+<li>Implement indexed method for <code>BitMapIter::nth</code> (<a href="https://github.com/owner/repo/issues/24766">#24766</a>)</li>
+<li>Pushdown slices on plans within unions (<a href="https://github.com/owner/repo/issues/24735">#24735</a>)</li>
+</ul>
+<h4 id="enhancements"><a class="toclink" href="#enhancements">✨ Enhancements</a></h4>
+<ul>
+<li>Add environment variable to roundtrip empty struct in Parquet (<a href="https://github.com/owner/repo/issues/24914">#24914</a>)</li>
+<li>Fast-count for <code>scan_iceberg().select(len())</code> (<a href="https://github.com/owner/repo/issues/24602">#24602</a>)</li>
+<li>Add <code>glob</code> parameter to <code>scan_ipc</code> (<a href="https://github.com/owner/repo/issues/24898">#24898</a>)</li>
+<li>Prevent generation of copies of <code>Dataframe</code>s in `DslPlan</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/pola-rs/polars/releases/tag/py-1.35.0-beta.1" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">Python Polars 1.34.0</div>
                             <div class="release-version ">
                                 py-1.34.0
@@ -1375,56 +1422,6 @@ def create_item(item: Item):
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/pola-rs/polars/releases/tag/py-1.34.0-beta.3" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">Python Polars 1.34.0-beta.1</div>
-                            <div class="release-version prerelease">
-                                py-1.34.0-beta.1
-                                 (Pre-release)
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-09-23 12:03 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="highlights"><a class="toclink" href="#highlights">🏆 Highlights</a></h4>
-<ul>
-<li>Add <code>LazyFrame.{sink,collect}_batches</code> (<a href="https://github.com/owner/repo/issues/23980">#23980</a>)</li>
-<li>Deterministic import order for Python Polars package variants (<a href="https://github.com/owner/repo/issues/24531">#24531</a>)</li>
-</ul>
-<h4 id="performance-improvements"><a class="toclink" href="#performance-improvements">🚀 Performance improvements</a></h4>
-<ul>
-<li>Skip files in <code>scan_iceberg</code> with filter based on metadata statistics (<a href="https://github.com/owner/repo/issues/24547">#24547</a>)</li>
-<li>Push row_index predicate for all scan types (<a href="https://github.com/owner/repo/issues/24537">#24537</a>)</li>
-<li>Perform integer in-filtering for Parquet inequality predicates (<a href="https://github.com/owner/repo/issues/24525">#24525</a>)</li>
-<li>Stop caching Parquet metadata after 8 files (<a href="https://github.com/owner/repo/issues/24513">#24513</a>)</li>
-<li>Native streaming <code>.mode()</code> expression (<a href="https://github.com/owner/repo/issues/24459">#24459</a>)</li>
-</ul>
-<h4 id="enhancements"><a class="toclink" href="#enhancements">✨ Enhancements</a></h4>
-<ul>
-<li>Add <code>LazyFrame.{sink,collect}_batches</code> (<a href="https://github.com/owner/repo/issues/23980">#23980</a>)</li>
-<li>Deterministic import order for Python Polars package variants (<a href="https://github.com/owner/repo/issues/24531">#24531</a>)</li>
-<li>Add support to display lazy query plan in marimo notebooks without needing to install matplotlib or mermaid (<a href="https://github.com/owner/repo/issues/24540">#24540</a>)</li>
-<li>Add unstable <code>hidden_file_prefix</code> parameter to <code>scan_parquet</code> (<a href="https://github.com/owner/repo/issues/24507">#24507</a>)</li>
-<li>Use fixed-scale Decimals (<a href="https://github.com/owner/repo/issues/24542">#24542</a>)</li>
-<li>Add support for unsigned 128-bit integers (<a href="https://github.com/owner/repo/issues/24346">#24346</a>)</li>
-<li>Add unstable <code>pl.Config.set_default_credential_provider</code> (<a href="https://github.com/owner/repo/issues/24434">#24434</a>)</li>
-<li>Roundtrip <code>BinaryOffset</code> type through Parquet (<a href="https://github.com/owner/repo/issues/24344">#24344</a>)</li>
-<li>Add opt-in unstable functionality to load interval types as <code>Struct</code> (<a href="https://github.com/owner/repo/issues/24320">#24320</a>)</li>
-<li>Support reading parquet metadata from cloud storage (<a href="https://github.com/owner/repo/issues/24443">#24443</a>)</li>
-<li>Add user guide section on AWS role as</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/pola-rs/polars/releases/tag/py-1.34.0-beta.1" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2569,7 +2566,7 @@ def create_item(item: Item):
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-10-19 06:08 UTC
+                Last updated: 2025-10-20 06:09 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
