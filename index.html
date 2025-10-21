@@ -395,6 +395,41 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.119.1</div>
+                            <div class="release-version ">
+                                0.119.1
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-10-20 11:29 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
+<ul>
+<li>🐛 Fix internal Pydantic v1 compatibility (warnings) for Python 3.14 and Pydantic 2.12.1. PR <a href="https://github.com/fastapi/fastapi/pull/14186">[#14186](https://github.com/owner/repo/issues/14186)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
+</ul>
+<h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
+<ul>
+<li>📝 Replace <code>starlette.io</code> by <code>starlette.dev</code> and <code>uvicorn.org</code> by <code>uvicorn.dev</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14176">[#14176](https://github.com/owner/repo/issues/14176)</a> by <a href="https://github.com/Kludex">[@Kludex](https://github.com/Kludex)</a>.</li>
+</ul>
+<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
+<ul>
+<li>🔧 Add sponsor Requestly. PR <a href="https://github.com/fastapi/fastapi/pull/14205">[#14205](https://github.com/owner/repo/issues/14205)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+<li>🔧 Configure reminder for <code>waiting</code> label in <code>issue-manager</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14156">[#14156](https://github.com/owner/repo/issues/14156)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
+</ul></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.119.1" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.119.0</div>
                             <div class="release-version ">
                                 0.119.0
@@ -543,45 +578,6 @@ def create_item(item: Item):
                         <div class="release-meta">
                             <span>Author: tiangolo</span>
                             <a href="https://github.com/fastapi/fastapi/releases/tag/0.118.1" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.118.0</div>
-                            <div class="release-version ">
-                                0.118.0
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-09-29 03:36 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="01180"><a class="toclink" href="#01180">0.118.0</a></h4>
-<h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
-<ul>
-<li>🐛 Fix support for <code>StreamingResponse</code>s with dependencies with <code>yield</code> or <code>UploadFile</code>s, close after the response is done. PR <a href="https://github.com/fastapi/fastapi/pull/14099">[#14099](https://github.com/owner/repo/issues/14099)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-</ul>
-<p>Before FastAPI 0.118.0, if you used a dependency with <code>yield</code>, it would run the exit code after the <em>path operation function</em> returned but right before sending the response.</p>
-<p>This change also meant that if you returned a <code>StreamingResponse</code>, the exit code of the dependency with <code>yield</code> would have been already run.</p>
-<p>For example, if you had a database session in a dependency with <code>yield</code>, the <code>StreamingResponse</code> would not be able to use that session while streaming data because the session would have already been closed in the exit code after <code>yield</code>.</p>
-<p>This behavior was reverted in 0.118.0, to make the exit code after <code>yield</code> be executed after the response is sent.</p>
-<p>You can read more about it in the docs for <a href="https://fastapi.tiangolo.com/advanced/advanced-dependencies#dependencies-with-yield-httpexception-except-and-background-tasks">Advanced Dependencies - Dependencies with <code>yield</code>, <code>HTTPException</code>, <code>except</code> and Background Tasks</a>. Including what you could do if you wanted to close a database session earlier, before returning the response to the client.</p>
-<h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
-<ul>
-<li>📝 Update <code>tutorial/security/oauth2-jwt/</code> to use <code>pwdlib</code> with Argon2 instead of <code>passlib</code>. PR <a href="https://github.com/fastapi/fastapi/pull/13917">[#13917](https://github.com/owner/repo/issues/13917)</a> by <a href="https://github.com/Neizvestnyj">[@Neizvestnyj](https://github.com/Neizvestnyj)</a>.</li>
-<li>✏️ Fix typos in OAuth2 password request forms. PR <a href="https://github.com/fastapi/fastapi/pull/14112">[#14112](https://github.com/owner/repo/issues/14112)</a> by <a href="https://github.com/alv2017">[@alv2017](https://github.com/alv2017)</a>.</li>
-<li>📝 Update contributing guidelines for installing requirements</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.118.0" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -845,6 +841,46 @@ def create_item(item: Item):
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">4.6.18</div>
+                            <div class="release-version ">
+                                4.6.18
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-10-20 11:26 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="whats-changed"><a class="toclink" href="#whats-changed">What's Changed</a></h4>
+<ul>
+<li><code>brew release</code> should run an actual release workflow by <a href="https://github.com/Copilot">@Copilot</a> in https://github.com/Homebrew/brew/pull/20808</li>
+<li>Context: enable Sorbet strict typing by <a href="https://github.com/aryabyte21">@aryabyte21</a> in https://github.com/Homebrew/brew/pull/20871</li>
+<li>Tweak release workflow by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20873</li>
+<li>Import rubydoc.brew.sh into docs.brew.sh/rubydoc by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20875</li>
+<li>docs: add main branch to push trigger. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20877</li>
+<li>Move <code>brew portable-package</code> to <code>brew test-bot</code> by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20874</li>
+<li>dev-cmd/release: improve reliability. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20876</li>
+<li>test_bot/formulae: fix portable attestations. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20878</li>
+<li>utils/github/api: print more info on rate limits by <a href="https://github.com/Bo98">@Bo98</a> in https://github.com/Homebrew/brew/pull/20879</li>
+<li>Support upcoming mas 3.0.0 right-justified app/ADAM IDs from <code>mas list</code> when called from brew bundle by <a href="https://github.com/rgoldberg">@rgoldberg</a> in https://github.com/Homebrew/brew/pull/20882</li>
+<li>formulae: fix verifying local portable Ruby bottles. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20883</li>
+<li>workflows/command-not-found-db-update: don't run on all PRs. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20885</li>
+<li>Change RubyDoc links and fix workflow by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20884</li>
+<li>rubocops/components_order: allow pour_bottle? in on_system blocks by [@p</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/Homebrew/brew/releases/tag/4.6.18" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">4.6.17</div>
                             <div class="release-version ">
                                 4.6.17
@@ -980,36 +1016,6 @@ def create_item(item: Item):
                         <div class="release-meta">
                             <span>Author: MikeMcQuaid</span>
                             <a href="https://github.com/Homebrew/brew/releases/tag/4.6.14" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">4.6.13</div>
-                            <div class="release-version ">
-                                4.6.13
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-09-23 07:28 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="whats-changed"><a class="toclink" href="#whats-changed">What's Changed</a></h4>
-<ul>
-<li>Use installed keg formula files when referencing installed formulae/dependencies by <a href="https://github.com/Rylan12">@Rylan12</a> in https://github.com/Homebrew/brew/pull/20603</li>
-<li>extend/kernel: restore user <code>TERM</code> in interactive shell by <a href="https://github.com/ZhongRuoyu">@ZhongRuoyu</a> in https://github.com/Homebrew/brew/pull/20748</li>
-<li>Revert "Use installed keg formula files when referencing installed formulae/dependencies" by <a href="https://github.com/ZhongRuoyu">@ZhongRuoyu</a> in https://github.com/Homebrew/brew/pull/20753</li>
-<li><code>brew determine-test-runners</code>: allow running locally. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20754</li>
-</ul>
-<p><strong>Full Changelog</strong>: https://github.com/Homebrew/brew/compare/4.6.12...4.6.13</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: MikeMcQuaid</span>
-                            <a href="https://github.com/Homebrew/brew/releases/tag/4.6.13" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -1694,6 +1700,47 @@ def create_item(item: Item):
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.20.0</div>
+                            <div class="release-version ">
+                                0.20.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-10-20 17:03 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="features"><a class="toclink" href="#features">Features</a></h5>
+<ul>
+<li>✨ Enable command suggestions on typo by default. PR <a href="https://github.com/fastapi/typer/pull/1371">[#1371](https://github.com/owner/repo/issues/1371)</a> by <a href="https://github.com/savannahostrowski">[@savannahostrowski](https://github.com/savannahostrowski)</a>.</li>
+</ul>
+<h5 id="upgrades"><a class="toclink" href="#upgrades">Upgrades</a></h5>
+<ul>
+<li>⬆️ Add support for Python 3.14. PR <a href="https://github.com/fastapi/typer/pull/1372">[#1372](https://github.com/owner/repo/issues/1372)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
+</ul>
+<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
+<ul>
+<li>👷 Add nightly workflow to run tests against CPython main branch. PR <a href="https://github.com/fastapi/typer/pull/1374">[#1374](https://github.com/owner/repo/issues/1374)</a> by <a href="https://github.com/savannahostrowski">[@savannahostrowski](https://github.com/savannahostrowski)</a>.</li>
+<li>⬆ Bump mkdocs-material from 9.6.21 to 9.6.22. PR <a href="https://github.com/fastapi/typer/pull/1377">[#1377](https://github.com/owner/repo/issues/1377)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>🔧 Configure reminder for <code>waiting</code> label in <code>issue-manager</code>. PR <a href="https://github.com/fastapi/typer/pull/1378">[#1378](https://github.com/owner/repo/issues/1378)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
+<li>⬆ Bump ruff from 0.13.3 to 0.14.0. PR <a href="https://github.com/fastapi/typer/pull/1368">[#1368](https://github.com/owner/repo/issues/1368)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>⬆ [pre-commit.ci] pre-commit autoupdate. PR <a href="https://github.com/fastapi/typer/pull/1376">[#1376](https://github.com/owner/repo/issues/1376)</a> by <a href="https://github.com/apps/pre-commit-ci">[@pre](https://github.com/pre)-commit-ci[bot]</a>.</li>
+<li>⬆ Bump mkdocs-macros-plugin from 1.3.9 to 1.4.0. PR <a href="https://github.com/fastapi/typer/pull/1354">[#1354](https://github.com/owner/repo/issues/1354)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>⬆ Bump mkdocs</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/typer/releases/tag/0.20.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.19.2</div>
                             <div class="release-version ">
                                 0.19.2
@@ -1818,44 +1865,6 @@ def create_item(item: Item):
                         <div class="release-meta">
                             <span>Author: tiangolo</span>
                             <a href="https://github.com/fastapi/typer/releases/tag/0.18.0" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.17.5</div>
-                            <div class="release-version ">
-                                0.17.5
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-09-19 18:34 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
-<ul>
-<li>⬇️ Restrict Click to below 8.3.0 to handle changes in the new version. PR <a href="https://github.com/fastapi/typer/pull/1336">[#1336](https://github.com/owner/repo/issues/1336)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
-</ul>
-<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
-<ul>
-<li>⬆ Bump mkdocs-material from 9.6.14 to 9.6.20. PR <a href="https://github.com/fastapi/typer/pull/1308">[#1308](https://github.com/owner/repo/issues/1308)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
-<li>⬆ Bump mkdocs-material from 9.5.50 to 9.6.14. PR <a href="https://github.com/fastapi/typer/pull/1223">[#1223](https://github.com/owner/repo/issues/1223)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
-<li>⬆ Bump actions/download-artifact from 4 to 5. PR <a href="https://github.com/fastapi/typer/pull/1269">[#1269](https://github.com/owner/repo/issues/1269)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
-<li>⬆ Bump ruff from 0.12.12 to 0.13.0. PR <a href="https://github.com/fastapi/typer/pull/1302">[#1302](https://github.com/owner/repo/issues/1302)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
-<li>⬆ [pre-commit.ci] pre-commit autoupdate. PR <a href="https://github.com/fastapi/typer/pull/1307">[#1307](https://github.com/owner/repo/issues/1307)</a> by <a href="https://github.com/apps/pre-commit-ci">[@pre](https://github.com/pre)-commit-ci[bot]</a>.</li>
-<li>⬆ Update pytest-cov requirement from &lt;7.0.0,&gt;=2.10.0 to &gt;=2.10.0,&lt;8.0.0. PR <a href="https://github.com/fastapi/typer/pull/1301">[#1301](https://github.com/owner/repo/issues/1301)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
-<li>⬆ Bump actions/setup-python from 5 to 6. PR <a href="https://github.com/fastapi/typer/pull/1291">[#1291](https://github.com/owner/repo/issues/1291)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
-<li>⬆ Bump ruff from 0.12.11</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/typer/releases/tag/0.17.5" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2566,7 +2575,7 @@ def create_item(item: Item):
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-10-20 06:09 UTC
+                Last updated: 2025-10-21 06:09 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
