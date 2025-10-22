@@ -2052,6 +2052,52 @@ def create_item(item: Item):
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.9.5</div>
+                            <div class="release-version ">
+                                0.9.5
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-10-21 16:51 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2025-10-21.</p>
+<p>This release contains an upgrade to <code>astral-tokio-tar</code>, which addresses a vulnerability in tar extraction on malformed archives with mismatching size information between the ustar header and PAX extensions. While the <code>astral-tokio-tar</code> advisory has been graded as "high" due its potential broader impact, the <em>specific</em> impact to uv is <strong>low</strong> due to a lack of novel attacker capability. Specifically, uv only processes tar archives from source distributions, which already possess the capability for full arbitrary code execution by design, meaning that an attacker gains no additional capabilities through <code>astral-tokio-tar</code>.</p>
+<p>Regardless, we take the hypothetical risk of parser differentials very seriously. Out of an abundance of caution, we have assigned this upgrade an advisory: https://github.com/astral-sh/uv/security/advisories/GHSA-w476-p2h3-79g9</p>
+<h5 id="security"><a class="toclink" href="#security">Security</a></h5>
+<ul>
+<li>Upgrade <code>astral-tokio-tar</code> to 0.5.6 to address a parsing differential (<a href="https://github.com/astral-sh/uv/pull/16387">[#16387](https://github.com/owner/repo/issues/16387)</a>)</li>
+</ul>
+<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
+<ul>
+<li>Add required environment marker example to hint (<a href="https://github.com/astral-sh/uv/pull/16244">[#16244](https://github.com/owner/repo/issues/16244)</a>)</li>
+<li>Fix typo in MissingTopLevel warning (<a href="https://github.com/astral-sh/uv/pull/16351">[#16351](https://github.com/owner/repo/issues/16351)</a>)</li>
+<li>Improve 403 Forbidden error message to indicate package may not exist (<a href="https://github.com/astral-sh/uv/pull/16353">[#16353](https://github.com/owner/repo/issues/16353)</a>)</li>
+<li>Add a hint on <code>uv pip install</code> failure if the <code>--system</code> flag is used to select an externally managed interpreter (<a href="https://github.com/astral-sh/uv/pull/16318">[#16318](https://github.com/owner/repo/issues/16318)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>Fix backtick escaping for PowerShell (<a href="https://github.com/astral-sh/uv/pull/16307">[#16307](https://github.com/owner/repo/issues/16307)</a>)</li>
+</ul>
+<h5 id="documentation"><a class="toclink" href="#documentation">Documentation</a></h5>
+<ul>
+<li>Document </li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.5" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.9.4</div>
                             <div class="release-version ">
                                 0.9.4
@@ -2337,43 +2383,6 @@ def create_item(item: Item):
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.9.0</div>
-                            <div class="release-version ">
-                                0.9.0
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-07 23:45 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2025-10-07.</p>
-<p>This breaking release is primarily motivated by the release of Python 3.14, which contains some breaking changes (we recommend reading the <a href="https://docs.python.org/3/whatsnew/3.14.html">"What's new in Python 3.14"</a> page). uv may use Python 3.14 in cases where it previously used 3.13, e.g., if you have not pinned your Python version and do not have any Python versions installed on your machine. While we think this is uncommon, we prefer to be cautious. We've included some additional small changes that could break workflows.</p>
-<p>See our <a href="https://astral.sh/blog/python-3.14">Python 3.14</a> blog post for some discussion of features we're excited about!</p>
-<p>There are no breaking changes to <a href="https://docs.astral.sh/uv/concepts/build-backend/"><code>uv_build</code></a>. If you have an upper bound in your <code>[build-system]</code> table, you should update it.</p>
-<h5 id="breaking-changes"><a class="toclink" href="#breaking-changes">Breaking changes</a></h5>
-<ul>
-<li><strong>Python 3.14 is now the default stable version</strong></li>
-</ul>
-<p>The default Python version has changed from 3.13 to 3.14. This applies to Python version installation when no Python version is requested, e.g., <code>uv python install</code>. By default, uv will use the system Python version if present, so this may not cause changes to general use of uv. For example, if Python 3.13 is installed already, then <code>uv venv</code> will use that version. If no Python versions are installed on a machine and automatic downloads are enabled, uv will now use 3.14 instead of 3.13, e.g., for <code>uv venv</code> or <code>uvx python</code>. This change will not affect users who are using a <code>.python-version</code> file to pin to a specific Python version.</p>
-<ul>
-<li><strong>Allow use of free-threaded variants in Python 3.14+ without explicit opt-in</strong> (<a href="https://github.com/astral-sh/uv/pull/16142">[#16142](https://github.com/owner/repo/issues/16142)</a>)</li>
-</ul>
-<p>Previously, free-threaded variants of Python were considered experimental and required explicit opt-in (i.e., with <code>3.14t</code>) for usage. Now uv will allow use of free-threaded Python 3.14+ interpreters with</p>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.0" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -2575,7 +2584,7 @@ def create_item(item: Item):
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-10-21 06:09 UTC
+                Last updated: 2025-10-22 06:09 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
