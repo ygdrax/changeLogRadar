@@ -395,6 +395,42 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.120.0</div>
+                            <div class="release-version ">
+                                0.120.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-10-23 20:55 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><p>There are no major nor breaking changes in this release. ☕️</p>
+<p>The internal reference documentation now uses <code>annotated_doc.Doc</code> instead of <code>typing_extensions.Doc</code>, this adds a new (very small) dependency on <a href="https://github.com/fastapi/annotated-doc"><code>annotated-doc</code></a>, a package made just to provide that <code>Doc</code> documentation utility class.</p>
+<p>I would expect <code>typing_extensions.Doc</code> to be deprecated and then removed at some point from <code>typing_extensions</code>, for that reason there's the new <code>annotated-doc</code> micro-package. If you are curious about this, you can read more in the repo for <a href="https://github.com/fastapi/annotated-doc"><code>annotated-doc</code></a>.</p>
+<p>This new version <code>0.120.0</code> only contains that transition to the new home package for that utility class <code>Doc</code>.</p>
+<h5 id="translations"><a class="toclink" href="#translations">Translations</a></h5>
+<ul>
+<li>🌐 Sync German docs. PR <a href="https://github.com/fastapi/fastapi/pull/14188">[#14188](https://github.com/owner/repo/issues/14188)</a> by <a href="https://github.com/nilslindemann">[@nilslindemann](https://github.com/nilslindemann)</a>.</li>
+</ul>
+<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
+<ul>
+<li>➕ Migrate internal reference documentation from <code>typing_extensions.Doc</code> to <code>annotated_doc.Doc</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14222">[#14222](https://github.com/owner/repo/issues/14222)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+<li>🛠️ Update German LLM prompt and test file. PR <a href="https://github.com/fastapi/fastapi/pull/14189">[#14189](https://github.com/owner/repo/issues/14189)</a> by <a href="https://github.com/nilslindemann">[@nilslindemann](https://github.com/nilslindemann)</a>.</li>
+<li>⬆ [pre-commit.ci] pre-commit autoupdate. PR <a href="https://github.com/fastapi/fastapi/pull/14181">[#14181](https://github.com/owner/repo/issues/14181)</a> by <a href="https://github.com/apps/pre-commit-ci">[@pre](https://github.com/pre)-commit-ci[bot]</a>.</li>
+</ul></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.120.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.119.1</div>
                             <div class="release-version ">
                                 0.119.1
@@ -534,50 +570,6 @@ def create_item(item: Item):
                         <div class="release-meta">
                             <span>Author: tiangolo</span>
                             <a href="https://github.com/fastapi/fastapi/releases/tag/0.118.2" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.118.1</div>
-                            <div class="release-version ">
-                                0.118.1
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-08 09:06 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h5 id="upgrades"><a class="toclink" href="#upgrades">Upgrades</a></h5>
-<ul>
-<li>👽️ Ensure compatibility with Pydantic 2.12.0. PR <a href="https://github.com/fastapi/fastapi/pull/14036">[#14036](https://github.com/owner/repo/issues/14036)</a> by <a href="https://github.com/cjwatson">[@cjwatson](https://github.com/cjwatson)</a>.</li>
-</ul>
-<h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
-<ul>
-<li>📝 Add External Link: Getting started with logging in FastAPI. PR <a href="https://github.com/fastapi/fastapi/pull/14152">[#14152](https://github.com/owner/repo/issues/14152)</a> by <a href="https://github.com/itssimon">[@itssimon](https://github.com/itssimon)</a>.</li>
-</ul>
-<h5 id="translations"><a class="toclink" href="#translations">Translations</a></h5>
-<ul>
-<li>🔨 Add Russian translations LLM prompt. PR <a href="https://github.com/fastapi/fastapi/pull/13936">[#13936](https://github.com/owner/repo/issues/13936)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-<li>🌐 Sync German docs. PR <a href="https://github.com/fastapi/fastapi/pull/14149">[#14149](https://github.com/owner/repo/issues/14149)</a> by <a href="https://github.com/nilslindemann">[@nilslindemann](https://github.com/nilslindemann)</a>.</li>
-<li>🌐 Add Russian translations for missing pages (LLM-generated). PR <a href="https://github.com/fastapi/fastapi/pull/14135">[#14135](https://github.com/owner/repo/issues/14135)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
-<li>🌐 Update Russian translations for existing pages (LLM-generated). PR <a href="https://github.com/fastapi/fastapi/pull/14123">[#14123](https://github.com/owner/repo/issues/14123)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
-<li>🌐 Remove configuration files for inactive translations. PR <a href="https://github.com/fastapi/fastapi/pull/14130">[#14130](https://github.com/owner/repo/issues/14130)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-</ul>
-<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
-<ul>
-<li>🔨 Move local coverage logic to its own script. PR <a href="https://github.com/fastapi/fastapi/pull/14166">[#14166](https://github.com/owner/repo/issues/14166)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-<li>⬆ [pre-commit.ci] pre-commit au</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.118.1" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -1455,6 +1447,54 @@ def create_item(item: Item):
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.14.2</div>
+                            <div class="release-version ">
+                                0.14.2
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-10-23 19:44 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2025-10-23.</p>
+<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
+<ul>
+<li>[<code>flake8-gettext</code>] Resolve qualified names and built-in bindings (<code>INT001</code>, <code>INT002</code>, <code>INT003</code>) (<a href="https://github.com/astral-sh/ruff/pull/19045">[#19045](https://github.com/owner/repo/issues/19045)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>Avoid reusing nested, interpolated quotes before Python 3.12 (<a href="https://github.com/astral-sh/ruff/pull/20930">[#20930](https://github.com/owner/repo/issues/20930)</a>)</li>
+<li>Catch syntax errors in nested interpolations before Python 3.12 (<a href="https://github.com/astral-sh/ruff/pull/20949">[#20949](https://github.com/owner/repo/issues/20949)</a>)</li>
+<li>[<code>fastapi</code>] Handle ellipsis defaults in <code>FAST002</code> autofix (<a href="https://github.com/astral-sh/ruff/pull/20810">[#20810](https://github.com/owner/repo/issues/20810)</a>)</li>
+<li>[<code>flake8-simplify</code>] Skip <code>SIM911</code> when unknown arguments are present (<a href="https://github.com/astral-sh/ruff/pull/20697">[#20697](https://github.com/owner/repo/issues/20697)</a>)</li>
+<li>[<code>pyupgrade</code>] Always parenthesize assignment expressions in fix for <code>f-string</code> (<code>UP032</code>) (<a href="https://github.com/astral-sh/ruff/pull/21003">[#21003](https://github.com/owner/repo/issues/21003)</a>)</li>
+<li>[<code>pyupgrade</code>] Fix <code>UP032</code> conversion for decimal ints with underscores (<a href="https://github.com/astral-sh/ruff/pull/21022">[#21022](https://github.com/owner/repo/issues/21022)</a>)</li>
+<li>[<code>fastapi</code>] Skip autofix for keyword and <code>__debug__</code> path params (<code>FAST003</code>) (<a href="https://github.com/astral-sh/ruff/pull/20960">[#20960](https://github.com/owner/repo/issues/20960)</a>)</li>
+</ul>
+<h5 id="rule-changes"><a class="toclink" href="#rule-changes">Rule changes</a></h5>
+<ul>
+<li>[<code>flake8-bugbear</code>] Skip <code>B905</code> and <code>B912</code> for fewer than two iterables and no starred arguments (<a href="https://github.com/astral-sh/ruff/pull/20998">[#20998](https://github.com/owner/repo/issues/20998)</a>)</li>
+<li>[<code>ruff</code>] Use <code>DiagnosticTag</code> for more <code>pyflakes</code> and <code>pandas</code> rules (<a href="https://github.com/astral-sh/ruff/pull/20801">[#20801](https://github.com/owner/repo/issues/20801)</a>)</li>
+</ul>
+<h5 id="cli"><a class="toclink" href="#cli">CLI</a></h5>
+<ul>
+<li>Improve JSON output from <code>ruff rule</code> ([[#20168](https://github.com/owner/</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.2" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.14.1</div>
                             <div class="release-version ">
                                 0.14.1
@@ -1631,48 +1671,6 @@ def create_item(item: Item):
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/astral-sh/ruff/releases/tag/0.13.2" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.13.1</div>
-                            <div class="release-version ">
-                                0.13.1
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-09-18 20:00 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2025-09-18.</p>
-<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
-<ul>
-<li>[<code>flake8-simplify</code>] Detect unnecessary <code>None</code> default for additional key expression types (<code>SIM910</code>) (<a href="https://github.com/astral-sh/ruff/pull/20343">[#20343](https://github.com/owner/repo/issues/20343)</a>)</li>
-<li>[<code>flake8-use-pathlib</code>] Add fix for <code>PTH123</code> (<a href="https://github.com/astral-sh/ruff/pull/20169">[#20169](https://github.com/owner/repo/issues/20169)</a>)</li>
-<li>[<code>flake8-use-pathlib</code>] Fix <code>PTH101</code>, <code>PTH104</code>, <code>PTH105</code>, <code>PTH121</code> fixes (<a href="https://github.com/astral-sh/ruff/pull/20143">[#20143](https://github.com/owner/repo/issues/20143)</a>)</li>
-<li>[<code>flake8-use-pathlib</code>] Make <code>PTH111</code> fix unsafe because it can change behavior (<a href="https://github.com/astral-sh/ruff/pull/20215">[#20215](https://github.com/owner/repo/issues/20215)</a>)</li>
-<li>[<code>pycodestyle</code>] Fix <code>E301</code> to only trigger for functions immediately within a class (<a href="https://github.com/astral-sh/ruff/pull/19768">[#19768](https://github.com/owner/repo/issues/19768)</a>)</li>
-<li>[<code>refurb</code>] Mark <code>single-item-membership-test</code> fix as always unsafe (<code>FURB171</code>) (<a href="https://github.com/astral-sh/ruff/pull/20279">[#20279](https://github.com/owner/repo/issues/20279)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Handle t-strings for token-based rules and suppression comments (<a href="https://github.com/astral-sh/ruff/pull/20357">[#20357](https://github.com/owner/repo/issues/20357)</a>)</li>
-<li>[<code>flake8-bandit</code>] Fix truthiness: dict-only <code>**</code> displays not truthy for <code>shell</code> (<code>S602</code>, <code>S604</code>, <code>S609</code>) (<a href="https://github.com/astral-sh/ruff/pull/20177">[#20177](https://github.com/owner/repo/issues/20177)</a>)</li>
-<li>[<code>flake8-simplify</code>] Fix diagnostic to show correct method name for <code>str.rsplit</code> calls (<code>SIM905</code>) (<a href="https://github.com/astral-sh/ruff/pull/20459">[#20459](https://github.com/owner/repo/issues/20459)</a>)</li>
-<li>[<code>flynt</code>] Use triple quotes for joined raw strings with newlines (<code>FLY002</code>) (<a href="https://github.com/astral-sh/ruff/pull/20197">[#20197](https://github.com/owner/repo/issues/20197)</a>)</li>
-<li>[<code>pyupgrade</code>] Fix false positive when class n</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.13.1" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2584,7 +2582,7 @@ def create_item(item: Item):
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-10-23 06:09 UTC
+                Last updated: 2025-10-24 06:09 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
