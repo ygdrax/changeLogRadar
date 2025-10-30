@@ -395,6 +395,39 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.120.2</div>
+                            <div class="release-version ">
+                                0.120.2
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-10-29 13:46 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
+<ul>
+<li>🐛 Fix separation of schemas with nested models introduced in 0.119.0. PR <a href="https://github.com/fastapi/fastapi/pull/14246">[#14246](https://github.com/owner/repo/issues/14246)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+</ul>
+<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
+<ul>
+<li>🔧 Add sponsor: SerpApi. PR <a href="https://github.com/fastapi/fastapi/pull/14248">[#14248](https://github.com/owner/repo/issues/14248)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+<li>⬆ Bump actions/download-artifact from 5 to 6. PR <a href="https://github.com/fastapi/fastapi/pull/14236">[#14236](https://github.com/owner/repo/issues/14236)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>⬆ [pre-commit.ci] pre-commit autoupdate. PR <a href="https://github.com/fastapi/fastapi/pull/14237">[#14237](https://github.com/owner/repo/issues/14237)</a> by <a href="https://github.com/apps/pre-commit-ci">[@pre](https://github.com/pre)-commit-ci[bot]</a>.</li>
+<li>⬆ Bump actions/upload-artifact from 4 to 5. PR <a href="https://github.com/fastapi/fastapi/pull/14235">[#14235](https://github.com/owner/repo/issues/14235)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+</ul></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.120.2" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.120.1</div>
                             <div class="release-version ">
                                 0.120.1
@@ -544,32 +577,6 @@ def create_item(item: Item):
                         <div class="release-meta">
                             <span>Author: tiangolo</span>
                             <a href="https://github.com/fastapi/fastapi/releases/tag/0.119.0" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.118.3</div>
-                            <div class="release-version ">
-                                0.118.3
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-10 10:39 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h5 id="upgrades"><a class="toclink" href="#upgrades">Upgrades</a></h5>
-<ul>
-<li>⬆️ Add support for Python 3.14. PR <a href="https://github.com/fastapi/fastapi/pull/14165">[#14165](https://github.com/owner/repo/issues/14165)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
-</ul></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.118.3" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2054,6 +2061,55 @@ def create_item(item: Item):
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.9.6</div>
+                            <div class="release-version ">
+                                0.9.6
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-10-29 19:41 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2025-10-29.</p>
+<p>This release contains an upgrade to Astral's fork of <code>async_zip</code>, which addresses potential sources of ZIP parsing differentials between uv and other Python packaging tooling. See <a href="https://github.com/astral-sh/uv/security/advisories/GHSA-pqhf-p39g-3x64">GHSA-pqhf-p39g-3x64</a> for additional details.</p>
+<h5 id="security"><a class="toclink" href="#security">Security</a></h5>
+<ul>
+<li>Address ZIP parsing differentials (<a href="https://github.com/astral-sh/uv/security/advisories/GHSA-pqhf-p39g-3x64">GHSA-pqhf-p39g-3x64</a>)</li>
+</ul>
+<h5 id="python"><a class="toclink" href="#python">Python</a></h5>
+<ul>
+<li>Upgrade GraalPy to 25.0.1 (<a href="https://github.com/astral-sh/uv/pull/16401">[#16401](https://github.com/owner/repo/issues/16401)</a>)</li>
+</ul>
+<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
+<ul>
+<li>Add <code>--clear</code> to <code>uv build</code> to remove old build artifacts (<a href="https://github.com/astral-sh/uv/pull/16371">[#16371](https://github.com/owner/repo/issues/16371)</a>)</li>
+<li>Add <code>--no-create-gitignore</code> to <code>uv build</code> (<a href="https://github.com/astral-sh/uv/pull/16369">[#16369](https://github.com/owner/repo/issues/16369)</a>)</li>
+<li>Do not error when a virtual environment directory cannot be removed due to a busy error (<a href="https://github.com/astral-sh/uv/pull/16394">[#16394](https://github.com/owner/repo/issues/16394)</a>)</li>
+<li>Improve hint on <code>pip install --system</code> when externally managed (<a href="https://github.com/astral-sh/uv/pull/16392">[#16392](https://github.com/owner/repo/issues/16392)</a>)</li>
+<li>Running <code>uv lock --check</code> with outdated lockfile will print that <code>--check</code> was passed, instead of <code>--locked</code>  (<a href="https://github.com/astral-sh/uv/pull/16322">[#16322](https://github.com/owner/repo/issues/16322)</a>)</li>
+<li>Update <code>uv init</code> template for Maturin (<a href="https://github.com/astral-sh/uv/pull/16449">[#16449](https://github.com/owner/repo/issues/16449)</a>)</li>
+<li>Improve ordering of Python sources in logs (<a href="https://github.com/astral-sh/uv/pull/16463">[#16463](https://github.com/owner/repo/issues/16463)</a>)</li>
+<li>Restore DockerHub release images and annotations (<a href="https://github.com/astral-sh/uv/pull/16441">[#16441](https://github.com/owner/repo/issues/16441)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>Check for matchi</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.6" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.9.5</div>
                             <div class="release-version ">
                                 0.9.5
@@ -2334,57 +2390,6 @@ def create_item(item: Item):
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.9.1</div>
-                            <div class="release-version ">
-                                0.9.1
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-09 19:11 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2025-10-09.</p>
-<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
-<ul>
-<li>Log Python choice in <code>uv init</code> (<a href="https://github.com/astral-sh/uv/pull/16182">[#16182](https://github.com/owner/repo/issues/16182)</a>)</li>
-<li>Fix <code>pylock.toml</code> config conflict error messages (<a href="https://github.com/astral-sh/uv/pull/16211">[#16211](https://github.com/owner/repo/issues/16211)</a>)</li>
-</ul>
-<h5 id="configuration"><a class="toclink" href="#configuration">Configuration</a></h5>
-<ul>
-<li>Add <code>UV_UPLOAD_HTTP_TIMEOUT</code> and respect <code>UV_HTTP_TIMEOUT</code> in uploads (<a href="https://github.com/astral-sh/uv/pull/16040">[#16040](https://github.com/owner/repo/issues/16040)</a>)</li>
-<li>Support <code>UV_WORKING_DIRECTORY</code> for setting <code>--directory</code> (<a href="https://github.com/astral-sh/uv/pull/16125">[#16125](https://github.com/owner/repo/issues/16125)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Allow missing <code>Scripts</code> directory (<a href="https://github.com/astral-sh/uv/pull/16206">[#16206](https://github.com/owner/repo/issues/16206)</a>)</li>
-<li>Fix handling of Python requests with pre-releases in ranges (<a href="https://github.com/astral-sh/uv/pull/16208">[#16208](https://github.com/owner/repo/issues/16208)</a>)</li>
-<li>Preserve comments on version bump (<a href="https://github.com/astral-sh/uv/pull/16141">[#16141](https://github.com/owner/repo/issues/16141)</a>)</li>
-<li>Retry all HTTP/2 errors (<a href="https://github.com/astral-sh/uv/pull/16038">[#16038](https://github.com/owner/repo/issues/16038)</a>)</li>
-<li>Treat deleted Windows registry keys as equivalent to missing ones (<a href="https://github.com/astral-sh/uv/pull/16194">[#16194](https://github.com/owner/repo/issues/16194)</a>)</li>
-<li>Ignore pre-release Python versions when a patch version is requested (<a href="https://github.com/astral-sh/uv/pull/16210">[#16210](https://github.com/owner/repo/issues/16210)</a>)</li>
-</ul>
-<h5 id="documentation"><a class="toclink" href="#documentation">Documentation</a></h5>
-<ul>
-<li>Document why uv discards upper bounds on <code>requires-python</code> (<a href="https://github.com/astral-sh/uv/pull/15927">[#15927](https://github.com/owner/repo/issues/15927)</a>)</li>
-<li>Document uv version environment variables were added in (<a href="https://github.com/astral-sh/uv/pull/15196">[#15196](https://github.com/owner/repo/issues/15196)</a>)</li>
-</ul>
-<h4 id="install-uv-091"><a class="toclink" href="#install-uv-091">Install uv 0.9.1</a></h4>
-<h5 id="install-preb"><a class="toclink" href="#install-preb">Install preb</a></h5>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.1" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -2586,7 +2591,7 @@ def create_item(item: Item):
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-10-29 06:09 UTC
+                Last updated: 2025-10-30 06:09 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
