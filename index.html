@@ -1438,6 +1438,54 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.14.4</div>
+                            <div class="release-version ">
+                                0.14.4
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-06 22:15 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2025-11-06.</p>
+<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
+<ul>
+<li>[formatter] Allow newlines after function headers without docstrings (<a href="https://github.com/astral-sh/ruff/pull/21110">[#21110](https://github.com/owner/repo/issues/21110)</a>)</li>
+<li>[formatter] Avoid extra parentheses for long <code>match</code> patterns with <code>as</code> captures (<a href="https://github.com/astral-sh/ruff/pull/21176">[#21176](https://github.com/owner/repo/issues/21176)</a>)</li>
+<li>[<code>refurb</code>] Expand fix safety for keyword arguments and <code>Decimal</code>s (<code>FURB164</code>) (<a href="https://github.com/astral-sh/ruff/pull/21259">[#21259](https://github.com/owner/repo/issues/21259)</a>)</li>
+<li>[<code>refurb</code>] Preserve argument ordering in autofix (<code>FURB103</code>) (<a href="https://github.com/astral-sh/ruff/pull/20790">[#20790](https://github.com/owner/repo/issues/20790)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>[server] Fix missing diagnostics for notebooks (<a href="https://github.com/astral-sh/ruff/pull/21156">[#21156](https://github.com/owner/repo/issues/21156)</a>)</li>
+<li>[<code>flake8-bugbear</code>] Ignore non-NFKC attribute names in <code>B009</code> and <code>B010</code> (<a href="https://github.com/astral-sh/ruff/pull/21131">[#21131](https://github.com/owner/repo/issues/21131)</a>)</li>
+<li>[<code>refurb</code>] Fix false negative for underscores before sign in <code>Decimal</code> constructor (<code>FURB157</code>) (<a href="https://github.com/astral-sh/ruff/pull/21190">[#21190](https://github.com/owner/repo/issues/21190)</a>)</li>
+<li>[<code>ruff</code>] Fix false positives on starred arguments (<code>RUF057</code>) (<a href="https://github.com/astral-sh/ruff/pull/21256">[#21256](https://github.com/owner/repo/issues/21256)</a>)</li>
+</ul>
+<h5 id="rule-changes"><a class="toclink" href="#rule-changes">Rule changes</a></h5>
+<ul>
+<li>[<code>airflow</code>] extend deprecated argument <code>concurrency</code> in <code>airflow..DAG</code> (<code>AIR301</code>) (<a href="https://github.com/astral-sh/ruff/pull/21220">[#21220](https://github.com/owner/repo/issues/21220)</a>)</li>
+</ul>
+<h5 id="documentation"><a class="toclink" href="#documentation">Documentation</a></h5>
+<ul>
+<li>Improve <code>extend</code> docs (<a href="https://github.com/astral-sh/ruff/pull/21135">[#21135](https://github.com/owner/repo/issues/21135)</a>)</li>
+<li>[<code>flake8-comprehensions</code>] Fix typo in <code>C416</code> documentation ([<a href="https://github.com/owner/repo/issues/21184">#21184</a>](https://github.com/astral-sh/ru</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.4" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.14.3</div>
                             <div class="release-version ">
                                 0.14.3
@@ -1613,55 +1661,6 @@
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.0" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.13.3</div>
-                            <div class="release-version ">
-                                0.13.3
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-02 19:36 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2025-10-02.</p>
-<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
-<ul>
-<li>Display diffs for <code>ruff format --check</code> and add support for different output formats (<a href="https://github.com/astral-sh/ruff/pull/20443">[#20443](https://github.com/owner/repo/issues/20443)</a>)</li>
-<li>[<code>pyflakes</code>] Handle some common submodule import situations for <code>unused-import</code> (<code>F401</code>) (<a href="https://github.com/astral-sh/ruff/pull/20200">[#20200](https://github.com/owner/repo/issues/20200)</a>)</li>
-<li>[<code>ruff</code>] Do not flag <code>%r</code> + <code>repr()</code> combinations (<code>RUF065</code>) (<a href="https://github.com/astral-sh/ruff/pull/20600">[#20600](https://github.com/owner/repo/issues/20600)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>[<code>cli</code>] Add conflict between <code>--add-noqa</code> and <code>--diff</code> options (<a href="https://github.com/astral-sh/ruff/pull/20642">[#20642](https://github.com/owner/repo/issues/20642)</a>)</li>
-<li>[<code>pylint</code>] Exempt required imports from <code>PLR0402</code> (<a href="https://github.com/astral-sh/ruff/pull/20381">[#20381](https://github.com/owner/repo/issues/20381)</a>)</li>
-<li>[<code>pylint</code>] Fix missing <code>max-nested-blocks</code> in settings display (<a href="https://github.com/astral-sh/ruff/pull/20574">[#20574](https://github.com/owner/repo/issues/20574)</a>)</li>
-<li>[<code>pyupgrade</code>] Prevent infinite loop with <code>I002</code> and <code>UP026</code> (<a href="https://github.com/astral-sh/ruff/pull/20634">[#20634](https://github.com/owner/repo/issues/20634)</a>)</li>
-</ul>
-<h5 id="rule-changes"><a class="toclink" href="#rule-changes">Rule changes</a></h5>
-<ul>
-<li>[<code>flake8-simplify</code>] Improve help message clarity (<code>SIM105</code>) (<a href="https://github.com/astral-sh/ruff/pull/20548">[#20548](https://github.com/owner/repo/issues/20548)</a>)</li>
-</ul>
-<h5 id="documentation"><a class="toclink" href="#documentation">Documentation</a></h5>
-<ul>
-<li>Add the <em>The Basics</em> title back to CONTRIBUTING.md (<a href="https://github.com/astral-sh/ruff/pull/20624">[#20624](https://github.com/owner/repo/issues/20624)</a>)</li>
-<li>Fixed documentation for try_consider_else (<a href="https://github.com/astral-sh/ruff/pull/20587">[#20587](https://github.com/owner/repo/issues/20587)</a>)</li>
-<li>[<code>isort</code>] Clarify dependency between <code>order-by-type</code> and <code>case-sensitive</code> settings (<a href="https://github.com/astral-sh/ruff/pull/20559">[#20559](https://github.com/owner/repo/issues/20559)</a>)</li>
-<li></li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.13.3" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2565,7 +2564,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-11-06 06:09 UTC
+                Last updated: 2025-11-07 06:09 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
