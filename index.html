@@ -2040,6 +2040,47 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.9.8</div>
+                            <div class="release-version ">
+                                0.9.8
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-07 20:42 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2025-11-07.</p>
+<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
+<ul>
+<li>Accept multiple packages in <code>uv export</code> (<a href="https://github.com/astral-sh/uv/pull/16603">[#16603](https://github.com/owner/repo/issues/16603)</a>)</li>
+<li>Accept multiple packages in <code>uv sync</code> (<a href="https://github.com/astral-sh/uv/pull/16543">[#16543](https://github.com/owner/repo/issues/16543)</a>)</li>
+<li>Add a <code>uv cache size</code> command (<a href="https://github.com/astral-sh/uv/pull/16032">[#16032](https://github.com/owner/repo/issues/16032)</a>)</li>
+<li>Add prerelease guidance for build-system resolution failures (<a href="https://github.com/astral-sh/uv/pull/16550">[#16550](https://github.com/owner/repo/issues/16550)</a>)</li>
+<li>Allow Python requests to include <code>+gil</code> to require a GIL-enabled interpreter (<a href="https://github.com/astral-sh/uv/pull/16537">[#16537](https://github.com/owner/repo/issues/16537)</a>)</li>
+<li>Avoid pluralizing 'retry' for single value (<a href="https://github.com/astral-sh/uv/pull/16535">[#16535](https://github.com/owner/repo/issues/16535)</a>)</li>
+<li>Enable first-class dependency exclusions (<a href="https://github.com/astral-sh/uv/pull/16528">[#16528](https://github.com/owner/repo/issues/16528)</a>)</li>
+<li>Fix inclusive constraints on available package versions in resolver errors (<a href="https://github.com/astral-sh/uv/pull/16629">[#16629](https://github.com/owner/repo/issues/16629)</a>)</li>
+<li>Improve <code>uv init</code> error for invalid directory names (<a href="https://github.com/astral-sh/uv/pull/16554">[#16554](https://github.com/owner/repo/issues/16554)</a>)</li>
+<li>Show help on <code>uv build -h</code> (<a href="https://github.com/astral-sh/uv/pull/16632">[#16632](https://github.com/owner/repo/issues/16632)</a>)</li>
+<li>Include the Python variant suffix in "Using Python ..." messages (<a href="https://github.com/astral-sh/uv/pull/16536">[#16536](https://github.com/owner/repo/issues/16536)</a>)</li>
+<li>Log most recently modified file for cache-keys (<a href="https://github.com/astral-sh/uv/pull/16338">[#16338](https://github.com/owner/repo/issues/16338)</a>)</li>
+<li>Update Docker builds to use nightly Rust toolchain with musl v1.2.5 ([[#16584](https://github.com/owner/r</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.8" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.9.7</div>
                             <div class="release-version ">
                                 0.9.7
@@ -2281,88 +2322,6 @@
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.9.3</div>
-                            <div class="release-version ">
-                                0.9.3
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-15 15:21 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2025-10-14.</p>
-<h5 id="python"><a class="toclink" href="#python">Python</a></h5>
-<ul>
-<li>Add CPython 3.15.0a1</li>
-<li>Add CPython 3.13.9</li>
-</ul>
-<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
-<ul>
-<li>Obfuscate secret token values in logs (<a href="https://github.com/astral-sh/uv/pull/16164">[#16164](https://github.com/owner/repo/issues/16164)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Fix workspace with relative pathing (<a href="https://github.com/astral-sh/uv/pull/16296">[#16296](https://github.com/owner/repo/issues/16296)</a>)</li>
-</ul>
-<h4 id="install-uv-093"><a class="toclink" href="#install-uv-093">Install uv 0.9.3</a></h4>
-<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
-<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.9.3/uv-installer.sh | sh
-</code></pre>
-<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
-<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -c &quot;irm https://github.com/astral-sh/uv/releases/download/0.9.3/uv-installer.ps1 | iex&quot;
-</code></pre>
-<h4 id="download-uv-093"><a class="toclink" href="#download-uv-093">Download uv 0.9.3</a></h4>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Platform</th>
-<th>Checksum</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.3/uv-aarch64-apple-darwin.tar.gz">uv-aarch64-apple-darwin.tar.gz</a></td>
-<td>Apple Silicon macOS</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.3/uv-aarch64-apple-darwin.tar.gz.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.3/uv-x86_64-apple-darwin.tar.gz">uv-x86_64-apple-darwin.tar.gz</a></td>
-<td>Intel macOS</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.3/uv-x86_64-apple-darwin.tar.gz.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.3/uv-aarch64-pc-windows-msvc.zip">uv-aarch64-pc-windows-msvc.zip</a></td>
-<td>ARM64 Windows</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.3/uv-aarch64-pc-windows-msvc.zip.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.3/uv-i686-pc-windows-msvc.zip">uv-i686-pc-windows-msvc.zip</a></td>
-<td>x86 Windows</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.3/uv-i686-pc-windows-msvc.zip.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.3/uv-x86_64-pc-windows-msvc.zip">uv-x86_64-pc-windows-msvc.zip</a></td>
-<td>x64 Wi</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.3" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -2564,7 +2523,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-11-07 06:09 UTC
+                Last updated: 2025-11-08 06:08 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
