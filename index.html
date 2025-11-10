@@ -1179,6 +1179,36 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">Python Polars 1.35.2</div>
+                            <div class="release-version ">
+                                py-1.35.2
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-09 13:20 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><ul>
+<li>Fix incorrect <code>drop_nans()</code> result when used in <code>group_by()</code> / <code>over()</code> (https://github.com/pola-rs/polars/pull/25146)</li>
+<li>Fix handling <code>Null</code> dtype in <code>ApplyExpr</code> on <code>group_by</code>(https://github.com/pola-rs/polars/pull/25077)</li>
+<li>Fix assertion panic on <code>group_by</code> (https://github.com/pola-rs/polars/pull/25179)</li>
+<li>Fix Wide-table join performance regression (https://github.com/pola-rs/polars/pull/25222)</li>
+</ul>
+<p>Thank you to all our contributors for making this release possible!<br />
+<a href="https://github.com/coastalwhite">@coastalwhite</a>, <a href="https://github.com/kdn36">@kdn36</a>, <a href="https://github.com/nameexhaustion">@nameexhaustion</a> and <a href="https://github.com/ritchie46">@ritchie46</a></p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/pola-rs/polars/releases/tag/py-1.35.2" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">Rust Polars 0.52.0</div>
                             <div class="release-version ">
                                 rs-0.52.0
@@ -1365,57 +1395,6 @@
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/pola-rs/polars/releases/tag/py-1.35.0-beta.1" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">Python Polars 1.34.0</div>
-                            <div class="release-version ">
-                                py-1.34.0
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-02 18:31 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="highlights"><a class="toclink" href="#highlights">🏆 Highlights</a></h4>
-<ul>
-<li>Add <code>LazyFrame.{sink,collect}_batches</code> (<a href="https://github.com/owner/repo/issues/23980">#23980</a>)</li>
-<li>Deterministic import order for Python Polars package variants (<a href="https://github.com/owner/repo/issues/24531">#24531</a>)</li>
-</ul>
-<h4 id="performance-improvements"><a class="toclink" href="#performance-improvements">🚀 Performance improvements</a></h4>
-<ul>
-<li>Optimize gather_every(n=1) to slice (<a href="https://github.com/owner/repo/issues/24704">#24704</a>)</li>
-<li>Lower null count to streaming engine (<a href="https://github.com/owner/repo/issues/24703">#24703</a>)</li>
-<li>Native streaming <code>gather_every</code> (<a href="https://github.com/owner/repo/issues/24700">#24700</a>)</li>
-<li>Pushdown filter with <code>strptime</code> if input is literal (<a href="https://github.com/owner/repo/issues/24694">#24694</a>)</li>
-<li>Avoid copying expanded paths (<a href="https://github.com/owner/repo/issues/24669">#24669</a>)</li>
-<li>Relax filter expr ordering (<a href="https://github.com/owner/repo/issues/24662">#24662</a>)</li>
-<li>Remove unnecessary <code>groups</code> call in <code>aggregated</code> (<a href="https://github.com/owner/repo/issues/24651">#24651</a>)</li>
-<li>Skip files in <code>scan_iceberg</code> with filter based on metadata statistics (<a href="https://github.com/owner/repo/issues/24547">#24547</a>)</li>
-<li>Push row_index predicate for all scan types (<a href="https://github.com/owner/repo/issues/24537">#24537</a>)</li>
-<li>Perform integer in-filtering for Parquet inequality predicates (<a href="https://github.com/owner/repo/issues/24525">#24525</a>)</li>
-<li>Stop caching Parquet metadata after 8 files (<a href="https://github.com/owner/repo/issues/24513">#24513</a>)</li>
-<li>Native streaming <code>.mode()</code> expression (<a href="https://github.com/owner/repo/issues/24459">#24459</a>)</li>
-</ul>
-<h4 id="enhancements"><a class="toclink" href="#enhancements">✨ Enhancements</a></h4>
-<ul>
-<li>Implement maintain_order for cross join (<a href="https://github.com/owner/repo/issues/24665">#24665</a>)</li>
-<li>Add support to output <code>dt.total_{}()</code> duration values as fractionals (<a href="https://github.com/owner/repo/issues/24598">#24598</a>)</li>
-<li>Avoid forcing a <code>pyarrow</code> dependency in <code>read_excel</code> when using the default "calamine" engine (<a href="https://github.com/owner/repo/issues/24655">#24655</a>)</li>
-<li>Support scanning from <code>file:/path</code> URIs (<a href="https://github.com/owner/repo/issues/24603">#24603</a>)</li>
-<li>Log which file the schema was sourc</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/pola-rs/polars/releases/tag/py-1.34.0" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2528,7 +2507,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-11-09 06:08 UTC
+                Last updated: 2025-11-10 06:10 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
