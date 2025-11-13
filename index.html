@@ -580,6 +580,104 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">Helm v4.0.0</div>
+                            <div class="release-version ">
+                                4.0.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-12 16:04 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><p>The Helm Team is proud to announce the first stable release of Helm 4.</p>
+<h4 id="new-features"><a class="toclink" href="#new-features">New Features</a></h4>
+<p>Helm 4 has numerous new features, but a few deserve highlighting here:</p>
+<ul>
+<li>Redesigned plugin system that supports Web Assembly based plugins</li>
+<li>Post-renderers are now plugins</li>
+<li>Server side apply is now supported</li>
+<li>Improved resource watching, to support waiting, based on kstatus</li>
+<li>Local Content-based caching (e.g. for charts)</li>
+<li>Logging via slog enabling SDK logging to integrate with modern loggers</li>
+<li>Reproducible builds of chart archives</li>
+<li>Updated SDK API including support for multiple chart API versions (new experimental v3 chart API version coming soon)</li>
+</ul>
+<p>For full release notes, please see: <a href="https://helm.sh/docs/overview/">https://helm.sh/docs/overview/</a></p>
+<h4 id="compatibility-with-helm-v3"><a class="toclink" href="#compatibility-with-helm-v3">Compatibility with Helm v3</a></h4>
+<p>Helm v4 is a major version with backward incompatible changes including to the flags and output of the Helm CLI and to the SDK. </p>
+<p>Please evaluate the changes to your workflows. The changes are not as extensive as those from Helm v2 to v3, with the goal that the majority of workflows remain compatible between Helm v3 and v4.</p>
+<p>Helm charts apiVersion v2 (majority of today's charts) will continue to be supported in Helm v4. Existing charts should continue to install, upgrade, and otherwise work. Please test the installation and upgrade of charts to ensure it works as expected. Changes (e.g., server side apply) may impact the experience.</p>
+<h4 id="community"><a class="toclink" href="#community">Community</a></h4>
+<p>The community keeps growing, and we'd love to see you there!</p>
+<ul>
+<li>Join the discussion in <a href="https://kubernetes.slack.com">Kubernetes Slack</a>:</li>
+<li>for questions and just to hang out</li>
+<li>for discussing PRs, code, and bugs</li>
+<li>Hang out at the Public Developer Call: Thursday, 9:30 Pacific via <a href="https://zoom.us/j/696660622">Zoom</a></li>
+<li>Test, debug, and contribute charts: <a href="https://artifacthub.io/packages/search?kind=0">ArtifactHub/packages</a></li>
+</ul>
+<h4 id="installation-and-upgrading"><a class="toclink" href="#installation-and-upgrading">Installation and Upgrading</a></h4>
+<p>Download Helm v4.0.0. The common platform binaries are here:</p>
+<ul>
+<li>[MacOS amd64](https://get.helm.</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: mattfarina</span>
+                            <a href="https://github.com/helm/helm/releases/tag/v4.0.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">Helm v3.19.2</div>
+                            <div class="release-version ">
+                                3.19.2
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-12 14:17 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><p>Helm v3.19.2 is a patch release. It is a rebuild of the v3.19.1 release with no code changes.</p>
+<p>The community keeps growing, and we'd love to see you there!</p>
+<ul>
+<li>Join the discussion in <a href="https://kubernetes.slack.com">Kubernetes Slack</a>:</li>
+<li>for questions and just to hang out</li>
+<li>for discussing PRs, code, and bugs</li>
+<li>Hang out at the Public Developer Call: Thursday, 9:30 Pacific via <a href="https://zoom.us/j/696660622">Zoom</a></li>
+<li>Test, debug, and contribute charts: <a href="https://artifacthub.io/packages/search?kind=0">ArtifactHub/packages</a></li>
+</ul>
+<h4 id="installation-and-upgrading"><a class="toclink" href="#installation-and-upgrading">Installation and Upgrading</a></h4>
+<p>Download Helm v3.19.2. The common platform binaries are here:</p>
+<ul>
+<li><a href="https://get.helm.sh/helm-v3.19.2-darwin-amd64.tar.gz">MacOS amd64</a> (<a href="https://get.helm.sh/helm-v3.19.2-darwin-amd64.tar.gz.sha256sum">checksum</a> / 7ef4416cdef4c2d78a09e1c8f07a51e945dc0343c883a46b1f628deab52690b7)</li>
+<li><a href="https://get.helm.sh/helm-v3.19.2-darwin-arm64.tar.gz">MacOS arm64</a> (<a href="https://get.helm.sh/helm-v3.19.2-darwin-arm64.tar.gz.sha256sum">checksum</a> / f0847f899479b66a6dd8d9fcd452e8db2562e4cf3f7de28103f9fcf2b824f1d5)</li>
+<li><a href="https://get.helm.sh/helm-v3.19.2-linux-amd64.tar.gz">Linux amd64</a> (<a href="https://get.helm.sh/helm-v3.19.2-linux-amd64.tar.gz.sha256sum">checksum</a> / 2114c9dea2844dce6d0ee2d792a9aae846be8cf53d5b19dc2988b5a0e8fec26e)</li>
+<li><a href="https://get.helm.sh/helm-v3.19.2-linux-arm.tar.gz">Linux arm</a> (<a href="https://get.helm.sh/helm-v3.19.2-linux-arm.tar.gz.sha256sum">checksum</a> / 20bcb0aad82172335914e30ae3efd020d28abc1b470b4b565e67aff152c0e4ee)</li>
+<li><a href="https://get.helm.sh/helm-v3.19.2-linux-arm64.tar.gz">Linux arm64</a> (<a href="https://get.helm.sh/helm-v3.19.2-linux-arm64.tar.gz.sha256sum">checksum</a> / 566e9f3a5a83a81e4b03503ae37e368edd52d699619e8a9bb1fdf21561ae0e88)</li>
+<li><a href="https://get.helm.sh/helm-v3.19.2-linux-386.tar.gz">Linux i386</a> (<a href="https://get.helm.sh/helm-v3.19.2-linux-386.tar.gz.sha256sum">checksum</a> / 54932ecf2c46c6d3cd9926d28d56e18e70b42467d8ad682844c64cbe8f3dfc11)</li>
+<li><a href="https://get.helm.sh/helm-v3.19.2-linux-ppc64le.tar.gz">Linux ppc64le</a> ([checksum](https://get</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: mattfarina</span>
+                            <a href="https://github.com/helm/helm/releases/tag/v3.19.2" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">Helm v3.19.1</div>
                             <div class="release-version ">
                                 3.19.1
@@ -706,99 +804,6 @@
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">v4.0.0-beta.1</div>
-                            <div class="release-version prerelease">
-                                4.0.0-beta.1
-                                 (Pre-release)
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-13 20:44 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><p>Helm v4.0.0-beta.1 is a pre-release for the next major version of Helm. This is a pre-release meant for testing. The beta testing phase is meant to test Helm v4. API breaking changes are no longer expected but could happen.</p>
-<p>The community keeps growing, and we'd love to see you there!</p>
-<ul>
-<li>Join the discussion in <a href="https://kubernetes.slack.com">Kubernetes Slack</a>:</li>
-<li>for questions and just to hang out</li>
-<li>for discussing PRs, code, and bugs</li>
-<li>Hang out at the Public Developer Call: Thursday, 9:30 Pacific via <a href="https://zoom.us/j/696660622">Zoom</a></li>
-<li>Test, debug, and contribute charts: <a href="https://artifacthub.io/packages/search?kind=0">ArtifactHub/packages</a></li>
-</ul>
-<h4 id="installation-and-upgrading"><a class="toclink" href="#installation-and-upgrading">Installation and Upgrading</a></h4>
-<p>Download Helm v4.0.0-beta.1. The common platform binaries are here:</p>
-<ul>
-<li><a href="https://get.helm.sh/helm-v4.0.0-beta.1-darwin-amd64.tar.gz">MacOS amd64</a> (<a href="https://get.helm.sh/helm-v4.0.0-beta.1-darwin-amd64.tar.gz.sha256sum">checksum</a> / 32f17e4ffb5017de8c15379998bb9ffee0cd16981680db544230f9d6c9129fdf)</li>
-<li><a href="https://get.helm.sh/helm-v4.0.0-beta.1-darwin-arm64.tar.gz">MacOS arm64</a> (<a href="https://get.helm.sh/helm-v4.0.0-beta.1-darwin-arm64.tar.gz.sha256sum">checksum</a> / cdf6b10532929d6f1f24a3ca9326789db0e1d3c49a99f88c4725940e116994e2)</li>
-<li><a href="https://get.helm.sh/helm-v4.0.0-beta.1-linux-amd64.tar.gz">Linux amd64</a> (<a href="https://get.helm.sh/helm-v4.0.0-beta.1-linux-amd64.tar.gz.sha256sum">checksum</a> / 7be0196d374ff121409d092d014b7759bc5e9419cda9ada7283dfbe4ff01fce8)</li>
-<li><a href="https://get.helm.sh/helm-v4.0.0-beta.1-linux-arm.tar.gz">Linux arm</a> (<a href="https://get.helm.sh/helm-v4.0.0-beta.1-linux-arm.tar.gz.sha256sum">checksum</a> / 11ad71b920426735210aa23c3cfff48aa61ec1b2764e1ea5a368faefc06b7d61)</li>
-<li><a href="https://get.helm.sh/helm-v4.0.0-beta.1-linux-arm64.tar.gz">Linux arm64</a> (<a href="https://get.helm.sh/helm-v4.0.0-beta.1-linux-arm64.tar.gz.sha256sum">checksum</a> / 48c0cfa5107bae86b733eab9150d3422944ff6638db63637e0a7ce6b69060088)</li>
-<li><a href="https://get.helm.sh/helm-v4.0.0-beta.1-linux-386.tar.gz">Linux i386</a> ([checksum](https://get.helm.sh/helm</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: mattfarina</span>
-                            <a href="https://github.com/helm/helm/releases/tag/v4.0.0-beta.1" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">Helm v3.19.0</div>
-                            <div class="release-version ">
-                                3.19.0
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-09-11 21:06 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><p>Helm v3.19.0 is a feature release. Users are encouraged to upgrade for the best experience.</p>
-<p>The community keeps growing, and we'd love to see you there!</p>
-<ul>
-<li>Join the discussion in <a href="https://kubernetes.slack.com">Kubernetes Slack</a>:</li>
-<li>for questions and just to hang out</li>
-<li>for discussing PRs, code, and bugs</li>
-<li>Hang out at the Public Developer Call: Thursday, 9:30 Pacific via <a href="https://zoom.us/j/696660622">Zoom</a></li>
-<li>Test, debug, and contribute charts: <a href="https://artifacthub.io/packages/search?kind=0">ArtifactHub/packages</a></li>
-</ul>
-<h4 id="notable-changes"><a class="toclink" href="#notable-changes">Notable Changes</a></h4>
-<ul>
-<li>Fixed a <code>helm pull</code> regression from 3.18 - error pulling OCI charts with --password <a href="https://github.com/owner/repo/issues/31230">#31230</a></li>
-<li>Fixed a <code>helm lint</code> regression from Helm 3.18 - rejected JSON Schema $ref URLs that worked in 3.17.x <a href="https://github.com/owner/repo/issues/31166">#31166</a></li>
-<li>Fixed go mod tidy <a href="https://github.com/owner/repo/issues/31154">#31154</a></li>
-<li>Fixed k8s version parsing not matching original <a href="https://github.com/owner/repo/issues/31091">#31091</a></li>
-<li>Fixed charts failing when using a redirect registry <a href="https://github.com/owner/repo/issues/31087">#31087</a></li>
-<li>Fixed missing debug logging for OCI transport </li>
-<li>Fixed broken legacy docker support for login <a href="https://github.com/owner/repo/issues/30941">#30941</a></li>
-<li>Fixed bugs from the move to ORAS v2</li>
-<li>Fixed processing all hook deletions on failure <a href="https://github.com/owner/repo/issues/30673">#30673</a></li>
-<li>Feature for <code>helm create</code> added httproute from gateway-api to create chart template <a href="https://github.com/owner/repo/issues/30658">#30658</a></li>
-</ul>
-<h4 id="installation-and-upgrading"><a class="toclink" href="#installation-and-upgrading">Installation and Upgrading</a></h4>
-<p>Download Helm v3.19.0. The common platform binaries are here:</p>
-<ul>
-<li><a href="https://get.helm.sh/helm-v3.19.0-darwin-amd64.tar.gz">MacOS amd64</a> (<a href="https://get.helm.sh/helm-v3.19.0-darwin-amd64.tar.gz.sha256sum">checksum</a> / 09a108c0abda42e45af172be65c49125354bf7cd178dbe10435e94540e49c7b9)</li>
-<li><a href="https://get.helm.sh/helm-v3.19.0-darwin-arm64.tar.gz">MacOS arm64</a> ([checksum](https://get.helm.sh/helm-v3.19.0</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: scottrigby</span>
-                            <a href="https://github.com/helm/helm/releases/tag/v3.19.0" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -820,6 +825,78 @@
                 <div class="releases">
                     <h3 class="releases-title">Latest Releases</h3>
 
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">5.0.1</div>
+                            <div class="release-version ">
+                                5.0.1
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-12 18:33 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="whats-changed"><a class="toclink" href="#whats-changed">What's Changed</a></h4>
+<ul>
+<li>utils/github: fix failing test by <a href="https://github.com/botantony">@botantony</a> in https://github.com/Homebrew/brew/pull/21034</li>
+<li>PULL_REQUEST_TEMPLATE: Encourage <code>brew lgtm</code> by <a href="https://github.com/issyl0">@issyl0</a> in https://github.com/Homebrew/brew/pull/21033</li>
+<li>test-bot: clarify cleanup flag usage by <a href="https://github.com/gromgit">@gromgit</a> in https://github.com/Homebrew/brew/pull/21035</li>
+<li>Improve profiling output for tests by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21032</li>
+<li>cli/parser: update next Homebrew version. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21031</li>
+<li>brew.rb: don't tell users to report internal deprecations. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21041</li>
+</ul>
+<p><strong>Full Changelog</strong>: https://github.com/Homebrew/brew/compare/5.0.0...5.0.1</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/Homebrew/brew/releases/tag/5.0.1" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">5.0.0</div>
+                            <div class="release-version ">
+                                5.0.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-12 09:15 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="whats-changed"><a class="toclink" href="#whats-changed">What's Changed</a></h4>
+<ul>
+<li>Bump rubocop TargetRubyVersion by <a href="https://github.com/dduugg">@dduugg</a> in https://github.com/Homebrew/brew/pull/20969</li>
+<li>formula_auditor: only run conflict check in <code>--strict</code> by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/20971</li>
+<li>Restore Style/RedundantLineContinuation following upstream fix by <a href="https://github.com/dduugg">@dduugg</a> in https://github.com/Homebrew/brew/pull/20970</li>
+<li>formula_creator: setup bundler env vars for ruby formula creation by <a href="https://github.com/chenrui333">@chenrui333</a> in https://github.com/Homebrew/brew/pull/20972</li>
+<li>Cleanup partial download queue installations on error/interrupt by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20966</li>
+<li>Make Linux ARM64/AARCH64 Tier 1 supported by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20974</li>
+<li>Set <code>HOMEBREW_DOWNLOAD_CONCURRENCY=auto</code> by default by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20975</li>
+<li>tab: Actual booleans for <code>installed_{on_request,as_dependency}</code> values by <a href="https://github.com/issyl0">@issyl0</a> in https://github.com/Homebrew/brew/pull/20979</li>
+<li>Homebrew 4.7.0 deprecations/disables/removals by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20973</li>
+<li>docs/Acceptable-*: update acceptability criteria. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20981</li>
+<li>system_command: avoid modifying Context.current by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/20982</li>
+<li>Fix <code>uses_from_macos</code> checks with unsupported macOS versions and the internal API by <a href="https://github.com/Rylan12">@Rylan12</a> in https://github.com/Homebrew/brew/pull/20986</li>
+<li>Various fixes to <code>Formula#latest_formula</code> by <a href="https://github.com/Rylan12">@Rylan12</a> in https://github.com/Homebrew/brew/pull/20985</li>
+<li>utils/path: allow loading API source cache </li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/Homebrew/brew/releases/tag/5.0.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
                     
                     <div class="release">
                         <div class="release-header">
@@ -941,85 +1018,6 @@
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">4.6.17</div>
-                            <div class="release-version ">
-                                4.6.17
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-13 14:18 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="whats-changed"><a class="toclink" href="#whats-changed">What's Changed</a></h4>
-<ul>
-<li>Fix test-bot cleanup to preserve etc/var files for dependent formulae by <a href="https://github.com/Copilot">@Copilot</a> in https://github.com/Homebrew/brew/pull/20805</li>
-<li>Make launchctl service removal sudo failures non-fatal by <a href="https://github.com/Copilot">@Copilot</a> in https://github.com/Homebrew/brew/pull/20803</li>
-<li>Allow systemctl stop on keep_alive services by using Restart=on-failure by <a href="https://github.com/Copilot">@Copilot</a> in https://github.com/Homebrew/brew/pull/20799</li>
-<li>Enable formula-to-cask migrations within the same tap by <a href="https://github.com/Copilot">@Copilot</a> in https://github.com/Homebrew/brew/pull/20800</li>
-<li>bump-*-pr: fix issue that <code>--commit</code> argument has no effect by <a href="https://github.com/scientificworld">@scientificworld</a> in https://github.com/Homebrew/brew/pull/20818</li>
-<li>cmd/deps: allow pruning deps tree for TestBot by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/20817</li>
-<li>Revert "Revert "Use installed keg formula files when referencing installed formulae/dependencies"" by <a href="https://github.com/Rylan12">@Rylan12</a> in https://github.com/Homebrew/brew/pull/20819</li>
-<li>Add <code>version_scheme</code> to minimal API by <a href="https://github.com/Rylan12">@Rylan12</a> in https://github.com/Homebrew/brew/pull/20821</li>
-<li>keg: retain pypy directories by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/20822</li>
-<li>Revert "Revert "Revert "Use installed keg formula files when referencing installed formulae/dependencies""" by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20824</li>
-<li>formula_auditor: get casks from API if not tapped by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/20816</li>
-<li>dev-cmd/bump-formula-pr: limit synced PR title length by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/20820</li>
-<li>Implement <code>no_linkage</code> DSL to cover dependencies without linkage by <a href="https://github.com/Copilot">@Copilot</a> in https://github.com/Homebrew/brew</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: MikeMcQuaid</span>
-                            <a href="https://github.com/Homebrew/brew/releases/tag/4.6.17" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">4.6.16</div>
-                            <div class="release-version ">
-                                4.6.16
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-06 07:59 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="whats-changed"><a class="toclink" href="#whats-changed">What's Changed</a></h4>
-<ul>
-<li>Import and support Portable Ruby by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20769</li>
-<li>fix: use composite cache key for to_keys_to_casks method by <a href="https://github.com/dynamicy">@dynamicy</a> in https://github.com/Homebrew/brew/pull/20771</li>
-<li>test_bot: fixes for building portable Ruby. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20772</li>
-<li>formula_auditor: remove unused postgresql audit by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/20774</li>
-<li>cask/installer: strengthen <code>--no-quarantine</code> message by <a href="https://github.com/p">@p</a>-linnane in https://github.com/Homebrew/brew/pull/20775</li>
-<li>dev-cmd/bottle: change mtime if the date is before 1970 by <a href="https://github.com/botantony">@botantony</a> in https://github.com/Homebrew/brew/pull/20773</li>
-<li>test_bot: more fixes for building portable Ruby. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20776</li>
-<li>feat: offer ubuntu for eligable casks by <a href="https://github.com/SMillerDev">@SMillerDev</a> in https://github.com/Homebrew/brew/pull/20707</li>
-<li>test_bot/formulae_detect: fix portable ruby handling. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20780</li>
-<li>test_bot: more fixes for building portable Ruby. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20783</li>
-<li>formula_auditor: add liquibase to RELICENSED_FORMULAE_VERSIONS by <a href="https://github.com/p">@p</a>-linnane in https://github.com/Homebrew/brew/pull/20785</li>
-<li>dev-cmd/generate-cask-ci-matrix: enable container for linux runners by <a href="https://github.com/bevanjkay">@bevanjkay</a> in https://github.com/Homebrew/brew/pull/20786</li>
-<li>xcode_requirement: fix unversioned requirement by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/20781</li>
-<li>utils/gzip: set <code>mtime</code> to one if it is less than 0 by [@botantony](https://github.com/b</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: MikeMcQuaid</span>
-                            <a href="https://github.com/Homebrew/brew/releases/tag/4.6.16" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -1044,6 +1042,102 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">Kubernetes v1.34.2</div>
+                            <div class="release-version ">
+                                1.34.2
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-12 09:26 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><p>See <a href="https://groups.google.com/forum/#!forum/kubernetes-announce">kubernetes-announce@</a>. Additional binary downloads are linked in the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md">CHANGELOG</a>.</p>
+<p>See the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md">CHANGELOG</a> for more details.</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: k8s-release-robot</span>
+                            <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.34.2" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">Kubernetes v1.33.6</div>
+                            <div class="release-version ">
+                                1.33.6
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-12 09:48 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><p>See <a href="https://groups.google.com/forum/#!forum/kubernetes-announce">kubernetes-announce@</a>. Additional binary downloads are linked in the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md">CHANGELOG</a>.</p>
+<p>See the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md">CHANGELOG</a> for more details.</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: k8s-release-robot</span>
+                            <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.33.6" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">Kubernetes v1.32.10</div>
+                            <div class="release-version ">
+                                1.32.10
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-12 12:01 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><p>See <a href="https://groups.google.com/forum/#!forum/kubernetes-announce">kubernetes-announce@</a>. Additional binary downloads are linked in the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md">CHANGELOG</a>.</p>
+<p>See the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md">CHANGELOG</a> for more details.</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: k8s-release-robot</span>
+                            <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.32.10" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">Kubernetes v1.31.14</div>
+                            <div class="release-version ">
+                                1.31.14
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-12 11:33 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><p>See <a href="https://groups.google.com/forum/#!forum/kubernetes-announce">kubernetes-announce@</a>. Additional binary downloads are linked in the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md">CHANGELOG</a>.</p>
+<p>See the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.31.md">CHANGELOG</a> for more details.</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: k8s-release-robot</span>
+                            <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.31.14" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">Kubernetes v1.35.0-alpha.3</div>
                             <div class="release-version prerelease">
                                 1.35.0-alpha.3
@@ -1063,102 +1157,6 @@
                         <div class="release-meta">
                             <span>Author: k8s-release-robot</span>
                             <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.35.0-alpha.3" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">Kubernetes v1.35.0-alpha.2</div>
-                            <div class="release-version prerelease">
-                                1.35.0-alpha.2
-                                 (Pre-release)
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-22 22:03 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><p>See <a href="https://groups.google.com/forum/#!forum/kubernetes-announce">kubernetes-announce@</a>. Additional binary downloads are linked in the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md">CHANGELOG</a>.</p>
-<p>See the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md">CHANGELOG</a> for more details.</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: k8s-release-robot</span>
-                            <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.35.0-alpha.2" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">Kubernetes v1.35.0-alpha.1</div>
-                            <div class="release-version prerelease">
-                                1.35.0-alpha.1
-                                 (Pre-release)
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-08 14:22 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><p>See <a href="https://groups.google.com/forum/#!forum/kubernetes-announce">kubernetes-announce@</a>. Additional binary downloads are linked in the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md">CHANGELOG</a>.</p>
-<p>See the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md">CHANGELOG</a> for more details.</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: k8s-release-robot</span>
-                            <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.35.0-alpha.1" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">Kubernetes v1.34.1</div>
-                            <div class="release-version ">
-                                1.34.1
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-09-10 03:28 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><p>See <a href="https://groups.google.com/forum/#!forum/kubernetes-announce">kubernetes-announce@</a>. Additional binary downloads are linked in the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md">CHANGELOG</a>.</p>
-<p>See the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md">CHANGELOG</a> for more details.</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: k8s-release-robot</span>
-                            <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.34.1" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">Kubernetes v1.33.5</div>
-                            <div class="release-version ">
-                                1.33.5
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-09-10 01:38 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><p>See <a href="https://groups.google.com/forum/#!forum/kubernetes-announce">kubernetes-announce@</a>. Additional binary downloads are linked in the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md">CHANGELOG</a>.</p>
-<p>See the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md">CHANGELOG</a> for more details.</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: k8s-release-robot</span>
-                            <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.33.5" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2031,6 +2029,59 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.9.9</div>
+                            <div class="release-version ">
+                                0.9.9
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-12 18:46 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2025-11-12.</p>
+<h5 id="deprecations"><a class="toclink" href="#deprecations">Deprecations</a></h5>
+<ul>
+<li>Deprecate use of <code>--project</code> in <code>uv init</code> (<a href="https://github.com/astral-sh/uv/pull/16674">[#16674](https://github.com/owner/repo/issues/16674)</a>)</li>
+</ul>
+<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
+<ul>
+<li>Add iOS support to Python interpreter discovery (<a href="https://github.com/astral-sh/uv/pull/16686">[#16686](https://github.com/owner/repo/issues/16686)</a>)</li>
+<li>Reject ambiguously parsed URLs (<a href="https://github.com/astral-sh/uv/pull/16622">[#16622](https://github.com/owner/repo/issues/16622)</a>)</li>
+<li>Allow explicit values in <code>uv version --bump</code> (<a href="https://github.com/astral-sh/uv/pull/16555">[#16555](https://github.com/owner/repo/issues/16555)</a>)</li>
+<li>Warn on use of managed pre-release Python versions when a stable version is available (<a href="https://github.com/astral-sh/uv/pull/16619">[#16619](https://github.com/owner/repo/issues/16619)</a>)</li>
+<li>Allow signing trampolines on Windows by using <code>.rcdata</code> to store metadata (<a href="https://github.com/astral-sh/uv/pull/15068">[#15068](https://github.com/owner/repo/issues/15068)</a>)</li>
+<li>Add <code>--only-emit-workspace</code> and similar variants to <code>uv export</code> (<a href="https://github.com/astral-sh/uv/pull/16681">[#16681](https://github.com/owner/repo/issues/16681)</a>)</li>
+</ul>
+<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
+<ul>
+<li>Add <code>uv workspace dir</code> command (<a href="https://github.com/astral-sh/uv/pull/16678">[#16678](https://github.com/owner/repo/issues/16678)</a>)</li>
+<li>Add <code>uv workspace metadata</code> command (<a href="https://github.com/astral-sh/uv/pull/16516">[#16516](https://github.com/owner/repo/issues/16516)</a>)</li>
+</ul>
+<h5 id="configuration"><a class="toclink" href="#configuration">Configuration</a></h5>
+<ul>
+<li>Add <code>UV_NO_DEFAULT_GROUPS</code> environment variable (<a href="https://github.com/astral-sh/uv/pull/16645">[#16645](https://github.com/owner/repo/issues/16645)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>Remove <code>torch-model-archiver</code> and <code>torch-tb-profiler</code> from PyTorch backend (<a href="https://github.com/astral-sh/uv/pull/16655">[#16655](https://github.com/owner/repo/issues/16655)</a>)</li>
+<li>Fix Pixi environment detection (<a href="https://github.com/astral-sh/uv/pull/16585">[#16585](https://github.com/owner/repo/issues/16585)</a>)</li>
+</ul>
+<h5 id="documenta"><a class="toclink" href="#documenta">Documenta</a></h5>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.9" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.9.8</div>
                             <div class="release-version ">
                                 0.9.8
@@ -2239,80 +2290,6 @@
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.9.4</div>
-                            <div class="release-version ">
-                                0.9.4
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-18 21:35 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2025-10-17.</p>
-<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
-<ul>
-<li>Add CUDA 13.0 support (<a href="https://github.com/astral-sh/uv/pull/16321">[#16321](https://github.com/owner/repo/issues/16321)</a>)</li>
-<li>Add auto-detection for Intel GPU on Windows (<a href="https://github.com/astral-sh/uv/pull/16280">[#16280](https://github.com/owner/repo/issues/16280)</a>)</li>
-<li>Implement display of RFC 9457 HTTP error contexts (<a href="https://github.com/astral-sh/uv/pull/16199">[#16199](https://github.com/owner/repo/issues/16199)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Avoid obfuscating pyx tokens in <code>uv auth token</code> output (<a href="https://github.com/astral-sh/uv/pull/16345">[#16345](https://github.com/owner/repo/issues/16345)</a>)</li>
-</ul>
-<h4 id="install-uv-094"><a class="toclink" href="#install-uv-094">Install uv 0.9.4</a></h4>
-<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
-<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.9.4/uv-installer.sh | sh
-</code></pre>
-<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
-<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -c &quot;irm https://github.com/astral-sh/uv/releases/download/0.9.4/uv-installer.ps1 | iex&quot;
-</code></pre>
-<h4 id="download-uv-094"><a class="toclink" href="#download-uv-094">Download uv 0.9.4</a></h4>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Platform</th>
-<th>Checksum</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.4/uv-aarch64-apple-darwin.tar.gz">uv-aarch64-apple-darwin.tar.gz</a></td>
-<td>Apple Silicon macOS</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.4/uv-aarch64-apple-darwin.tar.gz.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.4/uv-x86_64-apple-darwin.tar.gz">uv-x86_64-apple-darwin.tar.gz</a></td>
-<td>Intel macOS</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.4/uv-x86_64-apple-darwin.tar.gz.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.4/uv-aarch64-pc-windows-msvc.zip">uv-aarch64-pc-windows-msvc.zip</a></td>
-<td>ARM64 Windows</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.4/uv-aarch64-pc-windows-msvc.zip.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.4/uv-i686-pc-windows-msvc.zip">uv-i686-pc-windows-msvc.zip</a></td>
-<td>x8</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.4" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -2514,7 +2491,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-11-12 06:09 UTC
+                Last updated: 2025-11-13 06:09 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
