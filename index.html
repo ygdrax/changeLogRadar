@@ -1438,6 +1438,57 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.14.6</div>
+                            <div class="release-version ">
+                                0.14.6
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-21 14:33 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2025-11-21.</p>
+<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
+<ul>
+<li>[<code>flake8-bandit</code>] Support new PySNMP API paths (<code>S508</code>, <code>S509</code>) (<a href="https://github.com/astral-sh/ruff/pull/21374">[#21374](https://github.com/owner/repo/issues/21374)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>Adjust own-line comment placement between branches (<a href="https://github.com/astral-sh/ruff/pull/21185">[#21185](https://github.com/owner/repo/issues/21185)</a>)</li>
+<li>Avoid syntax error when formatting attribute expressions with outer parentheses, parenthesized value, and trailing comment on value (<a href="https://github.com/astral-sh/ruff/pull/20418">[#20418](https://github.com/owner/repo/issues/20418)</a>)</li>
+<li>Fix panic when formatting comments in unary expressions (<a href="https://github.com/astral-sh/ruff/pull/21501">[#21501](https://github.com/owner/repo/issues/21501)</a>)</li>
+<li>Respect <code>fmt: skip</code> for compound statements on a single line (<a href="https://github.com/astral-sh/ruff/pull/20633">[#20633](https://github.com/owner/repo/issues/20633)</a>)</li>
+<li>[<code>refurb</code>] Fix <code>FURB103</code> autofix (<a href="https://github.com/astral-sh/ruff/pull/21454">[#21454](https://github.com/owner/repo/issues/21454)</a>)</li>
+<li>[<code>ruff</code>] Fix false positive for complex conversion specifiers in <code>logging-eager-conversion</code> (<code>RUF065</code>) (<a href="https://github.com/astral-sh/ruff/pull/21464">[#21464](https://github.com/owner/repo/issues/21464)</a>)</li>
+</ul>
+<h5 id="rule-changes"><a class="toclink" href="#rule-changes">Rule changes</a></h5>
+<ul>
+<li>[<code>ruff</code>] Avoid false positive on <code>ClassVar</code> reassignment (<code>RUF012</code>) (<a href="https://github.com/astral-sh/ruff/pull/21478">[#21478](https://github.com/owner/repo/issues/21478)</a>)</li>
+</ul>
+<h5 id="cli"><a class="toclink" href="#cli">CLI</a></h5>
+<ul>
+<li>Render hyperlinks for lint errors (<a href="https://github.com/astral-sh/ruff/pull/21514">[#21514](https://github.com/owner/repo/issues/21514)</a>)</li>
+<li>Add a <code>ruff analyze</code> option to skip over imports in <code>TYPE_CHECKING</code> blocks (<a href="https://github.com/astral-sh/ruff/pull/21472">[#21472](https://github.com/owner/repo/issues/21472)</a>)</li>
+</ul>
+<h5 id="documentation"><a class="toclink" href="#documentation">Documentation</a></h5>
+<ul>
+<li>Limit <code>eglot-format</code> hook to eglot-managed Python buffers ([<a href="https://github.com/owner/repo/issues/21459">#21459</a>](https://github.com/</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.6" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.14.5</div>
                             <div class="release-version ">
                                 0.14.5
@@ -1619,48 +1670,6 @@
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.2" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.14.1</div>
-                            <div class="release-version ">
-                                0.14.1
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-16 18:12 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2025-10-16.</p>
-<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
-<ul>
-<li>[formatter] Remove parentheses around multiple exception types on Python 3.14+ (<a href="https://github.com/astral-sh/ruff/pull/20768">[#20768](https://github.com/owner/repo/issues/20768)</a>)</li>
-<li>[<code>flake8-bugbear</code>] Omit annotation in preview fix for <code>B006</code> (<a href="https://github.com/astral-sh/ruff/pull/20877">[#20877](https://github.com/owner/repo/issues/20877)</a>)</li>
-<li>[<code>flake8-logging-format</code>] Avoid dropping implicitly concatenated pieces in the <code>G004</code> fix (<a href="https://github.com/astral-sh/ruff/pull/20793">[#20793](https://github.com/owner/repo/issues/20793)</a>)</li>
-<li>[<code>pydoclint</code>] Implement <code>docstring-extraneous-parameter</code> (<code>DOC102</code>) (<a href="https://github.com/astral-sh/ruff/pull/20376">[#20376](https://github.com/owner/repo/issues/20376)</a>)</li>
-<li>[<code>pyupgrade</code>] Extend <code>UP019</code> to detect <code>typing_extensions.Text</code> (<code>UP019</code>) (<a href="https://github.com/astral-sh/ruff/pull/20825">[#20825](https://github.com/owner/repo/issues/20825)</a>)</li>
-<li>[<code>pyupgrade</code>] Fix false negative for <code>TypeVar</code> with default argument in <code>non-pep695-generic-class</code> (<code>UP046</code>) (<a href="https://github.com/astral-sh/ruff/pull/20660">[#20660](https://github.com/owner/repo/issues/20660)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Fix false negatives in <code>Truthiness::from_expr</code> for lambdas, generators, and f-strings (<a href="https://github.com/astral-sh/ruff/pull/20704">[#20704](https://github.com/owner/repo/issues/20704)</a>)</li>
-<li>Fix syntax error false positives for escapes and quotes in f-strings (<a href="https://github.com/astral-sh/ruff/pull/20867">[#20867](https://github.com/owner/repo/issues/20867)</a>)</li>
-<li>Fix syntax error false positives on parenthesized context managers (<a href="https://github.com/astral-sh/ruff/pull/20846">[#20846](https://github.com/owner/repo/issues/20846)</a>)</li>
-<li>[<code>fastapi</code>] Fix false positives for path parameters that FastAPI doesn't recognize (<code>FAST003</code>) (<a href="https://github.com/astral-sh/ruff/pull/20687">[#20687](https://github.com/owner/repo/issues/20687)</a>)</li>
-<li>[<code>flake8-pyi</code>] Fix operator precedence by adding parent</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.1" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2502,7 +2511,7 @@ curl --proto '=https' --tlsv1.2 -LsSf https://git</p>
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-11-21 06:09 UTC
+                Last updated: 2025-11-22 06:08 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
