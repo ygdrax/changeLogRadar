@@ -395,6 +395,45 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.122.0</div>
+                            <div class="release-version ">
+                                0.122.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-24 19:17 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
+<ul>
+<li>🐛 Use <code>401</code> status code in security classes when credentials are missing. PR <a href="https://github.com/fastapi/fastapi/pull/13786"><a href="https://github.com/owner/repo/issues/13786">#13786</a></a> by <a href="https://github.com/YuriiMotov"><a href="https://github.com/YuriiMotov">@YuriiMotov</a></a>.<ul>
+<li>If your code depended on these classes raising the old (less correct) <code>403</code> status code, check the new docs about how to override the classes, to use the same old behavior: <a href="https://fastapi.tiangolo.com/how-to/authentication-error-status-code/">Use Old 403 Authentication Error Status Codes</a>.</li>
+</ul>
+</li>
+</ul>
+<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
+<ul>
+<li>🔧 Configure labeler to exclude files that start from underscore for <code>lang-all</code> label. PR <a href="https://github.com/fastapi/fastapi/pull/14213">[#14213](https://github.com/owner/repo/issues/14213)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
+<li>👷 Add pre-commit config with local script for permalinks. PR <a href="https://github.com/fastapi/fastapi/pull/14398">[#14398](https://github.com/owner/repo/issues/14398)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+<li>💄 Use font Fira Code to fix display of Rich panels in docs in Windows. PR <a href="https://github.com/fastapi/fastapi/pull/14387">[#14387](https://github.com/owner/repo/issues/14387)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+<li>👷 Add custom pre-commit CI. PR <a href="https://github.com/fastapi/fastapi/pull/14397">[#14397](https://github.com/owner/repo/issues/14397)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+<li>⬆ Bump actions/checkout from 5 to 6. PR <a href="https://github.com/fastapi/fastapi/pull/14381">[#14381](https://github.com/owner/repo/issues/14381)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>👷 Upgrade <code>latest-changes</code> GitHub Action and pin <code>actions/checkout[@v5](https://github.com/v5)</code>. PR [<a href="https://github.com/owner/repo/issues/14403">#14403</a>](https://github.com/fastapi</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.122.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.121.3</div>
                             <div class="release-version ">
                                 0.121.3
@@ -540,32 +579,6 @@
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.120.4</div>
-                            <div class="release-version ">
-                                0.120.4
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-31 18:36 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
-<ul>
-<li>🐛 Fix security schemes in OpenAPI when added at the top level app. PR <a href="https://github.com/fastapi/fastapi/pull/14266">[#14266](https://github.com/owner/repo/issues/14266)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
-</ul></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.120.4" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -587,6 +600,49 @@
                 <div class="releases">
                     <h3 class="releases-title">Latest Releases</h3>
 
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">Helm v4.0.1</div>
+                            <div class="release-version ">
+                                4.0.1
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-24 20:31 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><p>Helm v4.0.1 is a patch release. Users are encouraged to upgrade for the best experience. Users are encouraged to upgrade for the best experience.</p>
+<p>The community keeps growing, and we'd love to see you there!</p>
+<ul>
+<li>Join the discussion in <a href="https://kubernetes.slack.com">Kubernetes Slack</a>:</li>
+<li>for questions and just to hang out</li>
+<li>for discussing PRs, code, and bugs</li>
+<li>Hang out at the Public Developer Call: Thursday, 9:30 Pacific via <a href="https://zoom.us/j/696660622">Zoom</a></li>
+<li>Test, debug, and contribute charts: <a href="https://artifacthub.io/packages/search?kind=0">ArtifactHub/packages</a></li>
+</ul>
+<h4 id="installation-and-upgrading"><a class="toclink" href="#installation-and-upgrading">Installation and Upgrading</a></h4>
+<p>Download Helm v4.0.1. The common platform binaries are here:</p>
+<ul>
+<li><a href="https://get.helm.sh/helm-v4.0.1-darwin-amd64.tar.gz">MacOS amd64</a> (<a href="https://get.helm.sh/helm-v4.0.1-darwin-amd64.tar.gz.sha256sum">checksum</a> / a8d1ca46c3ff5484b2b635dfc25832add4f36fdd09cf2a36fb709829c05b4112)</li>
+<li><a href="https://get.helm.sh/helm-v4.0.1-darwin-arm64.tar.gz">MacOS arm64</a> (<a href="https://get.helm.sh/helm-v4.0.1-darwin-arm64.tar.gz.sha256sum">checksum</a> / 8e0b9615cf72a62faaa0cfc0e22115f05bcddfd3d7ee58406ef97bc1ba563ae8)</li>
+<li><a href="https://get.helm.sh/helm-v4.0.1-linux-amd64.tar.gz">Linux amd64</a> (<a href="https://get.helm.sh/helm-v4.0.1-linux-amd64.tar.gz.sha256sum">checksum</a> / e0365548f01ed52a58a1181ad310b604a3244f59257425bb1739499372bdff60)</li>
+<li><a href="https://get.helm.sh/helm-v4.0.1-linux-arm.tar.gz">Linux arm</a> (<a href="https://get.helm.sh/helm-v4.0.1-linux-arm.tar.gz.sha256sum">checksum</a> / b946401f857de078c744990188f8f664ecb1c72cdafde1ed239020fa3bb2fc3c)</li>
+<li><a href="https://get.helm.sh/helm-v4.0.1-linux-arm64.tar.gz">Linux arm64</a> (<a href="https://get.helm.sh/helm-v4.0.1-linux-arm64.tar.gz.sha256sum">checksum</a> / 959fa52d34e2e1f0154e3220ed5f22263c8593447647a43af07890bba4b004d1)</li>
+<li><a href="https://get.helm.sh/helm-v4.0.1-linux-386.tar.gz">Linux i386</a> (<a href="https://get.helm.sh/helm-v4.0.1-linux-386.tar.gz.sha256sum">checksum</a> / 6a358de71c8dc2cf4a7946930ff9a70a7a3716531e64093a88182f64bdaea5a3)</li>
+<li>[Linux ppc64le](https://get.helm.sh/helm-v4.0.1-linux-p</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: mattfarina</span>
+                            <a href="https://github.com/helm/helm/releases/tag/v4.0.1" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
                     
                     <div class="release">
                         <div class="release-header">
@@ -769,48 +825,6 @@
                         <div class="release-meta">
                             <span>Author: mattfarina</span>
                             <a href="https://github.com/helm/helm/releases/tag/v4.0.0-rc.1" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">v4.0.0-beta.2</div>
-                            <div class="release-version prerelease">
-                                4.0.0-beta.2
-                                 (Pre-release)
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-27 19:55 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><p>Helm v4.0.0-beta.2 is a pre-release for the next major version of Helm. This is a pre-release meant for testing. The beta testing phase is meant to test Helm v4. API breaking changes are no longer expected but could happen.</p>
-<p>The community keeps growing, and we'd love to see you there!</p>
-<ul>
-<li>Join the discussion in <a href="https://kubernetes.slack.com">Kubernetes Slack</a>:</li>
-<li>for questions and just to hang out</li>
-<li>for discussing PRs, code, and bugs</li>
-<li>Hang out at the Public Developer Call: Thursday, 9:30 Pacific via <a href="https://zoom.us/j/696660622">Zoom</a></li>
-<li>Test, debug, and contribute charts: <a href="https://artifacthub.io/packages/search?kind=0">ArtifactHub/packages</a></li>
-</ul>
-<h4 id="installation-and-upgrading"><a class="toclink" href="#installation-and-upgrading">Installation and Upgrading</a></h4>
-<p>Download Helm v4.0.0-beta.2. The common platform binaries are here:</p>
-<ul>
-<li><a href="https://get.helm.sh/helm-v4.0.0-beta.2-darwin-amd64.tar.gz">MacOS amd64</a> (<a href="https://get.helm.sh/helm-v4.0.0-beta.2-darwin-amd64.tar.gz.sha256sum">checksum</a> / ec26b7ef9965eb826ce97bf2d11afd51dab6e9724b17eb3b654c78b2ed87f0e7)</li>
-<li><a href="https://get.helm.sh/helm-v4.0.0-beta.2-darwin-arm64.tar.gz">MacOS arm64</a> (<a href="https://get.helm.sh/helm-v4.0.0-beta.2-darwin-arm64.tar.gz.sha256sum">checksum</a> / 30221017e19aa5382be8d3f1b574a9bb5e435061d29b7e68b6c452a3d4c2d645)</li>
-<li><a href="https://get.helm.sh/helm-v4.0.0-beta.2-linux-amd64.tar.gz">Linux amd64</a> (<a href="https://get.helm.sh/helm-v4.0.0-beta.2-linux-amd64.tar.gz.sha256sum">checksum</a> / 4b82df8a6e4000409171b31d4053b7de5bf721bf4eb5e00dbe49d9884bb2de7a)</li>
-<li><a href="https://get.helm.sh/helm-v4.0.0-beta.2-linux-arm.tar.gz">Linux arm</a> (<a href="https://get.helm.sh/helm-v4.0.0-beta.2-linux-arm.tar.gz.sha256sum">checksum</a> / 0aaf9fa1b486f051f982cabfbb578a7349226ef6775089bee0daed87adb4311d)</li>
-<li><a href="https://get.helm.sh/helm-v4.0.0-beta.2-linux-arm64.tar.gz">Linux arm64</a> (<a href="https://get.helm.sh/helm-v4.0.0-beta.2-linux-arm64.tar.gz.sha256sum">checksum</a> / 1bc119af5c4b7a69fda8a5853473d7d15d6e6230b24f28a783e4caeb48214103)</li>
-<li><a href="https://get.helm.sh/helm-v4.0.0-beta.2-linux-386.tar.gz">Linux i386</a> ([checksum](https://get.helm.sh/helm</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: mattfarina</span>
-                            <a href="https://github.com/helm/helm/releases/tag/v4.0.0-beta.2" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2511,7 +2525,7 @@ curl --proto '=https' --tlsv1.2 -LsSf https://git</p>
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-11-24 06:09 UTC
+                Last updated: 2025-11-25 06:09 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
