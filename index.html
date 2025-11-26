@@ -2063,6 +2063,53 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.9.12</div>
+                            <div class="release-version ">
+                                0.9.12
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-25 18:21 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2025-11-24.</p>
+<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
+<ul>
+<li>Allow <code>--with-requirements</code> to load extensionless inline-metadata scripts (<a href="https://github.com/astral-sh/uv/pull/16744">[#16744](https://github.com/owner/repo/issues/16744)</a>)</li>
+<li>Collect and upload PEP 740 attestations during <code>uv publish</code> (<a href="https://github.com/astral-sh/uv/pull/16731">[#16731](https://github.com/owner/repo/issues/16731)</a>)</li>
+<li>Prevent <code>uv export</code> from overwriting <code>pyproject.toml</code> (<a href="https://github.com/astral-sh/uv/pull/16745">[#16745](https://github.com/owner/repo/issues/16745)</a>)</li>
+</ul>
+<h5 id="documentation"><a class="toclink" href="#documentation">Documentation</a></h5>
+<ul>
+<li>Add a crates.io README for uv (<a href="https://github.com/astral-sh/uv/pull/16809">[#16809](https://github.com/owner/repo/issues/16809)</a>)</li>
+<li>Add documentation for intermediate Docker layers in a workspace (<a href="https://github.com/astral-sh/uv/pull/16787">[#16787](https://github.com/owner/repo/issues/16787)</a>)</li>
+<li>Enumerate workspace members in the uv crate README (<a href="https://github.com/astral-sh/uv/pull/16811">[#16811](https://github.com/owner/repo/issues/16811)</a>)</li>
+<li>Fix documentation links for crates (<a href="https://github.com/astral-sh/uv/pull/16801">[#16801](https://github.com/owner/repo/issues/16801)</a>)</li>
+<li>Generate a crates.io README for uv workspace members (<a href="https://github.com/astral-sh/uv/pull/16812">[#16812](https://github.com/owner/repo/issues/16812)</a>)</li>
+<li>Move the "Export" guide to the projects concept section (<a href="https://github.com/astral-sh/uv/pull/16835">[#16835](https://github.com/owner/repo/issues/16835)</a>)</li>
+<li>Update the cargo install recommendation to use crates (<a href="https://github.com/astral-sh/uv/pull/16800">[#16800](https://github.com/owner/repo/issues/16800)</a>)</li>
+<li>Use the word "internal" in crate descriptions (<a href="https://github.com/astral-sh/uv/pull/16810">[#16810](https://github.com/owner/repo/issues/16810)</a>)</li>
+</ul>
+<h4 id="install-uv-0912"><a class="toclink" href="#install-uv-0912">Install uv 0.9.12</a></h4>
+<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
+<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.9.12/uv-installer.sh | sh
+</code></pre>
+<h5 id="install"><a class="toclink" href="#install">Install</a></h5>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: zanieb</span>
+                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.12" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.9.11</div>
                             <div class="release-version ">
                                 0.9.11
@@ -2077,7 +2124,7 @@
                         
                         <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
 <p>Released on 2025-11-20.</p>
-<p>Due to rate limiting during <a href="https://github.com/astral-sh/uv/pull/16770">publish to <code>crates.io</code></a>, this release <a href="https://github.com/astral-sh/uv/actions/runs/19553586192">was partially published</a> and manually finished. Consequently, <code>crates.io</code> does not include all of the artifacts and the GitHub Release was published by a maintainer instead of GitHub Actions. The artifacts from GitHub Actions were used without alteration. There should be no consequences from this; we just want to be transparent about the provenance of the artifacts.</p>
+<p>Due to rate limiting during <a href="https://github.com/astral-sh/uv/pull/16770">publish to <code>crates.io</code></a>, this release <a href="https://github.com/astral-sh/uv/actions/runs/19553586192">was partially published</a> and manually finished. Consequently, <code>crates.io</code> temporarily did not include all of the artifacts and the GitHub Release was published by a maintainer instead of GitHub Actions. The artifacts from GitHub Actions were used without alteration. There should be no consequences from this; we just want to be transparent about the provenance of the artifacts.</p>
 <h5 id="python"><a class="toclink" href="#python">Python</a></h5>
 <ul>
 <li>Add CPython 3.15.0a2</li>
@@ -2098,7 +2145,7 @@
 <li>Fix <code>uv init</code> author serialization via <code>toml_edit</code> inline tables (<a href="https://github.com/astral-sh/uv/pull/16778">[#16778](https://github.com/owner/repo/issues/16778)</a>)</li>
 <li>Fix status messages without TTY (<a href="https://github.com/astral-sh/uv/pull/16785">[#16785](https://github.com/owner/repo/issues/16785)</a>)</li>
 <li>Preserve end-of-line comment whitespace when editing <code>pyproject.toml</code> (<a href="https://github.com/astral-sh/uv/pull/16734">[#16734](https://github.com/owner/repo/issues/16734)</a>)</li>
-<li>Disable <code>always-authenticate</code> when running under Dependabot ([<a href="https://github.com/owner/repo/issues/16773">#16773</a>](https://github.com</li>
+<li>Disable <code>always-authenticate</code> when running under Dependabot ([<a href="https://github.com/owner/repo/issues/16773">#16773</a>](https:/</li>
 </ul>
 <p>... (content truncated)</p></div>
                         
@@ -2252,80 +2299,6 @@ curl --proto '=https' --tlsv1.2 -LsSf https://git</p>
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/astral-sh/uv/releases/tag/0.9.8" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.9.7</div>
-                            <div class="release-version ">
-                                0.9.7
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-30 23:02 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2025-10-30.</p>
-<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
-<ul>
-<li>Add Windows x86-32 emulation support to interpreter architecture checks (<a href="https://github.com/astral-sh/uv/pull/13475">[#13475](https://github.com/owner/repo/issues/13475)</a>)</li>
-<li>Improve readability of progress bars (<a href="https://github.com/astral-sh/uv/pull/16509">[#16509](https://github.com/owner/repo/issues/16509)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Drop terminal coloring from <code>uv auth token</code> output (<a href="https://github.com/astral-sh/uv/pull/16504">[#16504](https://github.com/owner/repo/issues/16504)</a>)</li>
-<li>Don't use UV_LOCKED to enable <code>--check</code> flag (<a href="https://github.com/astral-sh/uv/pull/16521">[#16521](https://github.com/owner/repo/issues/16521)</a>)</li>
-</ul>
-<h4 id="install-uv-097"><a class="toclink" href="#install-uv-097">Install uv 0.9.7</a></h4>
-<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
-<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.9.7/uv-installer.sh | sh
-</code></pre>
-<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
-<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -c &quot;irm https://github.com/astral-sh/uv/releases/download/0.9.7/uv-installer.ps1 | iex&quot;
-</code></pre>
-<h4 id="download-uv-097"><a class="toclink" href="#download-uv-097">Download uv 0.9.7</a></h4>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Platform</th>
-<th>Checksum</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.7/uv-aarch64-apple-darwin.tar.gz">uv-aarch64-apple-darwin.tar.gz</a></td>
-<td>Apple Silicon macOS</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.7/uv-aarch64-apple-darwin.tar.gz.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.7/uv-x86_64-apple-darwin.tar.gz">uv-x86_64-apple-darwin.tar.gz</a></td>
-<td>Intel macOS</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.7/uv-x86_64-apple-darwin.tar.gz.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.7/uv-aarch64-pc-windows-msvc.zip">uv-aarch64-pc-windows-msvc.zip</a></td>
-<td>ARM64 Windows</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.7/uv-aarch64-pc-windows-msvc.zip.sha256">checksum</a></td>
-</tr>
-<tr>
-<td>[uv-i686-pc-windows-msvc.zip](https://github.com/astral-sh/uv/releases/download/0.9.7</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: Gankra</span>
-                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.7" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2525,7 +2498,7 @@ curl --proto '=https' --tlsv1.2 -LsSf https://git</p>
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-11-25 06:09 UTC
+                Last updated: 2025-11-26 06:09 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
