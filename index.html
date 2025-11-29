@@ -1452,6 +1452,57 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.14.7</div>
+                            <div class="release-version ">
+                                0.14.7
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-28 21:03 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2025-11-28.</p>
+<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
+<ul>
+<li>[<code>flake8-bandit</code>] Handle string literal bindings in suspicious-url-open-usage (<code>S310</code>) (<a href="https://github.com/astral-sh/ruff/pull/21469">[#21469](https://github.com/owner/repo/issues/21469)</a>)</li>
+<li>[<code>pylint</code>] Fix <code>PLR1708</code> false positives on nested functions (<a href="https://github.com/astral-sh/ruff/pull/21177">[#21177](https://github.com/owner/repo/issues/21177)</a>)</li>
+<li>[<code>pylint</code>] Fix suppression for empty dict without tuple key annotation (<code>PLE1141</code>) (<a href="https://github.com/astral-sh/ruff/pull/21290">[#21290](https://github.com/owner/repo/issues/21290)</a>)</li>
+<li>[<code>ruff</code>] Add rule <code>RUF066</code> to detect unnecessary class properties (<a href="https://github.com/astral-sh/ruff/pull/21535">[#21535](https://github.com/owner/repo/issues/21535)</a>)</li>
+<li>[<code>ruff</code>] Catch more dummy variable uses (<code>RUF052</code>) (<a href="https://github.com/astral-sh/ruff/pull/19799">[#19799](https://github.com/owner/repo/issues/19799)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>[server] Set severity for non-rule diagnostics (<a href="https://github.com/astral-sh/ruff/pull/21559">[#21559](https://github.com/owner/repo/issues/21559)</a>)</li>
+<li>[<code>flake8-implicit-str-concat</code>] Avoid invalid fix in (<code>ISC003</code>) (<a href="https://github.com/astral-sh/ruff/pull/21517">[#21517](https://github.com/owner/repo/issues/21517)</a>)</li>
+<li>[<code>parser</code>] Fix panic when parsing IPython escape command expressions (<a href="https://github.com/astral-sh/ruff/pull/21480">[#21480](https://github.com/owner/repo/issues/21480)</a>)</li>
+</ul>
+<h5 id="cli"><a class="toclink" href="#cli">CLI</a></h5>
+<ul>
+<li>Show partial fixability indicator in statistics output (<a href="https://github.com/astral-sh/ruff/pull/21513">[#21513](https://github.com/owner/repo/issues/21513)</a>)</li>
+</ul>
+<h5 id="contributors"><a class="toclink" href="#contributors">Contributors</a></h5>
+<ul>
+<li><a href="https://github.com/mikeleppane">[@mikeleppane](https://github.com/mikeleppane)</a></li>
+<li><a href="https://github.com/senekor">[@senekor](https://github.com/senekor)</a></li>
+<li><a href="https://github.com/ShaharNaveh">[@ShaharNaveh](https://github.com/ShaharNaveh)</a></li>
+<li><a href="https://github.com/JumboBear">[@JumboBear](https://github.com/JumboBear)</a></li>
+<li>[[@prakhar1144](https://github.co</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.7" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.14.6</div>
                             <div class="release-version ">
                                 0.14.6
@@ -1636,54 +1687,6 @@
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.3" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.14.2</div>
-                            <div class="release-version ">
-                                0.14.2
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-23 19:44 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2025-10-23.</p>
-<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
-<ul>
-<li>[<code>flake8-gettext</code>] Resolve qualified names and built-in bindings (<code>INT001</code>, <code>INT002</code>, <code>INT003</code>) (<a href="https://github.com/astral-sh/ruff/pull/19045">[#19045](https://github.com/owner/repo/issues/19045)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Avoid reusing nested, interpolated quotes before Python 3.12 (<a href="https://github.com/astral-sh/ruff/pull/20930">[#20930](https://github.com/owner/repo/issues/20930)</a>)</li>
-<li>Catch syntax errors in nested interpolations before Python 3.12 (<a href="https://github.com/astral-sh/ruff/pull/20949">[#20949](https://github.com/owner/repo/issues/20949)</a>)</li>
-<li>[<code>fastapi</code>] Handle ellipsis defaults in <code>FAST002</code> autofix (<a href="https://github.com/astral-sh/ruff/pull/20810">[#20810](https://github.com/owner/repo/issues/20810)</a>)</li>
-<li>[<code>flake8-simplify</code>] Skip <code>SIM911</code> when unknown arguments are present (<a href="https://github.com/astral-sh/ruff/pull/20697">[#20697](https://github.com/owner/repo/issues/20697)</a>)</li>
-<li>[<code>pyupgrade</code>] Always parenthesize assignment expressions in fix for <code>f-string</code> (<code>UP032</code>) (<a href="https://github.com/astral-sh/ruff/pull/21003">[#21003](https://github.com/owner/repo/issues/21003)</a>)</li>
-<li>[<code>pyupgrade</code>] Fix <code>UP032</code> conversion for decimal ints with underscores (<a href="https://github.com/astral-sh/ruff/pull/21022">[#21022](https://github.com/owner/repo/issues/21022)</a>)</li>
-<li>[<code>fastapi</code>] Skip autofix for keyword and <code>__debug__</code> path params (<code>FAST003</code>) (<a href="https://github.com/astral-sh/ruff/pull/20960">[#20960](https://github.com/owner/repo/issues/20960)</a>)</li>
-</ul>
-<h5 id="rule-changes"><a class="toclink" href="#rule-changes">Rule changes</a></h5>
-<ul>
-<li>[<code>flake8-bugbear</code>] Skip <code>B905</code> and <code>B912</code> for fewer than two iterables and no starred arguments (<a href="https://github.com/astral-sh/ruff/pull/20998">[#20998](https://github.com/owner/repo/issues/20998)</a>)</li>
-<li>[<code>ruff</code>] Use <code>DiagnosticTag</code> for more <code>pyflakes</code> and <code>pandas</code> rules (<a href="https://github.com/astral-sh/ruff/pull/20801">[#20801](https://github.com/owner/repo/issues/20801)</a>)</li>
-</ul>
-<h5 id="cli"><a class="toclink" href="#cli">CLI</a></h5>
-<ul>
-<li>Improve JSON output from <code>ruff rule</code> ([[#20168](https://github.com/owner/</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.2" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2520,7 +2523,7 @@ curl --proto '=https' --tlsv1.2 -LsSf https://git</p>
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-11-28 06:09 UTC
+                Last updated: 2025-11-29 06:08 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
