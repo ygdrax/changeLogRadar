@@ -395,6 +395,33 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.123.10</div>
+                            <div class="release-version ">
+                                0.123.10
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-12-05 21:27 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
+<ul>
+<li>🐛 Fix using class (not instance) dependency that has <code>__call__</code> method. PR <a href="https://github.com/fastapi/fastapi/pull/14458">[#14458](https://github.com/owner/repo/issues/14458)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
+<li>🐛 Fix <code>separate_input_output_schemas=False</code> with <code>computed_field</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14453">[#14453](https://github.com/owner/repo/issues/14453)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
+</ul></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.123.10" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.123.9</div>
                             <div class="release-version ">
                                 0.123.9
@@ -494,47 +521,6 @@
                         <div class="release-meta">
                             <span>Author: tiangolo</span>
                             <a href="https://github.com/fastapi/fastapi/releases/tag/0.123.6" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.123.5</div>
-                            <div class="release-version ">
-                                0.123.5
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-12-02 21:07 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h5 id="features"><a class="toclink" href="#features">Features</a></h5>
-<ul>
-<li>✨ Allow using dependables with <code>functools.partial()</code>. PR <a href="https://github.com/fastapi/fastapi/pull/9753">[#9753](https://github.com/owner/repo/issues/9753)</a> by <a href="https://github.com/lieryan">[@lieryan](https://github.com/lieryan)</a>.</li>
-<li>✨ Add support for wrapped functions (e.g. <code>[@functools](https://github.com/functools).wraps()</code>) used with forward references. PR <a href="https://github.com/fastapi/fastapi/pull/5077">[#5077](https://github.com/owner/repo/issues/5077)</a> by <a href="https://github.com/lucaswiman">[@lucaswiman](https://github.com/lucaswiman)</a>.</li>
-<li>✨ Handle wrapped dependencies. PR <a href="https://github.com/fastapi/fastapi/pull/9555">[#9555](https://github.com/owner/repo/issues/9555)</a> by <a href="https://github.com/phy1729">[@phy1729](https://github.com/phy1729)</a>.</li>
-</ul>
-<h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
-<ul>
-<li>🐛 Fix optional sequence handling with new union syntax from Python 3.10. PR <a href="https://github.com/fastapi/fastapi/pull/14430">[#14430](https://github.com/owner/repo/issues/14430)</a> by <a href="https://github.com/Viicos">[@Viicos](https://github.com/Viicos)</a>.</li>
-</ul>
-<h5 id="refactors"><a class="toclink" href="#refactors">Refactors</a></h5>
-<ul>
-<li>🔥 Remove dangling extra condiitonal no longer needed. PR <a href="https://github.com/fastapi/fastapi/pull/14435">[#14435](https://github.com/owner/repo/issues/14435)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-<li>♻️ Refactor internals, update <code>is_coroutine</code> check to reuse internal supported variants (unwrap, check class). PR <a href="https://github.com/fastapi/fastapi/pull/14434">[#14434](https://github.com/owner/repo/issues/14434)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-</ul>
-<h5 id="translations"><a class="toclink" href="#translations">Translations</a></h5>
-<ul>
-<li>🌐 Sync German docs. PR <a href="https://github.com/fastapi/fastapi/pull/14367">[#14367](https://github.com/owner/repo/issues/14367)</a> by <a href="https://github.com/nilslindemann">[@nilslindemann](https://github.com/nilslindemann)</a>.</li>
-</ul></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.123.5" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2358,9 +2344,9 @@
 <p>This release features 474 commits from 213 contributors (57 new)！</p>
 <p><strong>Breaking Changes</strong>: This release includes PyTorch 2.9.0 upgrade (CUDA 12.9), V0 deprecations including <code>xformers</code> backend, and scheduled removals - please review the changelog carefully.</p>
 <p><strong>Major Features</strong>:<br />
-* <strong>GPU Model Runner V2</strong> (<a href="https://github.com/owner/repo/issues/25266">#25266</a>): Major refactoring that removes persistent batch management, introduces GPU-persistent block tables, and features a Triton-native sampler with efficient logprobs support.<br />
-* <strong>Prefill Context Parallel (PCP)</strong> (<a href="https://github.com/owner/repo/issues/28718">#28718</a>): Enhances long-sequence inference by partitioning the sequence dimension during prefill, complementing Decode Context Parallel (DCP).<br />
-* <strong>EAGLE Speculative Decoding</strong>: Multi-step CUDA graph support (<a href="https://github.com/owner/repo/issues/29559">#29559</a>), DP&gt;1 support (<a href="https://github.com/owner/repo/issues/26086">#26086</a>), and multimodal support with Qwen3VL (<a href="https://github.com/owner/repo/issues/29594">#29594</a>).</p>
+* <strong>EAGLE Speculative Decoding Improvements</strong>: Multi-step CUDA graph support (<a href="https://github.com/owner/repo/issues/29559">#29559</a>), DP&gt;1 support (<a href="https://github.com/owner/repo/issues/26086">#26086</a>), and multimodal support with Qwen3VL (<a href="https://github.com/owner/repo/issues/29594">#29594</a>).<br />
+* <strong>Significant Performance Optimizations</strong>: 18.1% throughput improvement from batch invariant BMM (<a href="https://github.com/owner/repo/issues/29345">#29345</a>), 2.2% throughput improvement from shared experts overlap (<a href="https://github.com/owner/repo/issues/28879">#28879</a>).<br />
+* <strong>AMD ROCm Expansion</strong>: DeepSeek v3.2 + SparseMLA support (<a href="https://github.com/owner/repo/issues/26670">#26670</a>), FP8 MLA decode (<a href="https://github.com/owner/repo/issues/28032">#28032</a>), AITER attention backend (<a href="https://github.com/owner/repo/issues/28701">#28701</a>).</p>
 <h5 id="model-support"><a class="toclink" href="#model-support">Model Support</a></h5>
 <ul>
 <li><strong>New model families</strong>: PLaMo-3 (<a href="https://github.com/owner/repo/issues/28834">#28834</a>), OpenCUA-7B (<a href="https://github.com/owner/repo/issues/29068">#29068</a>), HunyuanOCR (<a href="https://github.com/owner/repo/issues/29327">#29327</a>), Mistral Large 3 and Ministral 3 (<a href="https://github.com/owner/repo/issues/29757">#29757</a>).</li>
@@ -2370,7 +2356,7 @@
 </ul>
 <h5 id="engine-core"><a class="toclink" href="#engine-core">Engine Core</a></h5>
 <ul>
-<li><strong>GPU Model Runner V2</strong> (<a href="https://github.com/owner/repo/issues/25266">#25266</a>): Complete refactoring </li>
+<li>**GPU Model Runner V2 (Experimen</li>
 </ul>
 <p>... (content truncated)</p></div>
                         
@@ -2526,7 +2512,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-12-05 06:09 UTC
+                Last updated: 2025-12-06 06:08 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
