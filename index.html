@@ -395,6 +395,36 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.124.0</div>
+                            <div class="release-version ">
+                                0.124.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-12-06 13:10 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="features"><a class="toclink" href="#features">Features</a></h5>
+<ul>
+<li>🚸  Improve tracebacks by adding endpoint metadata. PR <a href="https://github.com/fastapi/fastapi/pull/14306">[#14306](https://github.com/owner/repo/issues/14306)</a> by <a href="https://github.com/savannahostrowski">[@savannahostrowski](https://github.com/savannahostrowski)</a>.</li>
+</ul>
+<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
+<ul>
+<li>✏️ Fix typo in <code>scripts/mkdocs_hooks.py</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14457">[#14457](https://github.com/owner/repo/issues/14457)</a> by <a href="https://github.com/yujiteshima">[@yujiteshima](https://github.com/yujiteshima)</a>.</li>
+</ul></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.124.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.123.10</div>
                             <div class="release-version ">
                                 0.123.10
@@ -495,32 +525,6 @@
                         <div class="release-meta">
                             <span>Author: tiangolo</span>
                             <a href="https://github.com/fastapi/fastapi/releases/tag/0.123.7" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.123.6</div>
-                            <div class="release-version ">
-                                0.123.6
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-12-04 07:34 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
-<ul>
-<li>🐛 Fix support for functools wraps and partial combined, for async and regular functions and classes in path operations and dependencies. PR <a href="https://github.com/fastapi/fastapi/pull/14448">[#14448](https://github.com/owner/repo/issues/14448)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-</ul></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.123.6" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2030,6 +2034,54 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.9.16</div>
+                            <div class="release-version ">
+                                0.9.16
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-12-06 14:22 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2025-12-06.</p>
+<h5 id="python"><a class="toclink" href="#python">Python</a></h5>
+<ul>
+<li>Add CPython 3.14.2</li>
+<li>Add CPython 3.13.11</li>
+</ul>
+<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
+<ul>
+<li>Add a 5m default timeout to acquiring file locks to fail faster on deadlock (<a href="https://github.com/astral-sh/uv/pull/16342">[#16342](https://github.com/owner/repo/issues/16342)</a>)</li>
+<li>Add a stub <code>debug</code> subcommand to <code>uv pip</code> announcing its intentional absence (<a href="https://github.com/astral-sh/uv/pull/16966">[#16966](https://github.com/owner/repo/issues/16966)</a>)</li>
+<li>Add bounds in <code>uv add --script</code> (<a href="https://github.com/astral-sh/uv/pull/16954">[#16954](https://github.com/owner/repo/issues/16954)</a>)</li>
+<li>Add brew specific message for <code>uv self update</code> (<a href="https://github.com/astral-sh/uv/pull/16838">[#16838](https://github.com/owner/repo/issues/16838)</a>)</li>
+<li>Error when built wheel is for the wrong platform (<a href="https://github.com/astral-sh/uv/pull/16074">[#16074](https://github.com/owner/repo/issues/16074)</a>)</li>
+<li>Filter wheels from PEP 751 files based on <code>--no-binary</code> et al in <code>uv pip compile</code> (<a href="https://github.com/astral-sh/uv/pull/16956">[#16956](https://github.com/owner/repo/issues/16956)</a>)</li>
+<li>Support <code>--target</code> and <code>--prefix</code> in <code>uv pip list</code>, <code>uv pip freeze</code>, and <code>uv pip show</code> (<a href="https://github.com/astral-sh/uv/pull/16955">[#16955](https://github.com/owner/repo/issues/16955)</a>)</li>
+<li>Tweak language for build backend validation errors (<a href="https://github.com/astral-sh/uv/pull/16720">[#16720](https://github.com/owner/repo/issues/16720)</a>)</li>
+<li>Use explicit credentials cache instead of global static (<a href="https://github.com/astral-sh/uv/pull/16768">[#16768](https://github.com/owner/repo/issues/16768)</a>)</li>
+<li>Enable SIMD in HTML parsing (<a href="https://github.com/astral-sh/uv/pull/17010">[#17010](https://github.com/owner/repo/issues/17010)</a>)</li>
+</ul>
+<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
+<ul>
+<li>Fix missing preview warning in <code>uv workspace metadata</code> (<a href="https://github.com/astral-sh/uv/pull/16988">[#16988](https://github.com/owner/repo/issues/16988)</a>)</li>
+<li>Add a <code>uv auth helper --protocol bazel</code> command ([[#16886](https://github.com/owner/r</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.16" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.9.15</div>
                             <div class="release-version ">
                                 0.9.15
@@ -2255,54 +2307,6 @@
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.9.11</div>
-                            <div class="release-version ">
-                                0.9.11
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-11-20 23:46 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2025-11-20.</p>
-<p>Due to rate limiting during <a href="https://github.com/astral-sh/uv/pull/16770">publish to <code>crates.io</code></a>, this release <a href="https://github.com/astral-sh/uv/actions/runs/19553586192">was partially published</a> and manually finished. Consequently, <code>crates.io</code> temporarily did not include all of the artifacts and the GitHub Release was published by a maintainer instead of GitHub Actions. The artifacts from GitHub Actions were used without alteration. The GitHub release attestations for the artifacts are not available for this release.</p>
-<h5 id="python"><a class="toclink" href="#python">Python</a></h5>
-<ul>
-<li>Add CPython 3.15.0a2</li>
-</ul>
-<p>See the <a href="https://github.com/astral-sh/python-build-standalone/releases/tag/20251120"><code>python-build-standalone</code> release notes</a> for details.</p>
-<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
-<ul>
-<li>Add SBOM support to <code>uv export</code> (<a href="https://github.com/astral-sh/uv/pull/16523">[#16523](https://github.com/owner/repo/issues/16523)</a>)</li>
-<li>Publish to <code>crates.io</code> (<a href="https://github.com/astral-sh/uv/pull/16770">[#16770](https://github.com/owner/repo/issues/16770)</a>)</li>
-</ul>
-<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
-<ul>
-<li>Add <code>uv workspace list --paths</code> (<a href="https://github.com/astral-sh/uv/pull/16776">[#16776](https://github.com/owner/repo/issues/16776)</a>)</li>
-<li>Fix the preview warning on <code>uv workspace dir</code> (<a href="https://github.com/astral-sh/uv/pull/16775">[#16775](https://github.com/owner/repo/issues/16775)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Fix <code>uv init</code> author serialization via <code>toml_edit</code> inline tables (<a href="https://github.com/astral-sh/uv/pull/16778">[#16778](https://github.com/owner/repo/issues/16778)</a>)</li>
-<li>Fix status messages without TTY (<a href="https://github.com/astral-sh/uv/pull/16785">[#16785](https://github.com/owner/repo/issues/16785)</a>)</li>
-<li>Preserve end-of-line comment whitespace when editing <code>pyproject.toml</code> (<a href="https://github.com/astral-sh/uv/pull/16734">[#16734](https://github.com/owner/repo/issues/16734)</a>)</li>
-<li>Disable <code>always-authenticate</code> when running under Dependabot ([<a href="https://github.com/owner/repo/issues/16773">#16773</a>](https://github.com/astral-sh/uv/pu</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: zanieb</span>
-                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.11" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -2512,7 +2516,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-12-06 06:08 UTC
+                Last updated: 2025-12-07 06:08 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
