@@ -1448,6 +1448,54 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.14.10</div>
+                            <div class="release-version ">
+                                0.14.10
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-12-18 19:37 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2025-12-18.</p>
+<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
+<ul>
+<li>[formatter] Fluent formatting of method chains (<a href="https://github.com/astral-sh/ruff/pull/21369">[#21369](https://github.com/owner/repo/issues/21369)</a>)</li>
+<li>[formatter] Keep lambda parameters on one line and parenthesize the body if it expands (<a href="https://github.com/astral-sh/ruff/pull/21385">[#21385](https://github.com/owner/repo/issues/21385)</a>)</li>
+<li>[<code>flake8-implicit-str-concat</code>] New rule to prevent implicit string concatenation in collections (<code>ISC004</code>) (<a href="https://github.com/astral-sh/ruff/pull/21972">[#21972](https://github.com/owner/repo/issues/21972)</a>)</li>
+<li>[<code>flake8-use-pathlib</code>] Make fixes unsafe when types change in compound statements (<code>PTH104</code>, <code>PTH105</code>, <code>PTH109</code>, <code>PTH115</code>) (<a href="https://github.com/astral-sh/ruff/pull/22009">[#22009](https://github.com/owner/repo/issues/22009)</a>)</li>
+<li>[<code>refurb</code>] Extend support for <code>Path.open</code> (<code>FURB101</code>, <code>FURB103</code>) (<a href="https://github.com/astral-sh/ruff/pull/21080">[#21080](https://github.com/owner/repo/issues/21080)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>[<code>pyupgrade</code>] Fix parsing named Unicode escape sequences (<code>UP032</code>) (<a href="https://github.com/astral-sh/ruff/pull/21901">[#21901](https://github.com/owner/repo/issues/21901)</a>)</li>
+</ul>
+<h5 id="rule-changes"><a class="toclink" href="#rule-changes">Rule changes</a></h5>
+<ul>
+<li>[<code>eradicate</code>] Ignore <code>ruff:disable</code> and <code>ruff:enable</code> comments in <code>ERA001</code> (<a href="https://github.com/astral-sh/ruff/pull/22038">[#22038](https://github.com/owner/repo/issues/22038)</a>)</li>
+<li>[<code>flake8-pytest-style</code>] Allow <code>match</code> and <code>check</code> keyword arguments without an expected exception type (<code>PT010</code>) (<a href="https://github.com/astral-sh/ruff/pull/21964">[#21964](https://github.com/owner/repo/issues/21964)</a>)</li>
+<li>[syntax-errors] Annotated name cannot be global (<a href="https://github.com/astral-sh/ruff/pull/20868">[#20868](https://github.com/owner/repo/issues/20868)</a>)</li>
+</ul>
+<h5 id="documentation"><a class="toclink" href="#documentation">Documentation</a></h5>
+<ul>
+<li>Add <code>uv</code> and <code>ty</code> to the Ruff README (<a href="https://github.com/astral-sh/ruff/pull/21996">[#21996](https://github.com/owner/repo/issues/21996)</a>)</li>
+<li>Document known lambda formatting deviations fro</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.10" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.14.9</div>
                             <div class="release-version ">
                                 0.14.9
@@ -1659,54 +1707,6 @@
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.6" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.14.5</div>
-                            <div class="release-version ">
-                                0.14.5
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-11-13 20:06 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2025-11-13.</p>
-<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
-<ul>
-<li>[<code>flake8-simplify</code>] Apply <code>SIM113</code> when index variable is of type <code>int</code> (<a href="https://github.com/astral-sh/ruff/pull/21395">[#21395](https://github.com/owner/repo/issues/21395)</a>)</li>
-<li>[<code>pydoclint</code>] Fix false positive when Sphinx directives follow a "Raises" section (<code>DOC502</code>) (<a href="https://github.com/astral-sh/ruff/pull/20535">[#20535](https://github.com/owner/repo/issues/20535)</a>)</li>
-<li>[<code>pydoclint</code>] Support NumPy-style comma-separated parameters (<code>DOC102</code>) (<a href="https://github.com/astral-sh/ruff/pull/20972">[#20972](https://github.com/owner/repo/issues/20972)</a>)</li>
-<li>[<code>refurb</code>] Auto-fix annotated assignments (<code>FURB101</code>) (<a href="https://github.com/astral-sh/ruff/pull/21278">[#21278](https://github.com/owner/repo/issues/21278)</a>)</li>
-<li>[<code>ruff</code>] Ignore <code>str()</code> when not used for simple conversion (<code>RUF065</code>) (<a href="https://github.com/astral-sh/ruff/pull/21330">[#21330](https://github.com/owner/repo/issues/21330)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Fix syntax error false positive on alternative <code>match</code> patterns (<a href="https://github.com/astral-sh/ruff/pull/21362">[#21362](https://github.com/owner/repo/issues/21362)</a>)</li>
-<li>[<code>flake8-simplify</code>] Fix false positive for iterable initializers with generator arguments (<code>SIM222</code>) (<a href="https://github.com/astral-sh/ruff/pull/21187">[#21187](https://github.com/owner/repo/issues/21187)</a>)</li>
-<li>[<code>pyupgrade</code>] Fix false positive on relative imports from local <code>.builtins</code> module (<code>UP029</code>) (<a href="https://github.com/astral-sh/ruff/pull/21309">[#21309](https://github.com/owner/repo/issues/21309)</a>)</li>
-<li>[<code>pyupgrade</code>] Consistently set the deprecated tag (<code>UP035</code>) (<a href="https://github.com/astral-sh/ruff/pull/21396">[#21396](https://github.com/owner/repo/issues/21396)</a>)</li>
-</ul>
-<h5 id="rule-changes"><a class="toclink" href="#rule-changes">Rule changes</a></h5>
-<ul>
-<li>[<code>refurb</code>] Detect empty f-strings (<code>FURB105</code>) (<a href="https://github.com/astral-sh/ruff/pull/21348">[#21348](https://github.com/owner/repo/issues/21348)</a>)</li>
-</ul>
-<h5 id="cli"><a class="toclink" href="#cli">CLI</a></h5>
-<ul>
-<li>Add option to provide a reason to <code>--add-noqa</code> ([[#21294](https://github.com/owner/repo/issues</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.5" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2389,6 +2389,27 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">v0.13.0</div>
+                            <div class="release-version ">
+                                0.13.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-12-19 03:02 UTC
+                        </div>
+
+                        
+
+                        <div class="release-meta">
+                            <span>Author: khluu</span>
+                            <a href="https://github.com/vllm-project/vllm/releases/tag/v0.13.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">v0.12.0</div>
                             <div class="release-version ">
                                 0.12.0
@@ -2533,39 +2554,6 @@
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">v0.10.2</div>
-                            <div class="release-version ">
-                                0.10.2
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-09-13 06:37 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="highlights"><a class="toclink" href="#highlights">Highlights</a></h4>
-<p>This release contains 740 commits from 266 contributors (97 new)!</p>
-<p><strong>Breaking Changes</strong>: This release includes PyTorch 2.8.0 upgrade, V0 deprecations, and API changes - please review the changelog carefully.</p>
-<p><strong>aarch64 support</strong>: This release features native support for aarch64 allowing usage of vLLM on GB200 platform. The docker image <code>vllm/vllm-openai</code> should already be multiplatform. To install the wheels, you can download the wheels from this release artifact or install via </p>
-<pre><code>uv pip install vllm==0.10.2 --extra-index-url https://wheels.vllm.ai/0.10.2/ --torch-backend=auto
-</code></pre>
-<h5 id="model-support"><a class="toclink" href="#model-support">Model Support</a></h5>
-<ul>
-<li><strong>New model families and enhancements</strong>: Apertus (<a href="https://github.com/owner/repo/issues/23068">#23068</a>), LFM2 (<a href="https://github.com/owner/repo/issues/22845">#22845</a>), MiDashengLM (<a href="https://github.com/owner/repo/issues/23652">#23652</a>), Motif-1-Tiny (<a href="https://github.com/owner/repo/issues/23414">#23414</a>), Seed-Oss (<a href="https://github.com/owner/repo/issues/23241">#23241</a>), Google EmbeddingGemma-300m (<a href="https://github.com/owner/repo/issues/24318">#24318</a>), GTE sequence classification (<a href="https://github.com/owner/repo/issues/23524">#23524</a>), Donut OCR model (<a href="https://github.com/owner/repo/issues/23229">#23229</a>), KeyeVL-1.5-8B (<a href="https://github.com/owner/repo/issues/23838">#23838</a>), R-4B vision model (<a href="https://github.com/owner/repo/issues/23246">#23246</a>), Ernie4.5 VL (<a href="https://github.com/owner/repo/issues/22514">#22514</a>), MiniCPM-V 4.5 (<a href="https://github.com/owner/repo/issues/23586">#23586</a>), Ovis2.5 (<a href="https://github.com/owner/repo/issues/23084">#23084</a>), Qwen3-Next with hybrid attention (<a href="https://github.com/owner/repo/issues/24526">#24526</a>), InternVL3.5 with video support (<a href="https://github.com/owner/repo/issues/23658">#23658</a>), Qwen2Audio embeddings (<a href="https://github.com/owner/repo/issues/23625">#23625</a>), NemotronH Nano VLM (<a href="https://github.com/owner/repo/issues/23644">#23644</a>), BLOOM V1 engine support (<a href="https://github.com/owner/repo/issues/23488">#23488</a>), an</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: simon-mo</span>
-                            <a href="https://github.com/vllm-project/vllm/releases/tag/v0.10.2" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -2574,7 +2562,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-12-18 06:10 UTC
+                Last updated: 2025-12-19 06:09 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
