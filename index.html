@@ -395,6 +395,50 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.126.0</div>
+                            <div class="release-version ">
+                                0.126.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-12-20 16:16 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="upgrades"><a class="toclink" href="#upgrades">Upgrades</a></h5>
+<ul>
+<li>➖ Drop support for Pydantic v1, keeping short temporary support for Pydantic v2's <code>pydantic.v1</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14575"><a href="https://github.com/owner/repo/issues/14575">#14575</a></a> by <a href="https://github.com/tiangolo"><a href="https://github.com/tiangolo">@tiangolo</a></a>.<ul>
+<li>The minimum version of Pydantic installed is now <code>pydantic &gt;=2.7.0</code>.</li>
+<li>The <code>standard</code> dependencies now include <code>pydantic-settings &gt;=2.0.0</code> and <code>pydantic-extra-types &gt;=2.0.0</code>.</li>
+</ul>
+</li>
+</ul>
+<h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
+<ul>
+<li>📝 Fix duplicated variable in <code>docs_src/python_types/tutorial005_py39.py</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14565">[#14565](https://github.com/owner/repo/issues/14565)</a> by <a href="https://github.com/paras-verma7454">[@paras](https://github.com/paras)-verma7454</a>.</li>
+</ul>
+<h5 id="translations"><a class="toclink" href="#translations">Translations</a></h5>
+<ul>
+<li>🔧 Add LLM prompt file for Ukrainian, generated from the existing translations. PR <a href="https://github.com/fastapi/fastapi/pull/14548">[#14548](https://github.com/owner/repo/issues/14548)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+</ul>
+<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
+<ul>
+<li>🔧 Tweak pre-commit to allow committing release-notes. PR <a href="https://github.com/fastapi/fastapi/pull/14577">[#14577](https://github.com/owner/repo/issues/14577)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+<li>⬆️ Use prek as a pre-commit alternative. PR <a href="https://github.com/fastapi/fastapi/pull/14572">[#14572](https://github.com/owner/repo/issues/14572)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+<li>👷 Add performance tests with CodSpeed. PR <a href="https://github.com/fastapi/fastapi/pull/14558">[#14558](https://github.com/owner/repo/issues/14558)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+</ul></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.126.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.125.0</div>
                             <div class="release-version ">
                                 0.125.0
@@ -534,41 +578,6 @@
                         <div class="release-meta">
                             <span>Author: tiangolo</span>
                             <a href="https://github.com/fastapi/fastapi/releases/tag/0.124.2" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.124.1</div>
-                            <div class="release-version ">
-                                0.124.1
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-12-10 10:39 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
-<ul>
-<li>🐛 Fix handling arbitrary types when using <code>arbitrary_types_allowed=True</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14482">[#14482](https://github.com/owner/repo/issues/14482)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-</ul>
-<h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
-<ul>
-<li>📝 Add variants for code examples in "Advanced User Guide". PR <a href="https://github.com/fastapi/fastapi/pull/14413">[#14413](https://github.com/owner/repo/issues/14413)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
-<li>📝 Update tech stack in project generation docs. PR <a href="https://github.com/fastapi/fastapi/pull/14472">[#14472](https://github.com/owner/repo/issues/14472)</a> by <a href="https://github.com/alejsdev">[@alejsdev](https://github.com/alejsdev)</a>.</li>
-</ul>
-<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
-<ul>
-<li>✅ Add test for Pydantic v2, dataclasses, UUID, and <code>__annotations__</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14477">[#14477](https://github.com/owner/repo/issues/14477)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-</ul></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.124.1" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2594,7 +2603,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-12-20 06:08 UTC
+                Last updated: 2025-12-21 06:09 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
