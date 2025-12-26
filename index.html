@@ -1753,6 +1753,46 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.21.0</div>
+                            <div class="release-version ">
+                                0.21.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-12-25 09:54 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="breaking-changes"><a class="toclink" href="#breaking-changes">Breaking Changes</a></h5>
+<ul>
+<li>➖ Drop support for Python 3.8. PR <a href="https://github.com/fastapi/typer/pull/1464">[#1464](https://github.com/owner/repo/issues/1464)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+<li>➖ Drop support for Python 3.8 in CI. PR <a href="https://github.com/fastapi/typer/pull/1463">[#1463](https://github.com/owner/repo/issues/1463)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a> and <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+</ul>
+<h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
+<ul>
+<li>📝 Update code examples to Python 3.9. PR <a href="https://github.com/fastapi/typer/pull/1459">[#1459](https://github.com/owner/repo/issues/1459)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
+</ul>
+<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
+<ul>
+<li>💚 Move <code>ruff</code> dependency to shared <code>requirements-docs-tests.txt</code> to fix "Build docs" workflow in CI. PR <a href="https://github.com/fastapi/typer/pull/1458">[#1458](https://github.com/owner/repo/issues/1458)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
+<li>⬆ Bump markdown-include-variants from 0.0.5 to 0.0.8. PR <a href="https://github.com/fastapi/typer/pull/1442">[#1442](https://github.com/owner/repo/issues/1442)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>👷 Add pre-commit workflow. PR <a href="https://github.com/fastapi/typer/pull/1453">[#1453](https://github.com/owner/repo/issues/1453)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+<li>👷 Configure coverage, error on main tests, don't wait for Smokeshow. PR <a href="https://github.com/fastapi/typer/pull/1448">[#1448](https://github.com/owner/repo/issues/1448)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
+<li>👷 Run Smokeshow always, even on test failures. PR <a href="https://github.com/fastapi/typer/pull/1447">[#1447](https://github.com/owner/repo/issues/1447)</a> by [<a href="https://github.com/YuriiMotov">@YuriiMotov</a>](https://github.com/</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/typer/releases/tag/0.21.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.20.1</div>
                             <div class="release-version ">
                                 0.20.1
@@ -1895,42 +1935,6 @@
                         <div class="release-meta">
                             <span>Author: tiangolo</span>
                             <a href="https://github.com/fastapi/typer/releases/tag/0.19.1" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.19.0</div>
-                            <div class="release-version ">
-                                0.19.0
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-09-20 08:07 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h5 id="features"><a class="toclink" href="#features">Features</a></h5>
-<ul>
-<li>✨ Support <code>typing.Literal</code> to define a set of predefined choices. PR <a href="https://github.com/fastapi/typer/pull/429">[#429](https://github.com/owner/repo/issues/429)</a> by <a href="https://github.com/blackary">[@blackary](https://github.com/blackary)</a>.</li>
-<li>✨ Allow setting an environment variable to <code>None</code> in <code>CliRunner.invoke</code>. PR <a href="https://github.com/fastapi/typer/pull/1303">[#1303](https://github.com/owner/repo/issues/1303)</a> by <a href="https://github.com/arjenzorgdoc">[@arjenzorgdoc](https://github.com/arjenzorgdoc)</a>.</li>
-</ul>
-<h5 id="refactors"><a class="toclink" href="#refactors">Refactors</a></h5>
-<ul>
-<li>✅ Use Ruff rules to ensure safe lazy-loading of <code>rich</code>. PR <a href="https://github.com/fastapi/typer/pull/1297">[#1297](https://github.com/owner/repo/issues/1297)</a> by <a href="https://github.com/nathanjmcdougall">[@nathanjmcdougall](https://github.com/nathanjmcdougall)</a>.</li>
-<li>✅ Avoid rich formatting in number test. PR <a href="https://github.com/fastapi/typer/pull/1305">[#1305](https://github.com/owner/repo/issues/1305)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
-</ul>
-<h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
-<ul>
-<li>📝 Clarify single-command vs multi-command behaviour in README. PR <a href="https://github.com/fastapi/typer/pull/1268">[#1268](https://github.com/owner/repo/issues/1268)</a> by <a href="https://github.com/MorgenPronk">[@MorgenPronk](https://github.com/MorgenPronk)</a>.</li>
-</ul></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/typer/releases/tag/0.19.0" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2613,7 +2617,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-12-25 06:09 UTC
+                Last updated: 2025-12-26 06:09 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
