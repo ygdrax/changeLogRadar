@@ -2124,6 +2124,79 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.9.21</div>
+                            <div class="release-version ">
+                                0.9.21
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-12-30 16:14 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2025-12-30.</p>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>Fix regression where zstd distribution hashes were not considered valid (<a href="https://github.com/astral-sh/uv/pull/17265">[#17265](https://github.com/owner/repo/issues/17265)</a>)</li>
+</ul>
+<h5 id="documentation"><a class="toclink" href="#documentation">Documentation</a></h5>
+<ul>
+<li>Fix a typo in the resolution documentation (<a href="https://github.com/astral-sh/uv/pull/17258">[#17258](https://github.com/owner/repo/issues/17258)</a>)</li>
+<li>Fix a typo in <code>python install --default</code> documentation (<a href="https://github.com/astral-sh/uv/pull/9826">[#9826](https://github.com/owner/repo/issues/9826)</a>)</li>
+</ul>
+<h4 id="install-uv-0921"><a class="toclink" href="#install-uv-0921">Install uv 0.9.21</a></h4>
+<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
+<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.9.21/uv-installer.sh | sh
+</code></pre>
+<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
+<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -c &quot;irm https://github.com/astral-sh/uv/releases/download/0.9.21/uv-installer.ps1 | iex&quot;
+</code></pre>
+<h4 id="download-uv-0921"><a class="toclink" href="#download-uv-0921">Download uv 0.9.21</a></h4>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Platform</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.21/uv-aarch64-apple-darwin.tar.gz">uv-aarch64-apple-darwin.tar.gz</a></td>
+<td>Apple Silicon macOS</td>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.21/uv-aarch64-apple-darwin.tar.gz.sha256">checksum</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.21/uv-x86_64-apple-darwin.tar.gz">uv-x86_64-apple-darwin.tar.gz</a></td>
+<td>Intel macOS</td>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.21/uv-x86_64-apple-darwin.tar.gz.sha256">checksum</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.21/uv-aarch64-pc-windows-msvc.zip">uv-aarch64-pc-windows-msvc.zip</a></td>
+<td>ARM64 Windows</td>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.21/uv-aarch64-pc-windows-msvc.zip.sha256">checksum</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.21/uv-i686-pc-windows-msvc.zip">uv-i686-pc-windows-msvc.zip</a></td>
+<td>x86 Windows</td>
+<td>[checksum](https://github.com/astral-sh/uv/releases/download/0.9.21/uv-i686-pc-wind</td>
+</tr>
+</tbody>
+</table>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.21" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.9.20</div>
                             <div class="release-version ">
                                 0.9.20
@@ -2334,54 +2407,6 @@
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/astral-sh/uv/releases/tag/0.9.16" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.9.15</div>
-                            <div class="release-version ">
-                                0.9.15
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-12-03 01:34 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2025-12-02.</p>
-<p>Continuing the unfortunate chain of disrupted releases, this release failed due to an error publishing new PEP 740 attestations to PyPI. The release workflow was re-run after removing the PEP 740 attestations (see <a href="https://github.com/owner/repo/issues/16944">#16944</a>) and our GitHub and PyPI artifacts were published as normal, but the crates.io publish completed in the first run and does not match the 0.9.15 tag — instead, the crates were published at commit https://github.com/astral-sh/uv/commit/e7af5838bbd3fe00d45b0ae6f399975846dbf41b. The only difference is the inclusion of https://github.com/astral-sh/uv/pull/16885.</p>
-<h5 id="python"><a class="toclink" href="#python">Python</a></h5>
-<ul>
-<li>Add CPython 3.14.1</li>
-<li>Add CPython 3.13.10</li>
-</ul>
-<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
-<ul>
-<li>Add ROCm 6.4 to <code>--torch-backend=auto</code> (<a href="https://github.com/astral-sh/uv/pull/16919">[#16919](https://github.com/owner/repo/issues/16919)</a>)</li>
-<li>Add a Windows manifest to uv binaries (<a href="https://github.com/astral-sh/uv/pull/16894">[#16894](https://github.com/owner/repo/issues/16894)</a>)</li>
-<li>Add LFS toggle to Git sources (<a href="https://github.com/astral-sh/uv/pull/16143">[#16143](https://github.com/owner/repo/issues/16143)</a>)</li>
-<li>Cache source reads during resolution (<a href="https://github.com/astral-sh/uv/pull/16888">[#16888](https://github.com/owner/repo/issues/16888)</a>)</li>
-<li>Allow reading requirements from scripts without an extension (<a href="https://github.com/astral-sh/uv/pull/16923">[#16923](https://github.com/owner/repo/issues/16923)</a>)</li>
-<li>Allow reading requirements from scripts with HTTP(S) paths (<a href="https://github.com/astral-sh/uv/pull/16891">[#16891](https://github.com/owner/repo/issues/16891)</a>)</li>
-</ul>
-<h5 id="configuration"><a class="toclink" href="#configuration">Configuration</a></h5>
-<ul>
-<li>Add <code>UV_HIDE_BUILD_OUTPUT</code> to omit build logs (<a href="https://github.com/astral-sh/uv/pull/16885">[#16885](https://github.com/owner/repo/issues/16885)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Fix <code>uv-trampoline-builder</code> builds from crates.io by moving bundled executables ([<a href="https://github.com/owner/repo/issues/16922">#16922</a>](https://github.com/astra</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.15" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2601,7 +2626,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2025-12-30 06:10 UTC
+                Last updated: 2025-12-31 06:10 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
