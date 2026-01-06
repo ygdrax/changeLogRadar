@@ -850,6 +850,49 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">5.0.9</div>
+                            <div class="release-version ">
+                                5.0.9
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-01-05 15:02 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="whats-changed"><a class="toclink" href="#whats-changed">What's Changed</a></h4>
+<ul>
+<li>Document that not supporting macOS versions can get a cask rejected by <a href="https://github.com/SMillerDev">@SMillerDev</a> in https://github.com/Homebrew/brew/pull/21336</li>
+<li>Add <code>String#to_string_or_symbol</code> extension by <a href="https://github.com/Rylan12">@Rylan12</a> in https://github.com/Homebrew/brew/pull/21332</li>
+<li>Use <code>CaskStruct</code> for loading casks from the API by <a href="https://github.com/Rylan12">@Rylan12</a> in https://github.com/Homebrew/brew/pull/21333</li>
+<li>Ignore missing items when generating <code>CaskStruct</code> by <a href="https://github.com/Rylan12">@Rylan12</a> in https://github.com/Homebrew/brew/pull/21343</li>
+<li>Add <code>source</code> command to open formulae source repositories by <a href="https://github.com/p">@p</a>-linnane in https://github.com/Homebrew/brew/pull/21339</li>
+<li>Use <code>#present?</code> instead of <code>#empty?</code> to check presence in <code>CaskStruct</code> by <a href="https://github.com/Rylan12">@Rylan12</a> in https://github.com/Homebrew/brew/pull/21349</li>
+<li>docs: fix permissions and privilege explanation in FAQ by <a href="https://github.com/liuxy600">@liuxy600</a> in https://github.com/Homebrew/brew/pull/21290</li>
+<li>build(deps): bump the bundler group across 1 directory with 5 updates by <a href="https://github.com/dependabot">@dependabot</a>[bot] in https://github.com/Homebrew/brew/pull/21352</li>
+<li>Improve <code>Tab.for_name</code> to use keg where possible. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21354</li>
+<li>Cpan: update generated url by <a href="https://github.com/samford">@samford</a> in https://github.com/Homebrew/brew/pull/21353</li>
+<li>keg_relocate: add var/www for relocation by <a href="https://github.com/daeho">@daeho</a>-ro in https://github.com/Homebrew/brew/pull/21356</li>
+<li>fix(bundle): prevent autoremove from removing Brewfile packages during cleanup by <a href="https://github.com/AbdelrahmanHafez">@AbdelrahmanHafez</a> in https://github.com/Homebrew/brew/pull/21351</li>
+<li>download_queue: tweak progress output. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21357</li>
+</ul>
+<h4 id="new-contributors"><a class="toclink" href="#new-contributors">New Contributors</a></h4>
+<ul>
+<li>[@liuxy600](h</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/Homebrew/brew/releases/tag/5.0.9" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">5.0.8</div>
                             <div class="release-version ">
                                 5.0.8
@@ -1009,46 +1052,6 @@
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/Homebrew/brew/releases/tag/5.0.5" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">5.0.4</div>
-                            <div class="release-version ">
-                                5.0.4
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-12-01 14:01 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="whats-changed"><a class="toclink" href="#whats-changed">What's Changed</a></h4>
-<ul>
-<li>utils/linkage: allow checking non-brew libraries by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21115</li>
-<li>cask/audit: audit <code>conflicts_with</code> stanza by <a href="https://github.com/botantony">@botantony</a> in https://github.com/Homebrew/brew/pull/21116</li>
-<li>dev-cmd/vendor-gems: restore setting up gem environment by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21121</li>
-<li>dev-cmd: install ast bundler gems before <code>require "utils/pypi"</code> by <a href="https://github.com/ZhongRuoyu">@ZhongRuoyu</a> in https://github.com/Homebrew/brew/pull/21123</li>
-<li>cask-cookbook: clarify <code>desktop</code> and <code>launcher</code> suffix in tokens by <a href="https://github.com/bevanjkay">@bevanjkay</a> in https://github.com/Homebrew/brew/pull/21119</li>
-<li>shims/super/cc: use canonical_path on <code>&lt;sysroot&gt;/usr/lib</code> by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21122</li>
-<li>system_config: <code>typed: strict</code> by <a href="https://github.com/botantony">@botantony</a> in https://github.com/Homebrew/brew/pull/21124</li>
-<li>extend/os/mac/system_config: check for Metal Toolchain by <a href="https://github.com/p">@p</a>-linnane in https://github.com/Homebrew/brew/pull/21117</li>
-<li>test_bot: remove <code>session-manager-plugin</code> by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21127</li>
-<li>item: do not remove <code>lib</code> formulae/casks by <a href="https://github.com/botantony">@botantony</a> in https://github.com/Homebrew/brew/pull/21126</li>
-<li>Bump the "all" group with 2 updates across multiple ecosystems by <a href="https://github.com/dependabot">@dependabot</a>[bot] in https://github.com/Homebrew/brew/pull/21120</li>
-<li>test/commands_spec: write files to tmpdir by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21128</li>
-<li><code>brew uninstall</code> respects the <code>HOMEBREW_NO_INSTALL_FROM_API</code> env var by <a href="https://github.com/wheelerlaw">@wheelerlaw</a> in https://github.com/Homebrew/brew/pull/21133</li>
-<li>Update type signature for <code>==</code> by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/bre</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/Homebrew/brew/releases/tag/5.0.4" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2626,7 +2629,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2026-01-05 06:12 UTC
+                Last updated: 2026-01-06 06:10 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
