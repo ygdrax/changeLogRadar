@@ -364,11 +364,11 @@
                 <div class="stat-label">Projects Tracked</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">30</div>
+                <div class="stat-number">50</div>
                 <div class="stat-label">Total Releases</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">60.0%</div>
+                <div class="stat-number">100.0%</div>
                 <div class="stat-label">Success Rate</div>
             </div>
         </div>
@@ -844,8 +844,217 @@
                 
 
                 
-                <div class="error-message">
-                    ERROR: Error fetching releases: Failed to fetch releases after 3 attempts: 504 Server Error: Gateway Time-out for url: https://api.github.com/repos/Homebrew/brew/releases?per_page=5&page=1
+                <div class="releases">
+                    <h3 class="releases-title">Latest Releases</h3>
+
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">5.0.9</div>
+                            <div class="release-version ">
+                                5.0.9
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-01-05 15:02 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="whats-changed"><a class="toclink" href="#whats-changed">What's Changed</a></h4>
+<ul>
+<li>Document that not supporting macOS versions can get a cask rejected by <a href="https://github.com/SMillerDev">@SMillerDev</a> in https://github.com/Homebrew/brew/pull/21336</li>
+<li>Add <code>String#to_string_or_symbol</code> extension by <a href="https://github.com/Rylan12">@Rylan12</a> in https://github.com/Homebrew/brew/pull/21332</li>
+<li>Use <code>CaskStruct</code> for loading casks from the API by <a href="https://github.com/Rylan12">@Rylan12</a> in https://github.com/Homebrew/brew/pull/21333</li>
+<li>Ignore missing items when generating <code>CaskStruct</code> by <a href="https://github.com/Rylan12">@Rylan12</a> in https://github.com/Homebrew/brew/pull/21343</li>
+<li>Add <code>source</code> command to open formulae source repositories by <a href="https://github.com/p">@p</a>-linnane in https://github.com/Homebrew/brew/pull/21339</li>
+<li>Use <code>#present?</code> instead of <code>#empty?</code> to check presence in <code>CaskStruct</code> by <a href="https://github.com/Rylan12">@Rylan12</a> in https://github.com/Homebrew/brew/pull/21349</li>
+<li>docs: fix permissions and privilege explanation in FAQ by <a href="https://github.com/liuxy600">@liuxy600</a> in https://github.com/Homebrew/brew/pull/21290</li>
+<li>build(deps): bump the bundler group across 1 directory with 5 updates by <a href="https://github.com/dependabot">@dependabot</a>[bot] in https://github.com/Homebrew/brew/pull/21352</li>
+<li>Improve <code>Tab.for_name</code> to use keg where possible. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21354</li>
+<li>Cpan: update generated url by <a href="https://github.com/samford">@samford</a> in https://github.com/Homebrew/brew/pull/21353</li>
+<li>keg_relocate: add var/www for relocation by <a href="https://github.com/daeho">@daeho</a>-ro in https://github.com/Homebrew/brew/pull/21356</li>
+<li>fix(bundle): prevent autoremove from removing Brewfile packages during cleanup by <a href="https://github.com/AbdelrahmanHafez">@AbdelrahmanHafez</a> in https://github.com/Homebrew/brew/pull/21351</li>
+<li>download_queue: tweak progress output. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21357</li>
+</ul>
+<h4 id="new-contributors"><a class="toclink" href="#new-contributors">New Contributors</a></h4>
+<ul>
+<li>[@liuxy600](h</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/Homebrew/brew/releases/tag/5.0.9" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">5.0.8</div>
+                            <div class="release-version ">
+                                5.0.8
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-12-29 15:21 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="whats-changed"><a class="toclink" href="#whats-changed">What's Changed</a></h4>
+<ul>
+<li>formula: add <code>:typer</code> type completion format by <a href="https://github.com/daeho">@daeho</a>-ro in https://github.com/Homebrew/brew/pull/21287</li>
+<li>Update some block returns to use type_parameter by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21292</li>
+<li>Fix typo in test cleanup: replace <code>pgrep -9</code> with <code>pkill -9</code> by <a href="https://github.com/loplex">@loplex</a> in https://github.com/Homebrew/brew/pull/21256</li>
+<li>Fetch in parallel with <code>brew bundle</code> by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21252</li>
+<li>feat: Allow omit Authentication header, if <code>HOMEBREW_DOCKER_REGISTRY_BASIC_AUTH_TOKEN</code> is set to <code>none</code> by <a href="https://github.com/jkroepke">@jkroepke</a> in https://github.com/Homebrew/brew/pull/21278</li>
+<li>test: deprecate <code>return false</code> in test by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21296</li>
+<li>Remove unneeded T.let by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21297</li>
+<li>Replace T.cast to Bottle with flow-sensitivity by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21298</li>
+<li>bundle: replace pluralize_dependency with <code>Utils.pluralize</code> by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21299</li>
+<li>bundle/*installer: <code>typed: strict</code> by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21300</li>
+<li>fix: 'fetch': key not found: "HOMEBREW_GITHUB_PACKAGES_AUTH" (KeyError) by <a href="https://github.com/jkroepke">@jkroepke</a> in https://github.com/Homebrew/brew/pull/21302</li>
+<li>Add test for installed cask dependency status by <a href="https://github.com/HaraldNordgren">@HaraldNordgren</a> in https://github.com/Homebrew/brew/pull/21294</li>
+<li>Propose fix typos by <a href="https://github.com/jeis4wpi">@jeis4wpi</a> in https://github.com/Homebrew/brew/pull/21304</li>
+<li>cask/metadata: <code>typed: strict</code> by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21305</li>
+<li>extend/os/linux/linkage_checker: `typed: st</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/Homebrew/brew/releases/tag/5.0.8" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">5.0.7</div>
+                            <div class="release-version ">
+                                5.0.7
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-12-21 08:04 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="whats-changed"><a class="toclink" href="#whats-changed">What's Changed</a></h4>
+<ul>
+<li>curl_args: support :curl user_agent by <a href="https://github.com/samford">@samford</a> in https://github.com/Homebrew/brew/pull/21249</li>
+<li>livecheck: add user_agent and referer options by <a href="https://github.com/samford">@samford</a> in https://github.com/Homebrew/brew/pull/21253</li>
+<li>sbom: <code>typed: strict</code> by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21260</li>
+<li>dev-cmd/release: increase timeout to 15 minutes by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21246</li>
+<li>api: increase stale seconds to 7 days. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21262</li>
+<li>commands: <code>typed: strict</code> by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21255</li>
+<li>debrew: <code>typed: strict</code> by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21264</li>
+<li>Add Cargo support to <code>brew bundle</code> by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21250</li>
+<li>lazy_object: typed: strict by <a href="https://github.com/hyuraku">@hyuraku</a> in https://github.com/Homebrew/brew/pull/21263</li>
+<li>github/workflows: use ubuntu-latest whenever we use setup-homebrew. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21267</li>
+<li>gitignore: ignore tmp files. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21270</li>
+<li>Portable Ruby 3.4.8 by <a href="https://github.com/p">@p</a>-linnane in https://github.com/Homebrew/brew/pull/21265</li>
+<li>lazy_object: update block parameter to fix Ruby warning by <a href="https://github.com/p">@p</a>-linnane in https://github.com/Homebrew/brew/pull/21271</li>
+<li>cask/artifact/app: fix up permissions for globally installed apps by <a href="https://github.com/carlocab">@carlocab</a> in https://github.com/Homebrew/brew/pull/21268</li>
+<li>livecheck: add cookies and header options by <a href="https://github.com/samford">@samford</a> in https://github.com/Homebrew/brew/pull/21272<br />
+*</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/Homebrew/brew/releases/tag/5.0.7" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">5.0.6</div>
+                            <div class="release-version ">
+                                5.0.6
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-12-16 09:41 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="whats-changed"><a class="toclink" href="#whats-changed">What's Changed</a></h4>
+<ul>
+<li>Remove migration of linuxbrew-core formulae by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21195</li>
+<li>os/mac/xcode: remove obsolete PKGID by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21199</li>
+<li>Remove linuxbrew automatic git repo migration by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21200</li>
+<li>build(deps): bump the bundler group across 1 directory with 5 updates by <a href="https://github.com/dependabot">@dependabot</a>[bot] in https://github.com/Homebrew/brew/pull/21205</li>
+<li>build(deps): bump actions/checkout from 6.0.0 to 6.0.1 in the github-actions group by <a href="https://github.com/dependabot">@dependabot</a>[bot] in https://github.com/Homebrew/brew/pull/21206</li>
+<li>Fix pouring dependencies extracted by download queue by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21208</li>
+<li>cask uninstall: opt-in quit/signal on upgrade/reinstall by <a href="https://github.com/toobuntu">@toobuntu</a> in https://github.com/Homebrew/brew/pull/21130</li>
+<li>test/bundle/formula_installer_spec: avoid slow <code>brew link</code> by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21203</li>
+<li>Move to ubuntu-slim by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21196</li>
+<li>Use <code>FormulaStruct</code> when loading formulae from the API by <a href="https://github.com/Rylan12">@Rylan12</a> in https://github.com/Homebrew/brew/pull/21176</li>
+<li>formula_auditor: skip non-core compatibility bumps check by <a href="https://github.com/scpeters">@scpeters</a> in https://github.com/Homebrew/brew/pull/21184</li>
+<li>fix: Don't abort an install if a dangling tracking link exists by <a href="https://github.com/boblail">@boblail</a> in https://github.com/Homebrew/brew/pull/21213</li>
+<li>tests: speed up cask tests by <a href="https://github.com/bevanjkay">@bevanjkay</a> in https://github.com/Homebrew/brew/pull/21210</li>
+<li>Add all <code>deprecate!</code> and <code>disable!</code> arguments to the formula API by <a href="https://github.com/Rylan12">@Rylan12</a></li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/Homebrew/brew/releases/tag/5.0.6" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">5.0.5</div>
+                            <div class="release-version ">
+                                5.0.5
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-12-08 08:44 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="whats-changed"><a class="toclink" href="#whats-changed">What's Changed</a></h4>
+<ul>
+<li>shellenv: prefer lsof to ps to read the command for a process by <a href="https://github.com/bolinfest">@bolinfest</a> in https://github.com/Homebrew/brew/pull/21157</li>
+<li>dev-cmd/contributions: update quarter dates. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21155</li>
+<li>Overhaul Homebrew governance by <a href="https://github.com/p">@p</a>-linnane in https://github.com/Homebrew/brew/pull/21156</li>
+<li>formula_auditor: audit <code>revision</code> and <code>compatibility_version</code> by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/20936</li>
+<li>Add Lead Maintainers to README and manpages. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21159</li>
+<li>README: fix broken links. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21160</li>
+<li>utils/git: <code>typed: strict</code> by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21162</li>
+<li>compilers: <code>typed: strict</code> by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21163</li>
+<li>Update pull request documentation for casks by <a href="https://github.com/nertzy">@nertzy</a> in https://github.com/Homebrew/brew/pull/21161</li>
+<li>Suppress warning from lsof by <a href="https://github.com/neuralsandwich">@neuralsandwich</a> in https://github.com/Homebrew/brew/pull/21164</li>
+<li>compilers: add comment on older GCC usage by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21168</li>
+<li>unversioned_cask_checker: <code>typed: strict</code> by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21166</li>
+<li>attestation: remove <code>T.must</code> by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21167</li>
+<li>extend/os/linux/hardware/cpu: <code>typed: strict</code> by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/pull/21171</li>
+<li>dev-cmd/test-bot: remove unused <code>--concurrent-downloads</code> by <a href="https://github.com/cho">@cho</a>-m in https://github.com/Homebrew/brew/p</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/Homebrew/brew/releases/tag/5.0.5" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
                 </div>
                 
             </div>
@@ -1009,6 +1218,54 @@
                 <div class="releases">
                     <h3 class="releases-title">Latest Releases</h3>
 
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">Python Polars 1.37.0</div>
+                            <div class="release-version ">
+                                py-1.37.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-01-10 12:28 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="performance-improvements"><a class="toclink" href="#performance-improvements">🚀 Performance improvements</a></h4>
+<ul>
+<li>Speed up <code>SQL</code> interface "ORDER BY" clauses (<a href="https://github.com/owner/repo/issues/26037">#26037</a>)</li>
+<li>Add fast kernel for is_nan and use it for numpy NaN-&gt;null conversion (<a href="https://github.com/owner/repo/issues/26034">#26034</a>)</li>
+<li>Optimize ArrayFromIter implementations for ObjectArray (<a href="https://github.com/owner/repo/issues/25712">#25712</a>)</li>
+<li>New streaming NDJSON sink pipeline (<a href="https://github.com/owner/repo/issues/25948">#25948</a>)</li>
+<li>New streaming CSV sink pipeline (<a href="https://github.com/owner/repo/issues/25900">#25900</a>)</li>
+<li>Dispatch partitioned usage of <code>sink_*</code> functions to new-streaming by default (<a href="https://github.com/owner/repo/issues/25910">#25910</a>)</li>
+<li>Replace ryu with faster zmij (<a href="https://github.com/owner/repo/issues/25885">#25885</a>)</li>
+<li>Reduce memory usage for .item() count in grouped first/last (<a href="https://github.com/owner/repo/issues/25787">#25787</a>)</li>
+<li>Skip schema inference if schema provided for <code>scan_csv/ndjson</code> (<a href="https://github.com/owner/repo/issues/25757">#25757</a>)</li>
+<li>Add width-aware chunking to prevent degradation with wide data (<a href="https://github.com/owner/repo/issues/25764">#25764</a>)</li>
+<li>Use new sink pipeline for write/sink_ipc (<a href="https://github.com/owner/repo/issues/25746">#25746</a>)</li>
+<li>Reduce memory usage when scanning multiple parquet files in streaming (<a href="https://github.com/owner/repo/issues/25747">#25747</a>)</li>
+<li>Don't call cluster_with_columns optimization if not needed (<a href="https://github.com/owner/repo/issues/25724">#25724</a>)</li>
+</ul>
+<h4 id="enhancements"><a class="toclink" href="#enhancements">✨ Enhancements</a></h4>
+<ul>
+<li>Add new <code>pl.PartitionBy</code> API (<a href="https://github.com/owner/repo/issues/26004">#26004</a>)</li>
+<li>ArrowStreamExportable and sink_delta (<a href="https://github.com/owner/repo/issues/25994">#25994</a>)</li>
+<li>Release musl builds (<a href="https://github.com/owner/repo/issues/25894">#25894</a>)</li>
+<li>Implement streaming decompression for CSV <code>COUNT(*)</code> fast path (<a href="https://github.com/owner/repo/issues/25988">#25988</a>)</li>
+<li>Add nulls support for rolling_mean_by (<a href="https://github.com/owner/repo/issues/25917">#25917</a>)</li>
+<li>Add lazy <code>collect_all</code> ([#2599</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/pola-rs/polars/releases/tag/py-1.37.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
                     
                     <div class="release">
                         <div class="release-header">
@@ -1189,53 +1446,6 @@
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/pola-rs/polars/releases/tag/py-1.35.2" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">Rust Polars 0.52.0</div>
-                            <div class="release-version ">
-                                rs-0.52.0
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-11-03 15:18 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="highlights"><a class="toclink" href="#highlights">🏆 Highlights</a></h4>
-<ul>
-<li>Add <code>LazyFrame.{sink,collect}_batches</code> (<a href="https://github.com/owner/repo/issues/23980">#23980</a>)</li>
-<li>Deterministic import order for Python Polars package variants (<a href="https://github.com/owner/repo/issues/24531">#24531</a>)</li>
-</ul>
-<h4 id="performance-improvements"><a class="toclink" href="#performance-improvements">🚀 Performance improvements</a></h4>
-<ul>
-<li>Lazy gather for <code>{forward,backward}_fill</code> in group-by contexts (<a href="https://github.com/owner/repo/issues/25115">#25115</a>)</li>
-<li>Don't recompute full rolling moment window when NaNs/nulls leave the window (<a href="https://github.com/owner/repo/issues/25078">#25078</a>)</li>
-<li>Skip filtering scan IR if no paths were filtered (<a href="https://github.com/owner/repo/issues/25037">#25037</a>)</li>
-<li>Optimize ipc stream read performance (<a href="https://github.com/owner/repo/issues/24671">#24671</a>)</li>
-<li>Bump foldhash to 0.2.0 and hashbrown to 0.16.0 (<a href="https://github.com/owner/repo/issues/25014">#25014</a>)</li>
-<li>Lower <code>unique</code> to native group-by and speed up <code>n_unique</code> in group-by context (<a href="https://github.com/owner/repo/issues/24976">#24976</a>)</li>
-<li>Better parallelize <code>take{_slice,}_unchecked</code> (<a href="https://github.com/owner/repo/issues/24980">#24980</a>)</li>
-<li>Implement native <code>skew</code> and <code>kurtosis</code> in group-by context (<a href="https://github.com/owner/repo/issues/24961">#24961</a>)</li>
-<li>Use native group-by aggregations for <code>bitwise_*</code> operations (<a href="https://github.com/owner/repo/issues/24935">#24935</a>)</li>
-<li>Address <code>group_by_dynamic</code> slowness in sparse data (<a href="https://github.com/owner/repo/issues/24916">#24916</a>)</li>
-<li>Native <code>filter/drop_nulls/drop_nans</code> in group-by context (<a href="https://github.com/owner/repo/issues/24897">#24897</a>)</li>
-<li>Implement <code>cumulative_eval</code> using the group-by engine (<a href="https://github.com/owner/repo/issues/24889">#24889</a>)</li>
-<li>Prevent generation of copies of <code>Dataframe</code>s in <code>DslPlan</code> serialization (<a href="https://github.com/owner/repo/issues/24852">#24852</a>)</li>
-<li>Implement native <code>null_count</code>, <code>any</code> and <code>all</code> group-by aggregations (<a href="https://github.com/owner/repo/issues/24859">#24859</a>)</li>
-<li>Speed up <code>reverse</code> in group-by context (<a href="https://github.com/owner/repo/issues/24855">#24855</a>)</li>
-<li>P</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/pola-rs/polars/releases/tag/rs-0.52.0" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -1538,8 +1748,208 @@
                 
 
                 
-                <div class="error-message">
-                    ERROR: Error fetching releases: Failed to fetch releases after 3 attempts: 504 Server Error: Gateway Time-out for url: https://api.github.com/repos/fastapi/typer/releases?per_page=5&page=1
+                <div class="releases">
+                    <h3 class="releases-title">Latest Releases</h3>
+
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">0.21.1</div>
+                            <div class="release-version ">
+                                0.21.1
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-01-06 11:20 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
+<ul>
+<li>🐛 Fix escaping in help text when <code>rich</code> is installed but not used. PR <a href="https://github.com/fastapi/typer/pull/1089">[#1089](https://github.com/owner/repo/issues/1089)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
+</ul>
+<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
+<ul>
+<li>⬆️  Migrate to uv. PR <a href="https://github.com/fastapi/typer/pull/1472">[#1472](https://github.com/owner/repo/issues/1472)</a> by <a href="https://github.com/DoctorJohn">[@DoctorJohn](https://github.com/DoctorJohn)</a>.</li>
+<li>⬆ Bump mypy from 1.18.2 to 1.19.1. PR <a href="https://github.com/fastapi/typer/pull/1469">[#1469](https://github.com/owner/repo/issues/1469)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>⬆ Bump actions/checkout from 5 to 6. PR <a href="https://github.com/fastapi/typer/pull/1456">[#1456](https://github.com/owner/repo/issues/1456)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>⬆ Bump actions/download-artifact from 6 to 7. PR <a href="https://github.com/fastapi/typer/pull/1444">[#1444](https://github.com/owner/repo/issues/1444)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>⬆ Bump ruff from 0.14.8 to 0.14.10. PR <a href="https://github.com/fastapi/typer/pull/1449">[#1449](https://github.com/owner/repo/issues/1449)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>⬆ Bump mkdocs-material from 9.7.0 to 9.7.1. PR <a href="https://github.com/fastapi/typer/pull/1446">[#1446](https://github.com/owner/repo/issues/1446)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>⬆ Bump actions/upload-artifact from 5 to 6. PR <a href="https://github.com/fastapi/typer/pull/1443">[#1443](https://github.com/owner/repo/issues/1443)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>⬆ Bump actions/cache from 4 to 5. PR [<a href="https://github.com/owner/repo/issues/1441">#1441</a>](https://github.</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/typer/releases/tag/0.21.1" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">0.21.0</div>
+                            <div class="release-version ">
+                                0.21.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-12-25 09:54 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="breaking-changes"><a class="toclink" href="#breaking-changes">Breaking Changes</a></h5>
+<ul>
+<li>➖ Drop support for Python 3.8. PR <a href="https://github.com/fastapi/typer/pull/1464">[#1464](https://github.com/owner/repo/issues/1464)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+<li>➖ Drop support for Python 3.8 in CI. PR <a href="https://github.com/fastapi/typer/pull/1463">[#1463](https://github.com/owner/repo/issues/1463)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a> and <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+</ul>
+<h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
+<ul>
+<li>📝 Update code examples to Python 3.9. PR <a href="https://github.com/fastapi/typer/pull/1459">[#1459](https://github.com/owner/repo/issues/1459)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
+</ul>
+<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
+<ul>
+<li>💚 Move <code>ruff</code> dependency to shared <code>requirements-docs-tests.txt</code> to fix "Build docs" workflow in CI. PR <a href="https://github.com/fastapi/typer/pull/1458">[#1458](https://github.com/owner/repo/issues/1458)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
+<li>⬆ Bump markdown-include-variants from 0.0.5 to 0.0.8. PR <a href="https://github.com/fastapi/typer/pull/1442">[#1442](https://github.com/owner/repo/issues/1442)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>👷 Add pre-commit workflow. PR <a href="https://github.com/fastapi/typer/pull/1453">[#1453](https://github.com/owner/repo/issues/1453)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+<li>👷 Configure coverage, error on main tests, don't wait for Smokeshow. PR <a href="https://github.com/fastapi/typer/pull/1448">[#1448](https://github.com/owner/repo/issues/1448)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
+<li>👷 Run Smokeshow always, even on test failures. PR <a href="https://github.com/fastapi/typer/pull/1447">[#1447](https://github.com/owner/repo/issues/1447)</a> by [<a href="https://github.com/YuriiMotov">@YuriiMotov</a>](https://github.com/</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/typer/releases/tag/0.21.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">0.20.1</div>
+                            <div class="release-version ">
+                                0.20.1
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-12-19 16:48 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="features"><a class="toclink" href="#features">Features</a></h5>
+<ul>
+<li>✨ Add support for standard tracebacks via the env <code>TYPER_STANDARD_TRACEBACK</code>. PR <a href="https://github.com/fastapi/typer/pull/1299">[#1299](https://github.com/owner/repo/issues/1299)</a> by <a href="https://github.com/colin-nolan">[@colin](https://github.com/colin)-nolan</a>.</li>
+</ul>
+<h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
+<ul>
+<li>🐛 Ensure that <code>options_metavar</code> is passed through correctly. PR <a href="https://github.com/fastapi/typer/pull/816">[#816](https://github.com/owner/repo/issues/816)</a> by <a href="https://github.com/gar1t">[@gar1t](https://github.com/gar1t)</a>.</li>
+<li>🐛 Ensure an optional argument is shown in brackets, even when <code>metavar</code> is set. PR <a href="https://github.com/fastapi/typer/pull/1409">[#1409](https://github.com/owner/repo/issues/1409)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
+<li>🐛 Ensure that the default <code>rich_markup_mode</code> is interpreted correctly. PR <a href="https://github.com/fastapi/typer/pull/1304">[#1304](https://github.com/owner/repo/issues/1304)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
+</ul>
+<h5 id="refactors"><a class="toclink" href="#refactors">Refactors</a></h5>
+<ul>
+<li>♻️ Refactor the handling of <code>shellingham</code>. PR <a href="https://github.com/fastapi/typer/pull/1347">[#1347](https://github.com/owner/repo/issues/1347)</a> by <a href="https://github.com/nathanjmcdougall">[@nathanjmcdougall](https://github.com/nathanjmcdougall)</a>.</li>
+</ul>
+<h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
+<ul>
+<li>📝 Ensure that bold letters are rendered correctly in <code>printing.md</code>. PR <a href="https://github.com/fastapi/typer/pull/1365">[#1365](https://github.com/owner/repo/issues/1365)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
+<li>🩺 Update test badge to only reflect pushes to <code>master</code>. PR <a href="https://github.com/fastapi/typer/pull/1414">[#1414](https://github.com/owner/repo/issues/1414)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
+<li>📝 Update console output on the Rich help formatting page. PR <a href="https://github.com/fastapi/typer/pull/1430">[#1430](https://github.com/owner/repo/issues/1430)</a> by [<a href="https://github.com/svlandeg">@svlandeg</a>](https</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/typer/releases/tag/0.20.1" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">0.20.0</div>
+                            <div class="release-version ">
+                                0.20.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-10-20 17:03 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="features"><a class="toclink" href="#features">Features</a></h5>
+<ul>
+<li>✨ Enable command suggestions on typo by default. PR <a href="https://github.com/fastapi/typer/pull/1371">[#1371](https://github.com/owner/repo/issues/1371)</a> by <a href="https://github.com/savannahostrowski">[@savannahostrowski](https://github.com/savannahostrowski)</a>.</li>
+</ul>
+<h5 id="upgrades"><a class="toclink" href="#upgrades">Upgrades</a></h5>
+<ul>
+<li>⬆️ Add support for Python 3.14. PR <a href="https://github.com/fastapi/typer/pull/1372">[#1372](https://github.com/owner/repo/issues/1372)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
+</ul>
+<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
+<ul>
+<li>👷 Add nightly workflow to run tests against CPython main branch. PR <a href="https://github.com/fastapi/typer/pull/1374">[#1374](https://github.com/owner/repo/issues/1374)</a> by <a href="https://github.com/savannahostrowski">[@savannahostrowski](https://github.com/savannahostrowski)</a>.</li>
+<li>⬆ Bump mkdocs-material from 9.6.21 to 9.6.22. PR <a href="https://github.com/fastapi/typer/pull/1377">[#1377](https://github.com/owner/repo/issues/1377)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>🔧 Configure reminder for <code>waiting</code> label in <code>issue-manager</code>. PR <a href="https://github.com/fastapi/typer/pull/1378">[#1378](https://github.com/owner/repo/issues/1378)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
+<li>⬆ Bump ruff from 0.13.3 to 0.14.0. PR <a href="https://github.com/fastapi/typer/pull/1368">[#1368](https://github.com/owner/repo/issues/1368)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>⬆ [pre-commit.ci] pre-commit autoupdate. PR <a href="https://github.com/fastapi/typer/pull/1376">[#1376](https://github.com/owner/repo/issues/1376)</a> by <a href="https://github.com/apps/pre-commit-ci">[@pre](https://github.com/pre)-commit-ci[bot]</a>.</li>
+<li>⬆ Bump mkdocs-macros-plugin from 1.3.9 to 1.4.0. PR <a href="https://github.com/fastapi/typer/pull/1354">[#1354](https://github.com/owner/repo/issues/1354)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>⬆ Bump mkdocs</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/typer/releases/tag/0.20.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">0.19.2</div>
+                            <div class="release-version ">
+                                0.19.2
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-09-23 09:47 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
+<ul>
+<li>🐛  Fix list convertor with an empty list default factory . PR <a href="https://github.com/fastapi/typer/pull/1350">[#1350](https://github.com/owner/repo/issues/1350)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
+</ul>
+<h5 id="refactors"><a class="toclink" href="#refactors">Refactors</a></h5>
+<ul>
+<li>🔥 Drop support for Python 3.7. PR <a href="https://github.com/fastapi/typer/pull/830">[#830](https://github.com/owner/repo/issues/830)</a> by <a href="https://github.com/kinuax">[@kinuax](https://github.com/kinuax)</a>.</li>
+</ul>
+<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
+<ul>
+<li>⬆ Bump ruff from 0.13.0 to 0.13.1. PR <a href="https://github.com/fastapi/typer/pull/1339">[#1339](https://github.com/owner/repo/issues/1339)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>⬆ [pre-commit.ci] pre-commit autoupdate. PR <a href="https://github.com/fastapi/typer/pull/1351">[#1351](https://github.com/owner/repo/issues/1351)</a> by <a href="https://github.com/apps/pre-commit-ci">[@pre](https://github.com/pre)-commit-ci[bot]</a>.</li>
+<li>⬆ Bump markdown-include-variants from 0.0.4 to 0.0.5. PR <a href="https://github.com/fastapi/typer/pull/1348">[#1348](https://github.com/owner/repo/issues/1348)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+</ul></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/typer/releases/tag/0.19.2" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
                 </div>
                 
             </div>
@@ -1558,8 +1968,148 @@
                 
 
                 
-                <div class="error-message">
-                    ERROR: Error fetching releases: Failed to fetch releases after 3 attempts: 504 Server Error: Gateway Time-out for url: https://api.github.com/repos/ahmetb/kubectx/releases?per_page=5&page=1
+                <div class="releases">
+                    <h3 class="releases-title">Latest Releases</h3>
+
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">v0.9.5</div>
+                            <div class="release-version ">
+                                0.9.5
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2023-07-14 03:24 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="changelog"><a class="toclink" href="#changelog">Changelog</a></h4>
+<ul>
+<li>92e5b5f Release v0.9.5</li>
+</ul></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/ahmetb/kubectx/releases/tag/v0.9.5" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">v0.9.4</div>
+                            <div class="release-version ">
+                                0.9.4
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2021-07-06 22:32 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="changelog"><a class="toclink" href="#changelog">Changelog</a></h4>
+<p>979012e Release v0.9.4</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/ahmetb/kubectx/releases/tag/v0.9.4" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">v0.9.3</div>
+                            <div class="release-version ">
+                                0.9.3
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2021-02-26 19:41 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="changelog"><a class="toclink" href="#changelog">Changelog</a></h4>
+<p>3504e66 Provide binary release for darwin/arm64</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/ahmetb/kubectx/releases/tag/v0.9.3" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">v0.9.2</div>
+                            <div class="release-version ">
+                                0.9.2
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2021-02-24 19:27 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="changelog"><a class="toclink" href="#changelog">Changelog</a></h4>
+<p>55548e1 Release v0.9.2</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/ahmetb/kubectx/releases/tag/v0.9.2" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">v0.9.1</div>
+                            <div class="release-version ">
+                                0.9.1
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2020-06-30 20:07 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><blockquote>
+<p><strong>NOTE:</strong> The <strong>stable</strong> versions of <code>kubectx</code> and <code>kubens</code> are the Bash script implementations (i.e. the <code>./kubectx</code> and <code>./kubens</code> files below). Go-based implementations are still <strong>unstable</strong> and are work-in-progress.</p>
+</blockquote>
+<h4 id="changelog"><a class="toclink" href="#changelog">Changelog</a></h4>
+<ul>
+<li>[Go implementation] Fix typo in kubens --help</li>
+<li>[Go implementation] Release binaries for arm64 (armv8) and armhf (armv6), armv7</li>
+<li>[Go implementation] Fix colorized outputs on windows</li>
+<li>[Go implementation] Handle context names with <code>:</code> character (e.g. AWS EKS)</li>
+<li>[Go implementation] Switching with kubens no longer requires "List Namespace" permissions</li>
+<li>[Go implementation] Fix messages while interactively switching context with fzf(1).</li>
+</ul>
+<h4 id="known-issues"><a class="toclink" href="#known-issues">Known Issues</a></h4>
+<ul>
+<li>[Go implementation] kubectx: doesn't work with multiple kubeconfig files (<a href="https://github.com/owner/repo/issues/211">#211</a>)</li>
+<li>[Go implementation] kubens: doesn't work with kubeconfig files that have relative file paths (<a href="https://github.com/owner/repo/issues/229">#229</a>)</li>
+<li>[Go implementation] kubectx: 240</li>
+</ul></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/ahmetb/kubectx/releases/tag/v0.9.1" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
                 </div>
                 
             </div>
@@ -1934,8 +2484,196 @@ curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astr</p>
                 
 
                 
-                <div class="error-message">
-                    ERROR: Error fetching releases: Failed to fetch releases after 3 attempts: 504 Server Error: Gateway Time-out for url: https://api.github.com/repos/vllm-project/vllm/releases?per_page=5&page=1
+                <div class="releases">
+                    <h3 class="releases-title">Latest Releases</h3>
+
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">v0.13.0</div>
+                            <div class="release-version ">
+                                0.13.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-12-19 03:02 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h3 id="vllm-v0130-release-notes-highlights"><a class="toclink" href="#vllm-v0130-release-notes-highlights">vLLM v0.13.0 Release Notes Highlights</a></h3>
+<h4 id="highlights"><a class="toclink" href="#highlights">Highlights</a></h4>
+<p>This release features <strong>442 commits from 207 contributors (61 new contributors)!</strong></p>
+<p><strong>Breaking Changes</strong>: This release includes deprecation removals, PassConfig flag renames, and attention configuration changes from environment variables to CLI arguments. Please review the breaking changes section carefully before upgrading.</p>
+<h5 id="model-support"><a class="toclink" href="#model-support">Model Support</a></h5>
+<ul>
+<li><strong>New models</strong>: BAGEL (AR only) (<a href="https://github.com/owner/repo/issues/28439">#28439</a>), AudioFlamingo3 (<a href="https://github.com/owner/repo/issues/30539">#30539</a>), JAIS 2 (<a href="https://github.com/owner/repo/issues/30188">#30188</a>), latent MoE architecture support (<a href="https://github.com/owner/repo/issues/30203">#30203</a>).</li>
+<li><strong>Tool parsers</strong>: DeepSeek-V3.2 (<a href="https://github.com/owner/repo/issues/29848">#29848</a>), Gigachat 3 (<a href="https://github.com/owner/repo/issues/29905">#29905</a>), Holo2 reasoning (<a href="https://github.com/owner/repo/issues/30048">#30048</a>).</li>
+<li><strong>Model enhancements</strong>: Qwen3-VL embeddings support (<a href="https://github.com/owner/repo/issues/30037">#30037</a>), Qwen3-VL EVS (Efficient Video Sampling) (<a href="https://github.com/owner/repo/issues/29752">#29752</a>), DeepSeek V3.2 proper <code>drop_thinking</code> logic (<a href="https://github.com/owner/repo/issues/30490">#30490</a>), DeepSeek V3.2 top-k fix (<a href="https://github.com/owner/repo/issues/27568">#27568</a>).</li>
+<li><strong>Task expansion</strong>: Automatic TokenClassification model conversion (<a href="https://github.com/owner/repo/issues/30666">#30666</a>), Ultravox v0.7 transformer projector (<a href="https://github.com/owner/repo/issues/30089">#30089</a>).</li>
+<li><strong>Quantization</strong>: BitsAndBytes for Qwen3-Omni-MoE (<a href="https://github.com/owner/repo/issues/29896">#29896</a>).</li>
+<li><strong>Speculative decoding</strong>: Eagle/Eagle3 Transformers backend (<a href="https://github.com/owner/repo/issues/30340">#30340</a>), Mamba <code>selective_state_update</code> spec decode (<a href="https://github.com/owner/repo/issues/29488">#29488</a>).</li>
+</ul>
+<h5 id="engine-core"><a class="toclink" href="#engine-core">Engine Core</a></h5>
+<ul>
+<li><strong>Compilation</strong>: Conditional compilation via <code>compile_ranges</code> for selective kernel compilation</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: khluu</span>
+                            <a href="https://github.com/vllm-project/vllm/releases/tag/v0.13.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">v0.12.0</div>
+                            <div class="release-version ">
+                                0.12.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-12-03 09:36 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h3 id="vllm-v0120-release-notes-highlights"><a class="toclink" href="#vllm-v0120-release-notes-highlights">vLLM v0.12.0 Release Notes Highlights</a></h3>
+<h4 id="highlights"><a class="toclink" href="#highlights">Highlights</a></h4>
+<p>This release features 474 commits from 213 contributors (57 new)！</p>
+<p><strong>Breaking Changes</strong>: This release includes PyTorch 2.9.0 upgrade (CUDA 12.9), V0 deprecations including <code>xformers</code> backend, and scheduled removals - please review the changelog carefully.</p>
+<p><strong>Major Features</strong>:<br />
+* <strong>EAGLE Speculative Decoding Improvements</strong>: Multi-step CUDA graph support (<a href="https://github.com/owner/repo/issues/29559">#29559</a>), DP&gt;1 support (<a href="https://github.com/owner/repo/issues/26086">#26086</a>), and multimodal support with Qwen3VL (<a href="https://github.com/owner/repo/issues/29594">#29594</a>).<br />
+* <strong>Significant Performance Optimizations</strong>: 18.1% throughput improvement from batch invariant BMM (<a href="https://github.com/owner/repo/issues/29345">#29345</a>), 2.2% throughput improvement from shared experts overlap (<a href="https://github.com/owner/repo/issues/28879">#28879</a>).<br />
+* <strong>AMD ROCm Expansion</strong>: DeepSeek v3.2 + SparseMLA support (<a href="https://github.com/owner/repo/issues/26670">#26670</a>), FP8 MLA decode (<a href="https://github.com/owner/repo/issues/28032">#28032</a>), AITER attention backend (<a href="https://github.com/owner/repo/issues/28701">#28701</a>).</p>
+<h5 id="model-support"><a class="toclink" href="#model-support">Model Support</a></h5>
+<ul>
+<li><strong>New model families</strong>: PLaMo-3 (<a href="https://github.com/owner/repo/issues/28834">#28834</a>), OpenCUA-7B (<a href="https://github.com/owner/repo/issues/29068">#29068</a>), HunyuanOCR (<a href="https://github.com/owner/repo/issues/29327">#29327</a>), Mistral Large 3 and Ministral 3 (<a href="https://github.com/owner/repo/issues/29757">#29757</a>).</li>
+<li><strong>Format support</strong>: Gemma3 GGUF multimodal support (<a href="https://github.com/owner/repo/issues/27772">#27772</a>).</li>
+<li><strong>Multimodal enhancements</strong>: Qwen3 Omni audio-in-video support (<a href="https://github.com/owner/repo/issues/27721">#27721</a>), Eagle3 multimodal support for Qwen3VL (<a href="https://github.com/owner/repo/issues/29594">#29594</a>).</li>
+<li><strong>Performance</strong>: QwenVL cos/sin cache optimization (<a href="https://github.com/owner/repo/issues/28798">#28798</a>).</li>
+</ul>
+<h5 id="engine-core"><a class="toclink" href="#engine-core">Engine Core</a></h5>
+<ul>
+<li>**GPU Model Runner V2 (Experimen</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: khluu</span>
+                            <a href="https://github.com/vllm-project/vllm/releases/tag/v0.12.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">v0.11.2</div>
+                            <div class="release-version ">
+                                0.11.2
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-20 07:29 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><p>This release includes 4 bug fixes on top of <code>v0.11.1</code>:<br />
+- [BugFix] Ray with multiple nodes (https://github.com/vllm-project/vllm/pull/28873)<br />
+- [BugFix] Fix false assertion with spec-decode=[2,4,..] and TP&gt;2 (https://github.com/vllm-project/vllm/pull/29036)<br />
+- [BugFix] Fix async-scheduling + FlashAttn MLA (https://github.com/vllm-project/vllm/pull/28990)<br />
+- [NVIDIA] Guard SM100 CUTLASS MoE macro to SM100 builds v2 (https://github.com/vllm-project/vllm/pull/28938)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: khluu</span>
+                            <a href="https://github.com/vllm-project/vllm/releases/tag/v0.11.2" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">v0.11.1</div>
+                            <div class="release-version ">
+                                0.11.1
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-11-18 23:03 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="highlights"><a class="toclink" href="#highlights">Highlights</a></h4>
+<p>This release includes 1456 commits from 449 contributors (184 new contributors)!</p>
+<p>Key changes include:<br />
+* <strong>PyTorch 2.9.0 + CUDA 12.9.1</strong>: Updated the default CUDA build to <code>torch==2.9.0+cu129</code>, enabling Inductor partitioning and landing multiple fixes in graph-partition rules and compile-cache integration.<br />
+* <strong>Batch-invariant <code>torch.compile</code></strong>: Generalized batch-invariant support across attention and MoE backends, with explicit support for DeepGEMM and FlashInfer on Hopper and Blackwell GPUs.<br />
+* <strong>Robust async scheduling</strong>: Fixed several correctness and stability issues in async scheduling, especially when combined with chunked prefill, structured outputs, priority scheduling, MTP, and DeepEP / DCP. We expect <code>--async-scheduling</code> to be enabled by default in the next release.<br />
+* <strong>Stronger scheduler + KV ecosystem</strong>: Improved test coverage in CI and made scheduler behavior more robust with KV connectors, prefix caching, and multi-node deployments.<br />
+* <strong>Anthropic API Support</strong>: Added support for the <code>/v1/messages</code> endpoint, allowing users to interact with <code>vllm serve</code> using Anthropic-compatible clients.</p>
+<p>Detailed release notes will be updated in the next few days.</p>
+<h4 id="whats-changed"><a class="toclink" href="#whats-changed">What's Changed</a></h4>
+<ul>
+<li>[Bugfix] Improve GLM4 MoE Reasoning Parser's is_reasoning_end Condition (<a href="https://github.com/frankwang28">@frankwang28</a> <a href="https://github.com/owner/repo/issues/25355">#25355</a>)</li>
+<li>[Docs] Add Toronto Meetup (<a href="https://github.com/mgoin">@mgoin</a> <a href="https://github.com/owner/repo/issues/25773">#25773</a>)</li>
+<li>[CI] Add E2E Blackwell Quantized MoE Test (<a href="https://github.com/mgoin">@mgoin</a> <a href="https://github.com/owner/repo/issues/25723">#25723</a>)</li>
+<li>[V1] address post issues related to <a href="https://github.com/owner/repo/issues/20059">#20059</a> (part 1); cascade attention reenable by default (<a href="https://github.com/fhl2000">@fhl2000</a> <a href="https://github.com/owner/repo/issues/23046">#23046</a>)</li>
+<li>[CI] Fix FlashInfer AOT in release docker image (<a href="https://github.com/mgoin">@mgoin</a> [#25730](https://github.c</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: khluu</span>
+                            <a href="https://github.com/vllm-project/vllm/releases/tag/v0.11.1" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">v0.11.0</div>
+                            <div class="release-version ">
+                                0.11.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2025-10-02 19:17 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="highlights"><a class="toclink" href="#highlights">Highlights</a></h4>
+<p>This release features 538 commits, 207 contributors (65 new contributors)!</p>
+<ul>
+<li>This release completes the removal of V0 engine. V0 engine code including AsyncLLMEngine, LLMEngine, MQLLMEngine, all attention backends, and related components have been removed. <strong>V1 is the only engine in the codebase now.</strong></li>
+<li>This releases turns on <strong>FULL_AND_PIECEWISE as the CUDA graph mode default</strong>. This should provide better out of the box performance for most models, particularly fine-grained MoEs, while preserving compatibility with existing models supporting only PIECEWISE mode.</li>
+</ul>
+<p>Note: In v0.11.0 (and v0.10.2), <code>--async-scheduling</code> will produce gibberish output in some cases such as preemption and others. This functionality is correct in v0.10.1. We are actively fixing it for the next version. </p>
+<h5 id="model-support"><a class="toclink" href="#model-support">Model Support</a></h5>
+<ul>
+<li>New architectures: DeepSeek-V3.2-Exp (<a href="https://github.com/owner/repo/issues/25896">#25896</a>), Qwen3-VL series (<a href="https://github.com/owner/repo/issues/24727">#24727</a>), Qwen3-Next (<a href="https://github.com/owner/repo/issues/24526">#24526</a>), OLMo3 (<a href="https://github.com/owner/repo/issues/24534">#24534</a>), LongCat-Flash (<a href="https://github.com/owner/repo/issues/23991">#23991</a>), Dots OCR (<a href="https://github.com/owner/repo/issues/24645">#24645</a>), Ling2.0 (<a href="https://github.com/owner/repo/issues/24627">#24627</a>), CWM (<a href="https://github.com/owner/repo/issues/25611">#25611</a>).</li>
+<li>Encoders: RADIO encoder support (<a href="https://github.com/owner/repo/issues/24595">#24595</a>), Transformers backend support for encoder-only models (<a href="https://github.com/owner/repo/issues/25174">#25174</a>).</li>
+<li>Task expansion: BERT token classification/NER (<a href="https://github.com/owner/repo/issues/24872">#24872</a>), multimodal models for pooling tasks (<a href="https://github.com/owner/repo/issues/24451">#24451</a>).</li>
+<li>Data parallel for vision encoders: InternVL (<a href="https://github.com/owner/repo/issues/23909">#23909</a>), Qwen2-VL (<a href="https://github.com/owner/repo/issues/25445">#25445</a>), Qwen3-VL ([#24955](https://github.com/owner/re</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: simon-mo</span>
+                            <a href="https://github.com/vllm-project/vllm/releases/tag/v0.11.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
                 </div>
                 
             </div>
@@ -1944,7 +2682,7 @@ curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astr</p>
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2026-01-10 06:10 UTC
+                Last updated: 2026-01-11 06:09 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
