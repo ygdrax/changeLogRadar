@@ -2150,6 +2150,61 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.9.25</div>
+                            <div class="release-version ">
+                                0.9.25
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-01-13 23:24 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2026-01-13.</p>
+<h5 id="python"><a class="toclink" href="#python">Python</a></h5>
+<ul>
+<li>Add CPython 3.15.0a4</li>
+<li>Upgrade Tcl/Tk used by CPython to 9.0</li>
+</ul>
+<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
+<ul>
+<li>Add <code>--compile-bytecode</code> to <code>uv python install</code> and <code>uv python upgrade</code> to compile the standard library (<a href="https://github.com/astral-sh/uv/pull/17088">[#17088](https://github.com/owner/repo/issues/17088)</a>)</li>
+<li>Allow disabling <code>exclude-newer</code> per package (<a href="https://github.com/astral-sh/uv/pull/16854">[#16854](https://github.com/owner/repo/issues/16854)</a>)</li>
+<li>Broadcast <code>WM_SETTINGCHANGE</code> on <code>uv tool update-shell</code> (<a href="https://github.com/astral-sh/uv/pull/17404">[#17404](https://github.com/owner/repo/issues/17404)</a>)</li>
+</ul>
+<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
+<ul>
+<li>Detect workspace from <code>uv run</code> target (<a href="https://github.com/astral-sh/uv/pull/17423">[#17423](https://github.com/owner/repo/issues/17423)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>Avoid unwrapping size for file responses (<a href="https://github.com/astral-sh/uv/pull/17434">[#17434](https://github.com/owner/repo/issues/17434)</a>)</li>
+<li>Use keyring authentication when retrieving <code>tool[@latest](https://github.com/latest)</code> version (<a href="https://github.com/astral-sh/uv/pull/17448">[#17448](https://github.com/owner/repo/issues/17448)</a>)</li>
+<li>Use latest Pyodide version for each python version (<a href="https://github.com/astral-sh/uv/pull/17372">[#17372](https://github.com/owner/repo/issues/17372)</a>)</li>
+<li>Improve trampoline file handle closing (<a href="https://github.com/astral-sh/uv/pull/17374">[#17374](https://github.com/owner/repo/issues/17374)</a>)</li>
+<li>Fix error message when installing musl python on armv7 (<a href="https://github.com/astral-sh/uv/pull/17213">[#17213](https://github.com/owner/repo/issues/17213)</a>)</li>
+</ul>
+<h4 id="install-uv-0925"><a class="toclink" href="#install-uv-0925">Install uv 0.9.25</a></h4>
+<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
+<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.9.25/uv-installer.sh | sh
+</code></pre>
+<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
+<p>```sh<br />
+powershell -ExecutionPolicy Bypass -c "irm https://github.com/astral-sh/uv/releases/download/0.9.25/uv-installer.ps1 | </p>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.25" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.9.24</div>
                             <div class="release-version ">
                                 0.9.24
@@ -2431,57 +2486,6 @@ curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astr</p>
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.9.20</div>
-                            <div class="release-version ">
-                                0.9.20
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-12-29 20:57 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2025-12-29.</p>
-<p>The 0.9.19 release failed to publish to crates.io and GitHub Releases, but was successfully published to PyPI, the GitHub Container Registry, and DockerHub. This is a re-release of 0.9.19, with the internal crate versions incremented to resolve the crates.io publish failure. The changelog entries for 0.9.19 are reproduced here.</p>
-<h5 id="python"><a class="toclink" href="#python">Python</a></h5>
-<ul>
-<li>Add CPython 3.15.0a3 (<a href="https://github.com/astral-sh/uv/pull/17165">[#17165](https://github.com/owner/repo/issues/17165)</a>)</li>
-</ul>
-<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
-<ul>
-<li>Allow <code>uv pip compile</code> to install missing python interpreters in cases where it would otherwise fail (<a href="https://github.com/astral-sh/uv/pull/17216">[#17216](https://github.com/owner/repo/issues/17216)</a>)</li>
-<li>Avoid creating file contents with <code>uv init --bare --script</code> (<a href="https://github.com/astral-sh/uv/pull/17162">[#17162](https://github.com/owner/repo/issues/17162)</a>)</li>
-<li>Respect <code>--torch-backend</code> in <code>uv tool</code> commands (<a href="https://github.com/astral-sh/uv/pull/17117">[#17117](https://github.com/owner/repo/issues/17117)</a>)</li>
-<li>Support comma-separated values in <code>--no-binary</code> and <code>--only-binary</code> (<a href="https://github.com/astral-sh/uv/pull/17185">[#17185](https://github.com/owner/repo/issues/17185)</a>)</li>
-</ul>
-<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
-<ul>
-<li>Summarize package changes in <code>uv sync</code> with JSON output format (<a href="https://github.com/astral-sh/uv/pull/16981">[#16981](https://github.com/owner/repo/issues/16981)</a>)</li>
-</ul>
-<h5 id="performance"><a class="toclink" href="#performance">Performance</a></h5>
-<ul>
-<li>Avoid two hot <code>String</code> allocations in deserialization (<a href="https://github.com/astral-sh/uv/pull/17221">[#17221](https://github.com/owner/repo/issues/17221)</a>)</li>
-<li>Cache NVIDIA-hosted wheels by default (<a href="https://github.com/astral-sh/uv/pull/17164">[#17164](https://github.com/owner/repo/issues/17164)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Avoid enforcing incorrect hash in mixed-hash settings (<a href="https://github.com/astral-sh/uv/pull/17157">[#17157](https://github.com/owner/repo/issues/17157)</a>)</li>
-<li>Fix retry counts in cached client ([[#17104](https://github.com/owner/rep</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.20" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -2698,7 +2702,7 @@ curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astr</p>
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2026-01-13 06:10 UTC
+                Last updated: 2026-01-14 06:10 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
