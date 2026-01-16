@@ -1501,6 +1501,55 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.14.13</div>
+                            <div class="release-version ">
+                                0.14.13
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-01-15 20:16 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2026-01-15.</p>
+<p>This is a follow-up release to 0.14.12. Because of an issue publishing the WASM packages, there is no GitHub release or Git tag for 0.14.12, although the package was published to PyPI. The contents of the 0.14.13 release are identical to 0.14.12.</p>
+<h4 id="01412"><a class="toclink" href="#01412">0.14.12</a></h4>
+<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
+<ul>
+<li>[<code>flake8-blind-except</code>] Allow more logging methods (<code>BLE001</code>) (<a href="https://github.com/astral-sh/ruff/pull/22057">[#22057](https://github.com/owner/repo/issues/22057)</a>)</li>
+<li>[<code>ruff</code>] Respect <code>lint.pydocstyle.property-decorators</code> in <code>RUF066</code> (<a href="https://github.com/astral-sh/ruff/pull/22515">[#22515](https://github.com/owner/repo/issues/22515)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>Fix configuration path in <code>--show-settings</code> (<a href="https://github.com/astral-sh/ruff/pull/22478">[#22478](https://github.com/owner/repo/issues/22478)</a>)</li>
+<li>Respect <code>fmt: skip</code> for multiple statements on the same logical line (<a href="https://github.com/astral-sh/ruff/pull/22119">[#22119](https://github.com/owner/repo/issues/22119)</a>)</li>
+</ul>
+<h5 id="rule-changes"><a class="toclink" href="#rule-changes">Rule changes</a></h5>
+<ul>
+<li>[<code>pydocstyle</code>] Update Rust crate imperative to v1.0.7 (<code>D401</code>) (<a href="https://github.com/astral-sh/ruff/pull/22519">[#22519](https://github.com/owner/repo/issues/22519)</a>)</li>
+<li>[<code>isort</code>] Insert imports in alphabetical order (<code>I002</code>) (<a href="https://github.com/astral-sh/ruff/pull/22493">[#22493](https://github.com/owner/repo/issues/22493)</a>)</li>
+</ul>
+<h5 id="documentation"><a class="toclink" href="#documentation">Documentation</a></h5>
+<ul>
+<li>Add llms.txt support for documentation (<a href="https://github.com/astral-sh/ruff/pull/22463">[#22463](https://github.com/owner/repo/issues/22463)</a>)</li>
+<li>Use prek in documentation and CI (<a href="https://github.com/astral-sh/ruff/pull/22505">[#22505](https://github.com/owner/repo/issues/22505)</a>)</li>
+<li>[<code>flake8-pytest-style</code>] Add <code>check</code> parameter example to <code>PT017</code> docs (<a href="https://github.com/astral-sh/ruff/pull/22546">[#22546](https://github.com/owner/repo/issues/22546)</a>)</li>
+<li>[<code>ruff</code>] Make example error out-of-the-box (<code>RUF103</code>) ([<a href="https://github.com/owner/repo/issues/22558">#22558</a>](https://github.com/a</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.13" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.14.11</div>
                             <div class="release-version ">
                                 0.14.11
@@ -1704,57 +1753,6 @@
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.8" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.14.7</div>
-                            <div class="release-version ">
-                                0.14.7
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-11-28 21:03 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2025-11-28.</p>
-<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
-<ul>
-<li>[<code>flake8-bandit</code>] Handle string literal bindings in suspicious-url-open-usage (<code>S310</code>) (<a href="https://github.com/astral-sh/ruff/pull/21469">[#21469](https://github.com/owner/repo/issues/21469)</a>)</li>
-<li>[<code>pylint</code>] Fix <code>PLR1708</code> false positives on nested functions (<a href="https://github.com/astral-sh/ruff/pull/21177">[#21177](https://github.com/owner/repo/issues/21177)</a>)</li>
-<li>[<code>pylint</code>] Fix suppression for empty dict without tuple key annotation (<code>PLE1141</code>) (<a href="https://github.com/astral-sh/ruff/pull/21290">[#21290](https://github.com/owner/repo/issues/21290)</a>)</li>
-<li>[<code>ruff</code>] Add rule <code>RUF066</code> to detect unnecessary class properties (<a href="https://github.com/astral-sh/ruff/pull/21535">[#21535](https://github.com/owner/repo/issues/21535)</a>)</li>
-<li>[<code>ruff</code>] Catch more dummy variable uses (<code>RUF052</code>) (<a href="https://github.com/astral-sh/ruff/pull/19799">[#19799](https://github.com/owner/repo/issues/19799)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>[server] Set severity for non-rule diagnostics (<a href="https://github.com/astral-sh/ruff/pull/21559">[#21559](https://github.com/owner/repo/issues/21559)</a>)</li>
-<li>[<code>flake8-implicit-str-concat</code>] Avoid invalid fix in (<code>ISC003</code>) (<a href="https://github.com/astral-sh/ruff/pull/21517">[#21517](https://github.com/owner/repo/issues/21517)</a>)</li>
-<li>[<code>parser</code>] Fix panic when parsing IPython escape command expressions (<a href="https://github.com/astral-sh/ruff/pull/21480">[#21480](https://github.com/owner/repo/issues/21480)</a>)</li>
-</ul>
-<h5 id="cli"><a class="toclink" href="#cli">CLI</a></h5>
-<ul>
-<li>Show partial fixability indicator in statistics output (<a href="https://github.com/astral-sh/ruff/pull/21513">[#21513](https://github.com/owner/repo/issues/21513)</a>)</li>
-</ul>
-<h5 id="contributors"><a class="toclink" href="#contributors">Contributors</a></h5>
-<ul>
-<li><a href="https://github.com/mikeleppane">[@mikeleppane](https://github.com/mikeleppane)</a></li>
-<li><a href="https://github.com/senekor">[@senekor](https://github.com/senekor)</a></li>
-<li><a href="https://github.com/ShaharNaveh">[@ShaharNaveh](https://github.com/ShaharNaveh)</a></li>
-<li><a href="https://github.com/JumboBear">[@JumboBear](https://github.com/JumboBear)</a></li>
-<li>[[@prakhar1144](https://github.co</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.7" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2162,6 +2160,63 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.9.26</div>
+                            <div class="release-version ">
+                                0.9.26
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-01-15 20:55 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2026-01-15.</p>
+<h5 id="python"><a class="toclink" href="#python">Python</a></h5>
+<ul>
+<li>Add CPython 3.15.0a5</li>
+</ul>
+<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
+<ul>
+<li>Add a hint to update uv when a managed Python download is not found (<a href="https://github.com/astral-sh/uv/pull/17461">[#17461](https://github.com/owner/repo/issues/17461)</a>)</li>
+<li>Improve cache initialization failure error message (<a href="https://github.com/astral-sh/uv/pull/17469">[#17469](https://github.com/owner/repo/issues/17469)</a>)</li>
+<li>Improve error message for abi3 wheels on free-threaded Python (<a href="https://github.com/astral-sh/uv/pull/17442">[#17442](https://github.com/owner/repo/issues/17442)</a>)</li>
+<li>Add support for <code>--no-sources-package</code> (<a href="https://github.com/astral-sh/uv/pull/14910">[#14910](https://github.com/owner/repo/issues/14910)</a>)</li>
+</ul>
+<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
+<ul>
+<li>Add <code>METADATA.json</code> and <code>WHEEL.json</code> in uv build backend (<a href="https://github.com/astral-sh/uv/pull/15510">[#15510](https://github.com/owner/repo/issues/15510)</a>)</li>
+<li>Add support for GCS request signing (<a href="https://github.com/astral-sh/uv/pull/17474">[#17474](https://github.com/owner/repo/issues/17474)</a>)</li>
+<li>Adjust the process ulimit to the maximum allowed on startup (<a href="https://github.com/astral-sh/uv/pull/17464">[#17464](https://github.com/owner/repo/issues/17464)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>Lock to avoid concurrent refresh of pyx tokens (<a href="https://github.com/astral-sh/uv/pull/17479">[#17479](https://github.com/owner/repo/issues/17479)</a>)</li>
+</ul>
+<h5 id="documentation"><a class="toclink" href="#documentation">Documentation</a></h5>
+<ul>
+<li>Add linting and formatting instructions to the CONTRIBUTING guide (<a href="https://github.com/astral-sh/uv/pull/17470">[#17470](https://github.com/owner/repo/issues/17470)</a>)</li>
+<li>Avoid rendering <code>pyproject.toml</code> examples for more system-level settings (<a href="https://github.com/astral-sh/uv/pull/17462">[#17462](https://github.com/owner/repo/issues/17462)</a>)</li>
+</ul>
+<h4 id="install-uv-0926"><a class="toclink" href="#install-uv-0926">Install uv 0.9.26</a></h4>
+<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
+<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.9.26/uv-installer.sh | sh
+</code></pre>
+<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
+<p>```s</p>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.26" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.9.25</div>
                             <div class="release-version ">
                                 0.9.25
@@ -2425,79 +2480,6 @@ curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astr</p>
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.9.21</div>
-                            <div class="release-version ">
-                                0.9.21
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-12-30 16:14 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2025-12-30.</p>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Fix regression where zstd distribution hashes were not considered valid (<a href="https://github.com/astral-sh/uv/pull/17265">[#17265](https://github.com/owner/repo/issues/17265)</a>)</li>
-</ul>
-<h5 id="documentation"><a class="toclink" href="#documentation">Documentation</a></h5>
-<ul>
-<li>Fix a typo in the resolution documentation (<a href="https://github.com/astral-sh/uv/pull/17258">[#17258](https://github.com/owner/repo/issues/17258)</a>)</li>
-<li>Fix a typo in <code>python install --default</code> documentation (<a href="https://github.com/astral-sh/uv/pull/9826">[#9826](https://github.com/owner/repo/issues/9826)</a>)</li>
-</ul>
-<h4 id="install-uv-0921"><a class="toclink" href="#install-uv-0921">Install uv 0.9.21</a></h4>
-<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
-<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.9.21/uv-installer.sh | sh
-</code></pre>
-<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
-<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -c &quot;irm https://github.com/astral-sh/uv/releases/download/0.9.21/uv-installer.ps1 | iex&quot;
-</code></pre>
-<h4 id="download-uv-0921"><a class="toclink" href="#download-uv-0921">Download uv 0.9.21</a></h4>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Platform</th>
-<th>Checksum</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.21/uv-aarch64-apple-darwin.tar.gz">uv-aarch64-apple-darwin.tar.gz</a></td>
-<td>Apple Silicon macOS</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.21/uv-aarch64-apple-darwin.tar.gz.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.21/uv-x86_64-apple-darwin.tar.gz">uv-x86_64-apple-darwin.tar.gz</a></td>
-<td>Intel macOS</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.21/uv-x86_64-apple-darwin.tar.gz.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.21/uv-aarch64-pc-windows-msvc.zip">uv-aarch64-pc-windows-msvc.zip</a></td>
-<td>ARM64 Windows</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.21/uv-aarch64-pc-windows-msvc.zip.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.21/uv-i686-pc-windows-msvc.zip">uv-i686-pc-windows-msvc.zip</a></td>
-<td>x86 Windows</td>
-<td>[checksum](https://github.com/astral-sh/uv/releases/download/0.9.21/uv-i686-pc-wind</td>
-</tr>
-</tbody>
-</table>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.21" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -2714,7 +2696,7 @@ curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astr</p>
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2026-01-15 06:10 UTC
+                Last updated: 2026-01-16 06:10 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
