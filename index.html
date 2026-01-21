@@ -2504,6 +2504,43 @@ curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astr</p>
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">v0.14.0</div>
+                            <div class="release-version ">
+                                0.14.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-01-20 09:20 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="highlights"><a class="toclink" href="#highlights">Highlights</a></h4>
+<p>This release features approximately 660 commits from 251 contributors (86 new contributors).</p>
+<p><strong>Breaking Changes:</strong><br />
+- <strong>Async scheduling is now enabled by default</strong> - Users who experience issues can disable with <code>--no-async-scheduling</code>.<br />
+   - Excludes some not-yet-supported configurations: pipeline parallel, CPU backend, non-MTP/Eagle spec decoding.<br />
+- <strong>PyTorch 2.9.1</strong> is now required and the default wheel is compiled against cu129.<br />
+- Deprecated quantization schemes have been removed (<a href="https://github.com/owner/repo/issues/31688">#31688</a>, <a href="https://github.com/owner/repo/issues/31285">#31285</a>).<br />
+- When using speculative decoding, unsupported sampling parameters will fail rather than being silently ignored (<a href="https://github.com/owner/repo/issues/31982">#31982</a>).</p>
+<p><strong>Key Improvements:</strong><br />
+- <strong>Async scheduling enabled by default</strong> (<a href="https://github.com/owner/repo/issues/27614">#27614</a>): Overlaps engine core scheduling with GPU execution, improving throughput without user configuration. Now also works with speculative decoding (<a href="https://github.com/owner/repo/issues/31998">#31998</a>) and structured outputs (<a href="https://github.com/owner/repo/issues/29821">#29821</a>).<br />
+- <strong>gRPC server entrypoint</strong> (<a href="https://github.com/owner/repo/issues/30190">#30190</a>): Alternative to REST API with binary protocol, HTTP/2 multiplexing.<br />
+- <strong><code>--max-model-len auto</code></strong> (<a href="https://github.com/owner/repo/issues/29431">#29431</a>): Automatically fits context length to available GPU memory, eliminating OOM startup failures.<br />
+- <strong>Model inspection view</strong> (<a href="https://github.com/owner/repo/issues/29450">#29450</a>): View the modules, attention backends, and quantization of your model in vLLM by specifying <code>VLLM_LOG_MODEL_INSPECTION=1</code> or by simply printing the <code>LLM</code> object.<br />
+- <strong>Model Runner V2 enhancements</strong>: UVA block tables (<a href="https://github.com/owner/repo/issues/31965">#31965</a>), M-RoPE (<a href="https://github.com/owner/repo/issues/32143">#32143</a>), <code>logit_bias</code>/<code>allowed_token_ids</code>/<code>min_tokens</code> support ([#32</p>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: khluu</span>
+                            <a href="https://github.com/vllm-project/vllm/releases/tag/v0.14.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">v0.13.0</div>
                             <div class="release-version ">
                                 0.13.0
@@ -2651,43 +2688,6 @@ curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astr</p>
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">v0.11.0</div>
-                            <div class="release-version ">
-                                0.11.0
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-02 19:17 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="highlights"><a class="toclink" href="#highlights">Highlights</a></h4>
-<p>This release features 538 commits, 207 contributors (65 new contributors)!</p>
-<ul>
-<li>This release completes the removal of V0 engine. V0 engine code including AsyncLLMEngine, LLMEngine, MQLLMEngine, all attention backends, and related components have been removed. <strong>V1 is the only engine in the codebase now.</strong></li>
-<li>This releases turns on <strong>FULL_AND_PIECEWISE as the CUDA graph mode default</strong>. This should provide better out of the box performance for most models, particularly fine-grained MoEs, while preserving compatibility with existing models supporting only PIECEWISE mode.</li>
-</ul>
-<p>Note: In v0.11.0 (and v0.10.2), <code>--async-scheduling</code> will produce gibberish output in some cases such as preemption and others. This functionality is correct in v0.10.1. We are actively fixing it for the next version. </p>
-<h5 id="model-support"><a class="toclink" href="#model-support">Model Support</a></h5>
-<ul>
-<li>New architectures: DeepSeek-V3.2-Exp (<a href="https://github.com/owner/repo/issues/25896">#25896</a>), Qwen3-VL series (<a href="https://github.com/owner/repo/issues/24727">#24727</a>), Qwen3-Next (<a href="https://github.com/owner/repo/issues/24526">#24526</a>), OLMo3 (<a href="https://github.com/owner/repo/issues/24534">#24534</a>), LongCat-Flash (<a href="https://github.com/owner/repo/issues/23991">#23991</a>), Dots OCR (<a href="https://github.com/owner/repo/issues/24645">#24645</a>), Ling2.0 (<a href="https://github.com/owner/repo/issues/24627">#24627</a>), CWM (<a href="https://github.com/owner/repo/issues/25611">#25611</a>).</li>
-<li>Encoders: RADIO encoder support (<a href="https://github.com/owner/repo/issues/24595">#24595</a>), Transformers backend support for encoder-only models (<a href="https://github.com/owner/repo/issues/25174">#25174</a>).</li>
-<li>Task expansion: BERT token classification/NER (<a href="https://github.com/owner/repo/issues/24872">#24872</a>), multimodal models for pooling tasks (<a href="https://github.com/owner/repo/issues/24451">#24451</a>).</li>
-<li>Data parallel for vision encoders: InternVL (<a href="https://github.com/owner/repo/issues/23909">#23909</a>), Qwen2-VL (<a href="https://github.com/owner/repo/issues/25445">#25445</a>), Qwen3-VL ([#24955](https://github.com/owner/re</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: simon-mo</span>
-                            <a href="https://github.com/vllm-project/vllm/releases/tag/v0.11.0" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -2696,7 +2696,7 @@ curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astr</p>
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2026-01-20 06:11 UTC
+                Last updated: 2026-01-21 06:11 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
