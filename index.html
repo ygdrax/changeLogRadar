@@ -615,6 +615,99 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">Helm v4.1.0</div>
+                            <div class="release-version ">
+                                4.1.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-01-21 22:31 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><p>Helm v4.1.0 is a feature release. Users are encouraged to upgrade for the best experience.</p>
+<p>The community keeps growing, and we'd love to see you there!</p>
+<ul>
+<li>Join the discussion in <a href="https://kubernetes.slack.com">Kubernetes Slack</a>:</li>
+<li>for questions and just to hang out</li>
+<li>for discussing PRs, code, and bugs</li>
+<li>Hang out at the Public Developer Call: Thursday, 9:30 Pacific via <a href="https://zoom.us/j/696660622">Zoom</a></li>
+<li>Test, debug, and contribute charts: <a href="https://artifacthub.io/packages/search?kind=0">ArtifactHub/packages</a></li>
+</ul>
+<h4 id="notable-changes"><a class="toclink" href="#notable-changes">Notable Changes</a></h4>
+<ul>
+<li>Feature: added chart name to dependency logs, namespace to resource waiting logs, and confirmation message when all resources are ready <a href="https://github.com/owner/repo/issues/31530">#31530</a></li>
+<li>Feature: improved plugin name validation error messages and field name detection <a href="https://github.com/owner/repo/issues/31491">#31491</a></li>
+<li>Feature: improved the --wait flag by allowing explicit strategy selection (including explicit --wait=hookOnly) and preventing SDK timeout errors when timeout is not specified <a href="https://github.com/owner/repo/issues/31421">#31421</a></li>
+<li>Feature: allow concurrent dependency build with atomic file write <a href="https://github.com/owner/repo/issues/30984">#30984</a></li>
+<li>Feature: added a --no-headers flag to the 'helm repo list' command, allowing users to suppress table headers in the output. Useful for scripting and automation <a href="https://github.com/owner/repo/issues/31448">#31448</a></li>
+<li>SDK feature: added a LoadArchive to common loader <a href="https://github.com/owner/repo/issues/31462">#31462</a></li>
+<li>SDK feature: introduced support for custom kstatus readers <a href="https://github.com/owner/repo/issues/31706">#31706</a></li>
+<li>Fixed bug where a plugin name could already be used by another command <a href="https://github.com/owner/repo/issues/31427">#31427</a></li>
+<li>Fixed bug where --server-side flag was not passed to install when using upgrade --install <a href="https://github.com/owner/repo/issues/31635">#31635</a></li>
+<li>Fixed bug where HELM_ environment variables were not</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: scottrigby</span>
+                            <a href="https://github.com/helm/helm/releases/tag/v4.1.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">Helm v3.20.0</div>
+                            <div class="release-version ">
+                                3.20.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-01-21 23:27 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><p>Helm v3.20.0 is a feature release. Users are encouraged to upgrade for the best experience.</p>
+<p>The community keeps growing, and we'd love to see you there!</p>
+<ul>
+<li>Join the discussion in <a href="https://kubernetes.slack.com">Kubernetes Slack</a>:</li>
+<li>for questions and just to hang out</li>
+<li>for discussing PRs, code, and bugs</li>
+<li>Hang out at the Public Developer Call: Thursday, 9:30 Pacific via <a href="https://zoom.us/j/696660622">Zoom</a></li>
+<li>Test, debug, and contribute charts: <a href="https://artifacthub.io/packages/search?kind=0">ArtifactHub/packages</a></li>
+</ul>
+<h4 id="notable-changes"><a class="toclink" href="#notable-changes">Notable Changes</a></h4>
+<ul>
+<li>SDK: bump k8s API versions to v0.35.0</li>
+<li>v3 backport: Fixed a bug where helm uninstall with --keep-history did not suspend previous deployed releases https://github.com/helm/helm/pull/12564</li>
+<li>v3 backport: Bump Go version to v1.25</li>
+</ul>
+<h4 id="installation-and-upgrading"><a class="toclink" href="#installation-and-upgrading">Installation and Upgrading</a></h4>
+<p>Download Helm v3.20.0. The common platform binaries are here:</p>
+<ul>
+<li><a href="https://get.helm.sh/helm-v3.20.0-darwin-amd64.tar.gz">MacOS amd64</a> (<a href="https://get.helm.sh/helm-v3.20.0-darwin-amd64.tar.gz.sha256sum">checksum</a> / 724aef60f737ca73cfcc77924219dbfb229dde8492b2722cb372da617fd77367)</li>
+<li><a href="https://get.helm.sh/helm-v3.20.0-darwin-arm64.tar.gz">MacOS arm64</a> (<a href="https://get.helm.sh/helm-v3.20.0-darwin-arm64.tar.gz.sha256sum">checksum</a> / 1cb8022ef9c88026adf236cbdf02a80bf7678632d1c39d3d8045e815959ab20e)</li>
+<li><a href="https://get.helm.sh/helm-v3.20.0-linux-amd64.tar.gz">Linux amd64</a> (<a href="https://get.helm.sh/helm-v3.20.0-linux-amd64.tar.gz.sha256sum">checksum</a> / dbb4c8fc8e19d159d1a63dda8db655f9ffa4aac1b9a6b188b34a40957119b286)</li>
+<li><a href="https://get.helm.sh/helm-v3.20.0-linux-arm.tar.gz">Linux arm</a> (<a href="https://get.helm.sh/helm-v3.20.0-linux-arm.tar.gz.sha256sum">checksum</a> / e66b9bcb51130f372b4750b2da83679e59d04633bfa825a1936c0b1039035bf0)</li>
+<li><a href="https://get.helm.sh/helm-v3.20.0-linux-arm64.tar.gz">Linux arm64</a> (<a href="https://get.helm.sh/helm-v3.20.0-linux-arm64.tar.gz.sha256sum">checksum</a> / bfb14953295d5324d47ab55f3dfba6da28d46c848978c8fbf412d4271bdc29f1)</li>
+<li>[Linux i386](https://get.helm.sh/helm-v3.20.0-</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: scottrigby</span>
+                            <a href="https://github.com/helm/helm/releases/tag/v3.20.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">Helm v4.0.5</div>
                             <div class="release-version ">
                                 4.0.5
@@ -749,90 +842,6 @@
                         <div class="release-meta">
                             <span>Author: scottrigby</span>
                             <a href="https://github.com/helm/helm/releases/tag/v4.1.0-rc.1" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">Helm v3.20.0-rc.1</div>
-                            <div class="release-version prerelease">
-                                3.20.0-rc.1
-                                 (Pre-release)
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2026-01-12 20:34 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><p>Helm v3.20.0-rc.1 is a pre-release. It is to help gather feedback from the community as well as give users a chance to test Helm in staging environments before v3.20.0 is officially released.</p>
-<p>The official changelog will come out with the v3.20.0 release. For now, you can see the commit changes from v3.19.4 <a href="https://github.com/helm/helm/compare/v3.19.4...v3.20.0-rc.1">here</a>.</p>
-<p>The community keeps growing, and we'd love to see you there!</p>
-<ul>
-<li>Join the discussion in <a href="https://kubernetes.slack.com">Kubernetes Slack</a>:</li>
-<li>for questions and just to hang out</li>
-<li>for discussing PRs, code, and bugs</li>
-<li>Hang out at the Public Developer Call: Thursday, 9:30 Pacific via <a href="https://zoom.us/j/696660622">Zoom</a></li>
-<li>Test, debug, and contribute charts: <a href="https://artifacthub.io/packages/search?kind=0">ArtifactHub/packages</a></li>
-</ul>
-<h4 id="installation-and-upgrading"><a class="toclink" href="#installation-and-upgrading">Installation and Upgrading</a></h4>
-<p>Download Helm v3.20.0-rc.1. The common platform binaries are here:</p>
-<ul>
-<li><a href="https://get.helm.sh/helm-v3.20.0-rc.1-darwin-amd64.tar.gz">MacOS amd64</a> (<a href="https://get.helm.sh/helm-v3.20.0-rc.1-darwin-amd64.tar.gz.sha256sum">checksum</a> / 2433b602d8067629e572674cd456e3e0e3687ef5fba7278e4251e0475255926b)</li>
-<li><a href="https://get.helm.sh/helm-v3.20.0-rc.1-darwin-arm64.tar.gz">MacOS arm64</a> (<a href="https://get.helm.sh/helm-v3.20.0-rc.1-darwin-arm64.tar.gz.sha256sum">checksum</a> / 332d08eae3aa0802cebba181232d921bc8971419d34aee5a582f24aa0f6a7eb0)</li>
-<li><a href="https://get.helm.sh/helm-v3.20.0-rc.1-linux-amd64.tar.gz">Linux amd64</a> (<a href="https://get.helm.sh/helm-v3.20.0-rc.1-linux-amd64.tar.gz.sha256sum">checksum</a> / bada6e52e7cf1d2cc4c89e7a39d57d4c793b898f2bac2d0ff73a3700c95430b0)</li>
-<li><a href="https://get.helm.sh/helm-v3.20.0-rc.1-linux-arm.tar.gz">Linux arm</a> (<a href="https://get.helm.sh/helm-v3.20.0-rc.1-linux-arm.tar.gz.sha256sum">checksum</a> / a629277cee70aea2ca358b1aedde5f825d234c47f98927a604793bf00b155637)</li>
-<li><a href="https://get.helm.sh/helm-v3.20.0-rc.1-linux-arm64.tar.gz">Linux arm64</a> (<a href="https://get.helm.sh/helm-v3.20.0-rc.1-linux-arm64.tar.gz.sha256sum">checksum</a> / 838e40ea46e2383f154aa091798e69</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: scottrigby</span>
-                            <a href="https://github.com/helm/helm/releases/tag/v3.20.0-rc.1" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">Helm v4.0.4</div>
-                            <div class="release-version ">
-                                4.0.4
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-12-13 01:22 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><p>Helm v4.0.4 is a security fix for a Go CVE in the previous tag. This patch release rebuilds the Helm <code>v4.0.2</code> release with the latest Go toolchain, to fix the Go CVE. Users are encouraged to upgrade. Note that tag v4.0.3 was skipped due to a build failure.</p>
-<p>The community keeps growing, and we'd love to see you there!</p>
-<ul>
-<li>Join the discussion in <a href="https://kubernetes.slack.com">Kubernetes Slack</a>:</li>
-<li>for questions and just to hang out</li>
-<li>for discussing PRs, code, and bugs</li>
-<li>Hang out at the Public Developer Call: Thursday, 9:30 Pacific via <a href="https://zoom.us/j/696660622">Zoom</a></li>
-<li>Test, debug, and contribute charts: <a href="https://artifacthub.io/packages/search?kind=0">ArtifactHub/packages</a></li>
-</ul>
-<h4 id="installation-and-upgrading"><a class="toclink" href="#installation-and-upgrading">Installation and Upgrading</a></h4>
-<p>Download Helm v4.0.4. The common platform binaries are here:</p>
-<ul>
-<li><a href="https://get.helm.sh/helm-v4.0.4-darwin-amd64.tar.gz">MacOS amd64</a> (<a href="https://get.helm.sh/helm-v4.0.4-darwin-amd64.tar.gz.sha256sum">checksum</a> / 73bcfd6ab000fdc95acf9fe1c59e8e47179426a653e45ae485889869d4a00523)</li>
-<li><a href="https://get.helm.sh/helm-v4.0.4-darwin-arm64.tar.gz">MacOS arm64</a> (<a href="https://get.helm.sh/helm-v4.0.4-darwin-arm64.tar.gz.sha256sum">checksum</a> / a7ea99937a9679b3935fa0a2b70e577aa1ea84e5856e7c0821ca6ffa064ea976)</li>
-<li><a href="https://get.helm.sh/helm-v4.0.4-linux-amd64.tar.gz">Linux amd64</a> (<a href="https://get.helm.sh/helm-v4.0.4-linux-amd64.tar.gz.sha256sum">checksum</a> / 29454bc351f4433e66c00f5d37841627cbbcc02e4c70a6d796529d355237671c)</li>
-<li><a href="https://get.helm.sh/helm-v4.0.4-linux-arm.tar.gz">Linux arm</a> (<a href="https://get.helm.sh/helm-v4.0.4-linux-arm.tar.gz.sha256sum">checksum</a> / 9255732e31b5aa5ee7b55be8497eea4723e3dfb08a63c37603ae0d15a9a9d82c)</li>
-<li><a href="https://get.helm.sh/helm-v4.0.4-linux-arm64.tar.gz">Linux arm64</a> (<a href="https://get.helm.sh/helm-v4.0.4-linux-arm64.tar.gz.sha256sum">checksum</a> / 16b88acc6503d646b7537a298e7389bef469c5cc9ebadf727547abe9f6a35903)</li>
-<li><a href="https://get.helm.sh/helm-v4.0.4-linux-386.tar.gz">Linux i386</a> (<a href="https://get.helm.sh/helm-v4.0.4-linux-386.tar.gz.sha256sum">checksum</a> / e6dbf45313bab</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: scottrigby</span>
-                            <a href="https://github.com/helm/helm/releases/tag/v4.0.4" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2696,7 +2705,7 @@ curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astr</p>
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2026-01-21 06:11 UTC
+                Last updated: 2026-01-22 06:10 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
