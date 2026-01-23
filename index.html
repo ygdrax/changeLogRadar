@@ -1510,6 +1510,54 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.14.14</div>
+                            <div class="release-version ">
+                                0.14.14
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-01-22 22:31 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2026-01-22.</p>
+<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
+<ul>
+<li>Preserve required parentheses in lambda bodies (<a href="https://github.com/astral-sh/ruff/pull/22747">[#22747](https://github.com/owner/repo/issues/22747)</a>)</li>
+<li>Combine range suppression code diagnostics (<a href="https://github.com/astral-sh/ruff/pull/22613">[#22613](https://github.com/owner/repo/issues/22613)</a>)</li>
+<li>[<code>airflow</code>] Second positional argument to <code>Asset</code>/<code>Dataset</code> should not be a dictionary (<code>AIR303</code>) (<a href="https://github.com/astral-sh/ruff/pull/22453">[#22453](https://github.com/owner/repo/issues/22453)</a>)</li>
+<li>[<code>ruff</code>] Detect duplicate entries in <code>__all__</code> (<code>RUF068</code>) (<a href="https://github.com/astral-sh/ruff/pull/22114">[#22114](https://github.com/owner/repo/issues/22114)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>[<code>pyupgrade</code>] Allow shadowing non-builtin bindings (<code>UP029</code>) (<a href="https://github.com/astral-sh/ruff/pull/22749">[#22749](https://github.com/owner/repo/issues/22749)</a>)</li>
+<li>[<code>pyupgrade</code>] Apply <code>UP045</code> to string arguments of <code>typing.cast</code> (<a href="https://github.com/astral-sh/ruff/pull/22320">[#22320](https://github.com/owner/repo/issues/22320)</a>)</li>
+<li>[<code>flake8-pie</code>] Detect duplicated declared class fields in <code>PIE794</code> (<a href="https://github.com/astral-sh/ruff/pull/22717">[#22717](https://github.com/owner/repo/issues/22717)</a>)</li>
+</ul>
+<h5 id="rule-changes"><a class="toclink" href="#rule-changes">Rule changes</a></h5>
+<ul>
+<li>[<code>flake8-pyi</code>] Fix inconsistent handling of forward references for <code>__new__</code>, <code>__enter__</code>, <code>__aenter__</code> in <code>PYI034</code> (<a href="https://github.com/astral-sh/ruff/pull/22798">[#22798](https://github.com/owner/repo/issues/22798)</a>)</li>
+<li>[<code>flake8-pytest-style</code>] Support <code>check</code> parameter in <code>PT011</code> (<a href="https://github.com/astral-sh/ruff/pull/22725">[#22725](https://github.com/owner/repo/issues/22725)</a>)</li>
+<li>[<code>ruff</code>] Add exception for <code>ctypes.Structure._fields_</code> (<code>RUF012</code>) (<a href="https://github.com/astral-sh/ruff/pull/22559">[#22559](https://github.com/owner/repo/issues/22559)</a>)</li>
+<li>Many fixes are now marked unsafe if they would remove comments:<ul>
+<li>[<code>flake8-bugbear</code>] <a href="https://github.com/astral-sh/ruff/pull/22656"><code>B009</code></a>, [`B</li>
+</ul>
+</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.14" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.14.13</div>
                             <div class="release-version ">
                                 0.14.13
@@ -1703,65 +1751,6 @@
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.9" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.14.8</div>
-                            <div class="release-version ">
-                                0.14.8
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-12-04 15:14 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2025-12-04.</p>
-<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
-<ul>
-<li>[<code>flake8-bugbear</code>] Catch <code>yield</code> expressions within other statements (<code>B901</code>) (<a href="https://github.com/astral-sh/ruff/pull/21200">[#21200](https://github.com/owner/repo/issues/21200)</a>)</li>
-<li>[<code>flake8-use-pathlib</code>] Mark fixes unsafe for return type changes (<code>PTH104</code>, <code>PTH105</code>, <code>PTH109</code>, <code>PTH115</code>) (<a href="https://github.com/astral-sh/ruff/pull/21440">[#21440](https://github.com/owner/repo/issues/21440)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Fix syntax error false positives for <code>await</code> outside functions (<a href="https://github.com/astral-sh/ruff/pull/21763">[#21763](https://github.com/owner/repo/issues/21763)</a>)</li>
-<li>[<code>flake8-simplify</code>] Fix truthiness assumption for non-iterable arguments in tuple/list/set calls (<code>SIM222</code>, <code>SIM223</code>) (<a href="https://github.com/astral-sh/ruff/pull/21479">[#21479](https://github.com/owner/repo/issues/21479)</a>)</li>
-</ul>
-<h5 id="documentation"><a class="toclink" href="#documentation">Documentation</a></h5>
-<ul>
-<li>Suggest using <code>--output-file</code> option in GitLab integration (<a href="https://github.com/astral-sh/ruff/pull/21706">[#21706](https://github.com/owner/repo/issues/21706)</a>)</li>
-</ul>
-<h5 id="other-changes"><a class="toclink" href="#other-changes">Other changes</a></h5>
-<ul>
-<li>[syntax-error] Default type parameter followed by non-default type parameter (<a href="https://github.com/astral-sh/ruff/pull/21657">[#21657](https://github.com/owner/repo/issues/21657)</a>)</li>
-</ul>
-<h5 id="contributors"><a class="toclink" href="#contributors">Contributors</a></h5>
-<ul>
-<li><a href="https://github.com/kieran-ryan">[@kieran](https://github.com/kieran)-ryan</a></li>
-<li><a href="https://github.com/11happy">[@11happy](https://github.com/11happy)</a></li>
-<li><a href="https://github.com/danparizher">[@danparizher](https://github.com/danparizher)</a></li>
-<li><a href="https://github.com/ntBre">[@ntBre](https://github.com/ntBre)</a></li>
-</ul>
-<h4 id="install-ruff-0148"><a class="toclink" href="#install-ruff-0148">Install ruff 0.14.8</a></h4>
-<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
-<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/ruff/releases/download/0.14.8/ruff-installer.sh | sh
-</code></pre>
-<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
-<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -c &quot;irm https://github.com/astral-sh/ruff/releases/download/0.14.8/ruff-installer.ps1 | iex&quot;
-</code></pre>
-<h4 id="download-ruff-0148"><a class="toclink" href="#download-ruff-0148">Download ruff 0.14.8</a></h4>
-<p>|  Fi</p>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.8" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2705,7 +2694,7 @@ curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astr</p>
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2026-01-22 06:10 UTC
+                Last updated: 2026-01-23 06:10 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
