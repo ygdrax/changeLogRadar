@@ -2157,6 +2157,78 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.9.28</div>
+                            <div class="release-version ">
+                                0.9.28
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-01-29 20:19 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2026-01-29.</p>
+<h5 id="python"><a class="toclink" href="#python">Python</a></h5>
+<ul>
+<li>Update CPython to use <a href="https://github.com/openssl/openssl/releases/tag/openssl-3.5.5">OpenSSL 3.5.5</a> which includes fixes for high severity CVEs (<a href="https://github.com/astral-sh/python-build-standalone/pull/960">python-build-standalone[#960](https://github.com/owner/repo/issues/960)</a>)</li>
+</ul>
+<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
+<ul>
+<li>Add support for Pyodide interpreter on Windows (<a href="https://github.com/astral-sh/uv/pull/17658">[#17658](https://github.com/owner/repo/issues/17658)</a>)</li>
+<li>Warn if multiple indexes include <code>default = true</code> (<a href="https://github.com/astral-sh/uv/pull/17713">[#17713](https://github.com/owner/repo/issues/17713)</a>)</li>
+<li>Skip uploads when validation reports 'Already uploaded' (<a href="https://github.com/astral-sh/uv/pull/17412">[#17412](https://github.com/owner/repo/issues/17412)</a>)</li>
+</ul>
+<h5 id="configuration"><a class="toclink" href="#configuration">Configuration</a></h5>
+<ul>
+<li>Add a reflink alias for the "clone" link mode (<a href="https://github.com/astral-sh/uv/pull/17724">[#17724](https://github.com/owner/repo/issues/17724)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>Ensure <code>uv.exe</code> exits when <code>uvw.exe</code> or <code>uvx.exe</code> is killed (<a href="https://github.com/astral-sh/uv/pull/17500">[#17500](https://github.com/owner/repo/issues/17500)</a>)</li>
+</ul>
+<h4 id="install-uv-0928"><a class="toclink" href="#install-uv-0928">Install uv 0.9.28</a></h4>
+<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
+<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.9.28/uv-installer.sh | sh
+</code></pre>
+<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
+<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -c &quot;irm https://github.com/astral-sh/uv/releases/download/0.9.28/uv-installer.ps1 | iex&quot;
+</code></pre>
+<h4 id="download-uv-0928"><a class="toclink" href="#download-uv-0928">Download uv 0.9.28</a></h4>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Platform</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.28/uv-aarch64-apple-darwin.tar.gz">uv-aarch64-apple-darwin.tar.gz</a></td>
+<td>Apple Silicon macOS</td>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.28/uv-aarch64-apple-darwin.tar.gz.sha256">checksum</a></td>
+</tr>
+<tr>
+<td>[uv-x86_64-apple-darwin.tar.gz](https://github.com/astral-sh/uv/releases/download/0.9.28/uv-x86_</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.28" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.9.27</div>
                             <div class="release-version ">
                                 0.9.27
@@ -2395,61 +2467,6 @@ powershell -ExecutionPolicy Bypass -c "irm https://github.com/astral-sh/uv/relea
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.9.23</div>
-                            <div class="release-version ">
-                                0.9.23
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2026-01-09 19:48 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2026-01-09.</p>
-<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
-<ul>
-<li>Only write portable paths in <code>RECORD</code> files (<a href="https://github.com/astral-sh/uv/pull/17339">[#17339](https://github.com/owner/repo/issues/17339)</a>)</li>
-<li>Support relative paths in <code>UV_PYTHON_BIN_DIR</code> and <code>UV_TOOL_BIN_DIR</code> (<a href="https://github.com/astral-sh/uv/pull/17367">[#17367](https://github.com/owner/repo/issues/17367)</a>)</li>
-</ul>
-<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
-<ul>
-<li>Enable uploads to S3 via pre-signed URLs (<a href="https://github.com/astral-sh/uv/pull/17349">[#17349](https://github.com/owner/repo/issues/17349)</a>)</li>
-</ul>
-<h5 id="configuration"><a class="toclink" href="#configuration">Configuration</a></h5>
-<ul>
-<li>Allow setting proxy variables via global / user configuration (<a href="https://github.com/astral-sh/uv/pull/16918">[#16918](https://github.com/owner/repo/issues/16918)</a>)</li>
-<li>Manually parse and reconcile Boolean environment variables (<a href="https://github.com/astral-sh/uv/pull/17321">[#17321](https://github.com/owner/repo/issues/17321)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Avoid broken build artifacts on build failure (<a href="https://github.com/astral-sh/uv/pull/17276">[#17276](https://github.com/owner/repo/issues/17276)</a>)</li>
-<li>Fix missing dependencies on synthetic root in SBOM export (<a href="https://github.com/astral-sh/uv/pull/17363">[#17363](https://github.com/owner/repo/issues/17363)</a>)</li>
-<li>Recognize <code>armv8l</code> as an alias for <code>armv7l</code> in platform tag parsing (<a href="https://github.com/astral-sh/uv/pull/17384">[#17384](https://github.com/owner/repo/issues/17384)</a>)</li>
-<li>Fix redaction of a URL in a middleware trace log (<a href="https://github.com/astral-sh/uv/pull/17346">[#17346](https://github.com/owner/repo/issues/17346)</a>)</li>
-</ul>
-<h5 id="documentation"><a class="toclink" href="#documentation">Documentation</a></h5>
-<ul>
-<li>Add <code>index.md</code> suggestion to <code>llms.txt</code> (<a href="https://github.com/astral-sh/uv/pull/17362">[#17362](https://github.com/owner/repo/issues/17362)</a>)</li>
-<li>Clarify that <code>uv run</code> uses inexact syncing by default (<a href="https://github.com/astral-sh/uv/pull/17366">[#17366](https://github.com/owner/repo/issues/17366)</a>)</li>
-</ul>
-<h4 id="install-uv-0923"><a class="toclink" href="#install-uv-0923">Install uv 0.9.23</a></h4>
-<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
-<p>```sh<br />
-curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astr</p>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.23" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -2471,6 +2488,45 @@ curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astr</p>
                 <div class="releases">
                     <h3 class="releases-title">Latest Releases</h3>
 
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">v0.15.0</div>
+                            <div class="release-version ">
+                                0.15.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-01-29 10:21 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="highlights"><a class="toclink" href="#highlights">Highlights</a></h4>
+<p>This release features 335 commits from 158 contributors (39 new)!</p>
+<h5 id="model-support"><a class="toclink" href="#model-support">Model Support</a></h5>
+<ul>
+<li><strong>New architectures</strong>: Kimi-K2.5 (<a href="https://github.com/owner/repo/issues/33131">#33131</a>), Molmo2 (<a href="https://github.com/owner/repo/issues/30997">#30997</a>), Step3vl 10B (<a href="https://github.com/owner/repo/issues/32329">#32329</a>), Step1 (<a href="https://github.com/owner/repo/issues/32511">#32511</a>), GLM-Lite (<a href="https://github.com/owner/repo/issues/31386">#31386</a>), Eagle2.5-8B VLM (<a href="https://github.com/owner/repo/issues/32456">#32456</a>).</li>
+<li><strong>LoRA expansion</strong>: Nemotron-H (<a href="https://github.com/owner/repo/issues/30802">#30802</a>), InternVL2 (<a href="https://github.com/owner/repo/issues/32397">#32397</a>), MiniMax M2 (<a href="https://github.com/owner/repo/issues/32763">#32763</a>).</li>
+<li><strong>Speculative decoding</strong>: EAGLE3 for Pixtral/LlavaForConditionalGeneration (<a href="https://github.com/owner/repo/issues/32542">#32542</a>), Qwen3 VL MoE (<a href="https://github.com/owner/repo/issues/32048">#32048</a>), draft model support (<a href="https://github.com/owner/repo/issues/24322">#24322</a>).</li>
+<li><strong>Embeddings</strong>: BGE-M3 sparse embeddings and ColBERT embeddings (<a href="https://github.com/owner/repo/issues/14526">#14526</a>).</li>
+<li><strong>Model enhancements</strong>: Voxtral streaming architecture (<a href="https://github.com/owner/repo/issues/32861">#32861</a>), SharedFusedMoE for Qwen3MoE (<a href="https://github.com/owner/repo/issues/32082">#32082</a>), dynamic resolution for Nemotron Nano VL (<a href="https://github.com/owner/repo/issues/32121">#32121</a>), Molmo2 vision backbone quantization (<a href="https://github.com/owner/repo/issues/32385">#32385</a>).</li>
+</ul>
+<h5 id="engine-core"><a class="toclink" href="#engine-core">Engine Core</a></h5>
+<ul>
+<li><strong>Async scheduling + Pipeline Parallelism</strong>: <code>--async-scheduling</code> now works with pipeline parallelism (<a href="https://github.com/owner/repo/issues/32359">#32359</a>).</li>
+<li><strong>Mamba prefix caching</strong>: Block-aligned prefix caching for Mamba/hybrid models with <code>--enable-prefix-caching --mamba-cache-mode align</code>. Achieves ~2x speedup by caching Mamba states directly (<a href="https://github.com/owner/repo/issues/30877">#30877</a>).</li>
+<li>**Session-based streaming input</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: khluu</span>
+                            <a href="https://github.com/vllm-project/vllm/releases/tag/v0.15.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
                     
                     <div class="release">
                         <div class="release-header">
@@ -2614,33 +2670,6 @@ curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astr</p>
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">v0.11.2</div>
-                            <div class="release-version ">
-                                0.11.2
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-11-20 07:29 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><p>This release includes 4 bug fixes on top of <code>v0.11.1</code>:<br />
-- [BugFix] Ray with multiple nodes (https://github.com/vllm-project/vllm/pull/28873)<br />
-- [BugFix] Fix false assertion with spec-decode=[2,4,..] and TP&gt;2 (https://github.com/vllm-project/vllm/pull/29036)<br />
-- [BugFix] Fix async-scheduling + FlashAttn MLA (https://github.com/vllm-project/vllm/pull/28990)<br />
-- [NVIDIA] Guard SM100 CUTLASS MoE macro to SM100 builds v2 (https://github.com/vllm-project/vllm/pull/28938)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: khluu</span>
-                            <a href="https://github.com/vllm-project/vllm/releases/tag/v0.11.2" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -2649,7 +2678,7 @@ curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astr</p>
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2026-01-29 06:19 UTC
+                Last updated: 2026-01-30 06:19 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
