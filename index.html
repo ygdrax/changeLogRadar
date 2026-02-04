@@ -1508,6 +1508,74 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.15.0</div>
+                            <div class="release-version ">
+                                0.15.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-03 17:55 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2026-02-03.</p>
+<p>Check out the <a href="https://astral.sh/blog/ruff-v0.15.0">blog post</a> for a migration guide and overview of the changes!</p>
+<h5 id="breaking-changes"><a class="toclink" href="#breaking-changes">Breaking changes</a></h5>
+<ul>
+<li>
+<p>Ruff now formats your code according to the 2026 style guide. See the formatter section below or in the blog post for a detailed list of changes.</p>
+</li>
+<li>
+<p>The linter now supports block suppression comments. For example, to suppress <code>N803</code> for all parameters in this function:</p>
+<p>```python</p>
+<h3 id="ruff-disablen803"><a class="toclink" href="#ruff-disablen803">ruff: disable[N803]</a></h3>
+<p>def foo(<br />
+    legacyArg1,<br />
+    legacyArg2,<br />
+    legacyArg3,<br />
+    legacyArg4,<br />
+): ...</p>
+<h3 id="ruff-enablen803"><a class="toclink" href="#ruff-enablen803">ruff: enable[N803]</a></h3>
+<p>```</p>
+<p>See the <a href="https://docs.astral.sh/ruff/linter/#block-level">documentation</a> for more details.</p>
+</li>
+<li>
+<p>The <code>ruff:alpine</code> Docker image is now based on Alpine 3.23 (up from 3.21).</p>
+</li>
+<li>
+<p>The <code>ruff:debian</code> and <code>ruff:debian-slim</code> Docker images are now based on Debian 13 "Trixie" instead of Debian 12 "Bookworm."</p>
+</li>
+<li>
+<p>Binaries for the <code>ppc64</code> (64-bit big-endian PowerPC) architecture are no longer included in our releases. It should still be possible to build Ruff manually for this platform, if needed.</p>
+</li>
+<li>
+<p>Ruff now resolves all <code>extend</code>ed configuration files before falling back on a default Python version.</p>
+</li>
+</ul>
+<h5 id="stabilization"><a class="toclink" href="#stabilization">Stabilization</a></h5>
+<p>The following rules have been stabilized and are no longer in preview:</p>
+<ul>
+<li><a href="https://docs.astral.sh/ruff/rules/blocking-http-call-httpx-in-async-function"><code>blocking-http-call-httpx-in-async-function</code></a> (<code>ASYNC212</code>)</li>
+<li><a href="https://docs.astral.sh/ruff/rules/blocking-path-method-in-async-function"><code>blocking-path-method-in-async-function</code></a> (<code>ASYNC240</code>)</li>
+<li><a href="https://docs.astral.sh/ruff/rules/blocking-input-in-async-function"><code>blocking-input-in-async-function</code></a> (<code>ASYNC250</code>)</li>
+<li><a href="https://docs.astral.sh/ruff/rules/map-without-explicit-strict"><code>map-without-explicit-strict</code></a> (<code>B912</code>)</li>
+<li><a href="https://docs.astral.sh/ruff/rules/if-exp-instead-of-or-operator"><code>if-exp-instead-of-or-operator</code></a> (<code>FURB110</code>)</li>
+<li>[`single-item-membership-te</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.15.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.14.14</div>
                             <div class="release-version ">
                                 0.14.14
@@ -1694,61 +1762,6 @@
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.10" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.14.9</div>
-                            <div class="release-version ">
-                                0.14.9
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-12-11 21:46 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2025-12-11.</p>
-<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
-<ul>
-<li>[<code>ruff</code>] New <code>RUF100</code> diagnostics for unused range suppressions (<a href="https://github.com/astral-sh/ruff/pull/21783">[#21783](https://github.com/owner/repo/issues/21783)</a>)</li>
-<li>[<code>pylint</code>] Detect subclasses of builtin exceptions (<code>PLW0133</code>) (<a href="https://github.com/astral-sh/ruff/pull/21382">[#21382](https://github.com/owner/repo/issues/21382)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Fix comment placement in lambda parameters (<a href="https://github.com/astral-sh/ruff/pull/21868">[#21868](https://github.com/owner/repo/issues/21868)</a>)</li>
-<li>Skip over trivia tokens after re-lexing (<a href="https://github.com/astral-sh/ruff/pull/21895">[#21895](https://github.com/owner/repo/issues/21895)</a>)</li>
-<li>[<code>flake8-bandit</code>] Fix false positive when using non-standard <code>CSafeLoader</code> path (S506). (<a href="https://github.com/astral-sh/ruff/pull/21830">[#21830](https://github.com/owner/repo/issues/21830)</a>)</li>
-<li>[<code>flake8-bugbear</code>] Accept immutable slice default arguments (<code>B008</code>) (<a href="https://github.com/astral-sh/ruff/pull/21823">[#21823](https://github.com/owner/repo/issues/21823)</a>)</li>
-</ul>
-<h5 id="rule-changes"><a class="toclink" href="#rule-changes">Rule changes</a></h5>
-<ul>
-<li>[<code>pydocstyle</code>] Suppress <code>D417</code> for parameters with <code>Unpack</code> annotations (<a href="https://github.com/astral-sh/ruff/pull/21816">[#21816](https://github.com/owner/repo/issues/21816)</a>)</li>
-</ul>
-<h5 id="performance"><a class="toclink" href="#performance">Performance</a></h5>
-<ul>
-<li>Use <code>memchr</code> for computing line indexes (<a href="https://github.com/astral-sh/ruff/pull/21838">[#21838](https://github.com/owner/repo/issues/21838)</a>)</li>
-</ul>
-<h5 id="documentation"><a class="toclink" href="#documentation">Documentation</a></h5>
-<ul>
-<li>Document <code>*.pyw</code> is included by default in preview (<a href="https://github.com/astral-sh/ruff/pull/21885">[#21885](https://github.com/owner/repo/issues/21885)</a>)</li>
-<li>Document range suppressions, reorganize suppression docs (<a href="https://github.com/astral-sh/ruff/pull/21884">[#21884](https://github.com/owner/repo/issues/21884)</a>)</li>
-<li>Update mkdocs-material to 9.7.0 (Insiders now free) (<a href="https://github.com/astral-sh/ruff/pull/21797">[#21797](https://github.com/owner/repo/issues/21797)</a>)</li>
-</ul>
-<h5 id="contributors"><a class="toclink" href="#contributors">Contributors</a></h5>
-<ul>
-<li>[<a href="https://github.com/Avasam">@Avasam</a></li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.9" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2156,6 +2169,55 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.9.29</div>
+                            <div class="release-version ">
+                                0.9.29
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-03 19:42 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2026-02-03.</p>
+<h5 id="python"><a class="toclink" href="#python">Python</a></h5>
+<ul>
+<li>Update to Pyodide 0.29.3 (<a href="https://github.com/astral-sh/uv/pull/17730">[#17730](https://github.com/owner/repo/issues/17730)</a>)</li>
+</ul>
+<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
+<ul>
+<li>Add wheel-tag-style aliases for manylinux platform names (<a href="https://github.com/astral-sh/uv/pull/17750">[#17750](https://github.com/owner/repo/issues/17750)</a>)</li>
+<li>Hint on <code>uv version --bump dev</code> similar to pre-release bumps (<a href="https://github.com/astral-sh/uv/pull/17796">[#17796](https://github.com/owner/repo/issues/17796)</a>)</li>
+<li>Improve display of RFC 9457 Problem Detail responses in <code>uv publish</code> server errors (<a href="https://github.com/astral-sh/uv/pull/17787">[#17787](https://github.com/owner/repo/issues/17787)</a>)</li>
+<li>Improve the wording of publish errors during dry-run (<a href="https://github.com/astral-sh/uv/pull/17782">[#17782](https://github.com/owner/repo/issues/17782)</a>)</li>
+<li>Set backoff to 10 retries (<a href="https://github.com/astral-sh/uv/pull/17816">[#17816](https://github.com/owner/repo/issues/17816)</a>)</li>
+<li>Add properties to synthentic and project roots in Cyclone DX exports (<a href="https://github.com/astral-sh/uv/pull/17820">[#17820](https://github.com/owner/repo/issues/17820)</a>)</li>
+<li>Identify the invidividual clients in <code>uv publish</code> trace logs (<a href="https://github.com/astral-sh/uv/pull/17784">[#17784](https://github.com/owner/repo/issues/17784)</a>)</li>
+</ul>
+<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
+<ul>
+<li>Remove special casing for <code>base</code> and <code>default</code> conda environment names (<a href="https://github.com/astral-sh/uv/pull/17758">[#17758](https://github.com/owner/repo/issues/17758)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>Fix <code>PYTHONHOME</code> inheritance when spawning different Python versions (<a href="https://github.com/astral-sh/uv/pull/17821">[#17821](https://github.com/owner/repo/issues/17821)</a>)</li>
+<li>Fix wheel rejections on freethreading+debug builds (<a href="https://github.com/astral-sh/uv/pull/17812">[#17812](https://github.com/owner/repo/issues/17812)</a>)</li>
+<li>Pad with zeros during comparisons in <code>EqualStar</code> and <code>NotEqualStar</code> operators ([[#17751](https://github.com/owner/repo/issues/</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.29" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.9.28</div>
                             <div class="release-version ">
                                 0.9.28
@@ -2388,84 +2450,6 @@ powershell -ExecutionPolicy Bypass -c "irm https://github.com/astral-sh/uv/relea
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.9.24</div>
-                            <div class="release-version ">
-                                0.9.24
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2026-01-09 22:36 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2026-01-09.</p>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Fix handling of <code>UV_NO_SYNC=1 uv run ...</code> (<a href="https://github.com/astral-sh/uv/pull/17391">[#17391](https://github.com/owner/repo/issues/17391)</a>)</li>
-<li>Rebuild dynamic distribution when version changes with <code>--no-cache</code> (<a href="https://github.com/astral-sh/uv/pull/17387">[#17387](https://github.com/owner/repo/issues/17387)</a>)</li>
-</ul>
-<h5 id="documentation"><a class="toclink" href="#documentation">Documentation</a></h5>
-<ul>
-<li>Add Rust language classifier (<a href="https://github.com/astral-sh/uv/pull/17389">[#17389](https://github.com/owner/repo/issues/17389)</a>)</li>
-</ul>
-<h4 id="install-uv-0924"><a class="toclink" href="#install-uv-0924">Install uv 0.9.24</a></h4>
-<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
-<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.9.24/uv-installer.sh | sh
-</code></pre>
-<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
-<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -c &quot;irm https://github.com/astral-sh/uv/releases/download/0.9.24/uv-installer.ps1 | iex&quot;
-</code></pre>
-<h4 id="download-uv-0924"><a class="toclink" href="#download-uv-0924">Download uv 0.9.24</a></h4>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Platform</th>
-<th>Checksum</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.24/uv-aarch64-apple-darwin.tar.gz">uv-aarch64-apple-darwin.tar.gz</a></td>
-<td>Apple Silicon macOS</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.24/uv-aarch64-apple-darwin.tar.gz.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.24/uv-x86_64-apple-darwin.tar.gz">uv-x86_64-apple-darwin.tar.gz</a></td>
-<td>Intel macOS</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.24/uv-x86_64-apple-darwin.tar.gz.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.24/uv-aarch64-pc-windows-msvc.zip">uv-aarch64-pc-windows-msvc.zip</a></td>
-<td>ARM64 Windows</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.24/uv-aarch64-pc-windows-msvc.zip.sha256">checksum</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.24/uv-i686-pc-windows-msvc.zip">uv-i686-pc-windows-msvc.zip</a></td>
-<td>x86 Windows</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.24/uv-i686-pc-windows-msvc.zip.sha256">checksum</a></td>
-</tr>
-<tr>
-<td>[uv</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.24" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -2677,7 +2661,7 @@ powershell -ExecutionPolicy Bypass -c "irm https://github.com/astral-sh/uv/relea
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2026-02-03 06:22 UTC
+                Last updated: 2026-02-04 06:21 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
