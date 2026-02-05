@@ -395,6 +395,46 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.128.1</div>
+                            <div class="release-version ">
+                                0.128.1
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-04 17:34 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="features"><a class="toclink" href="#features">Features</a></h5>
+<ul>
+<li>✨ Add <code>viewport</code> meta tag to improve Swagger UI on mobile devices. PR <a href="https://github.com/fastapi/fastapi/pull/14777">[#14777](https://github.com/owner/repo/issues/14777)</a> by <a href="https://github.com/Joab0">[@Joab0](https://github.com/Joab0)</a>.</li>
+<li>🚸 Improve error message for invalid query parameter type annotations. PR <a href="https://github.com/fastapi/fastapi/pull/14479">[#14479](https://github.com/owner/repo/issues/14479)</a> by <a href="https://github.com/retwish">[@retwish](https://github.com/retwish)</a>.</li>
+</ul>
+<h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
+<ul>
+<li>🐛 Update <code>ValidationError</code> schema to include <code>input</code> and <code>ctx</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14791">[#14791](https://github.com/owner/repo/issues/14791)</a> by <a href="https://github.com/jonathan-fulton">[@jonathan](https://github.com/jonathan)-fulton</a>.</li>
+<li>🐛 Fix TYPE_CHECKING annotations for Python 3.14 (PEP 649). PR <a href="https://github.com/fastapi/fastapi/pull/14789">[#14789](https://github.com/owner/repo/issues/14789)</a> by <a href="https://github.com/mgu">[@mgu](https://github.com/mgu)</a>.</li>
+<li>🐛 Strip whitespaces from <code>Authorization</code> header credentials. PR <a href="https://github.com/fastapi/fastapi/pull/14786">[#14786](https://github.com/owner/repo/issues/14786)</a> by <a href="https://github.com/WaveTheory1">[@WaveTheory1](https://github.com/WaveTheory1)</a>.</li>
+<li>🐛 Fix OpenAPI duplication of <code>anyOf</code> refs for app-level responses with specified <code>content</code> and <code>model</code> as <code>Union</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14463">[#14463](https://github.com/owner/repo/issues/14463)</a> by <a href="https://github.com/DJMcoder">[@DJMcoder](https://github.com/DJMcoder)</a>.</li>
+</ul>
+<h5 id="refactors"><a class="toclink" href="#refactors">Refactors</a></h5>
+<ul>
+<li>🎨 Tweak types for mypy. PR <a href="https://github.com/fastapi/fastapi/pull/14816">[#14816](https://github.com/owner/repo/issues/14816)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+<li>🏷️ Re-export <code>IncEx</code> type from Pydantic instead of duplicating it. PR <a href="https://github.com/fastapi/fastapi/pull/14641">[#14641](https://github.com/owner/repo/issues/14641)</a> by [[@mvanderlee](https://github</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.128.1" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.128.0</div>
                             <div class="release-version ">
                                 0.128.0
@@ -543,51 +583,6 @@
                         <div class="release-meta">
                             <span>Author: tiangolo</span>
                             <a href="https://github.com/fastapi/fastapi/releases/tag/0.126.0" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.125.0</div>
-                            <div class="release-version ">
-                                0.125.0
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-12-17 21:41 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h5 id="breaking-changes"><a class="toclink" href="#breaking-changes">Breaking Changes</a></h5>
-<ul>
-<li>🔧 Drop support for Python 3.8. PR <a href="https://github.com/fastapi/fastapi/pull/14563"><a href="https://github.com/owner/repo/issues/14563">#14563</a></a> by <a href="https://github.com/tiangolo"><a href="https://github.com/tiangolo">@tiangolo</a></a>.<ul>
-<li>This would actually not be a <em>breaking</em> change as no code would really break. Any Python 3.8 installer would just refuse to install the latest version of FastAPI and would only install 0.124.4. Only marking it as a "breaking change" to make it visible.</li>
-</ul>
-</li>
-</ul>
-<h5 id="refactors"><a class="toclink" href="#refactors">Refactors</a></h5>
-<ul>
-<li>♻️ Upgrade internal syntax to Python 3.9+ 🎉. PR <a href="https://github.com/fastapi/fastapi/pull/14564">[#14564](https://github.com/owner/repo/issues/14564)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-</ul>
-<h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
-<ul>
-<li>⚰️ Remove Python 3.8 from CI and remove Python 3.8 examples from source docs. PR <a href="https://github.com/fastapi/fastapi/pull/14559">[#14559](https://github.com/owner/repo/issues/14559)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a> and <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-</ul>
-<h5 id="translations"><a class="toclink" href="#translations">Translations</a></h5>
-<ul>
-<li>🌐 Update translations for pt (add-missing). PR <a href="https://github.com/fastapi/fastapi/pull/14539">[#14539](https://github.com/owner/repo/issues/14539)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-<li>🔧 Add LLM prompt file for French, generated from the existing French docs. PR <a href="https://github.com/fastapi/fastapi/pull/14544">[#14544](https://github.com/owner/repo/issues/14544)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-<li>🌐 Sync Portuguese docs (pages found with script). PR <a href="https://github.com/fastapi/fastapi/pull/14554">[#14554](https://github.com/owner/repo/issues/14554)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
-<li>🌐 Sync Spanish docs (outdated pages found with script). PR [<a href="https://github.com/owner/repo/issues/14553">#14553</a>](https://github.com/fastapi/fas</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.125.0" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -1237,6 +1232,56 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">Python Polars 1.38.0</div>
+                            <div class="release-version ">
+                                py-1.38.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-04 12:01 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="deprecations"><a class="toclink" href="#deprecations">⚠️ Deprecations</a></h4>
+<ul>
+<li>Deprecate <code>retries=n</code> in favor of <code>storage_options={"max_retries": n}</code> (<a href="https://github.com/owner/repo/issues/26155">#26155</a>)</li>
+</ul>
+<h4 id="performance-improvements"><a class="toclink" href="#performance-improvements">🚀 Performance improvements</a></h4>
+<ul>
+<li>Enable zero-copy object_store <code>put</code> upload for IPC sink (<a href="https://github.com/owner/repo/issues/26288">#26288</a>)</li>
+<li>Resolve file schema's and metadata concurrently (<a href="https://github.com/owner/repo/issues/26325">#26325</a>)</li>
+<li>Run elementwise CSEE for the streaming engine (<a href="https://github.com/owner/repo/issues/26278">#26278</a>)</li>
+<li>Disable morsel splitting for fast-count on streaming engine (<a href="https://github.com/owner/repo/issues/26245">#26245</a>)</li>
+<li>Implement streaming decompression for scan_ndjson and scan_lines (<a href="https://github.com/owner/repo/issues/26200">#26200</a>)</li>
+<li>Improve string slicing performance (<a href="https://github.com/owner/repo/issues/26206">#26206</a>)</li>
+<li>Refactor <code>scan_delta</code> to use python dataset interface (<a href="https://github.com/owner/repo/issues/26190">#26190</a>)</li>
+<li>Add dedicated kernel for group-by <code>arg_max/arg_min</code> (<a href="https://github.com/owner/repo/issues/26093">#26093</a>)</li>
+<li>Add streaming merge-join (<a href="https://github.com/owner/repo/issues/25964">#25964</a>)</li>
+<li>Generalize Bitmap::new_zeroed opt for Buffer::zeroed (<a href="https://github.com/owner/repo/issues/26142">#26142</a>)</li>
+<li>Reduce fs stat calls in path expansion (<a href="https://github.com/owner/repo/issues/26173">#26173</a>)</li>
+<li>Lower streaming group_by n_unique to unique().len() (<a href="https://github.com/owner/repo/issues/26109">#26109</a>)</li>
+</ul>
+<h4 id="enhancements"><a class="toclink" href="#enhancements">✨ Enhancements</a></h4>
+<ul>
+<li>Avoid OOM for scan_ndjson and scan_lines if input is compressed and negative slice (<a href="https://github.com/owner/repo/issues/26396">#26396</a>)</li>
+<li>Support annoymous agg in-mem (<a href="https://github.com/owner/repo/issues/26376">#26376</a>)</li>
+<li>Add unstable <code>arrow_schema</code> parameter to <code>sink_parquet</code> (<a href="https://github.com/owner/repo/issues/26323">#26323</a>)</li>
+<li>Improve error message formatting for structs (<a href="https://github.com/owner/repo/issues/26349">#26349</a>)</li>
+<li>Remove parquet field overwrites ([#26236](https://github.com/owner/repo/issues/2</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/pola-rs/polars/releases/tag/py-1.38.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">Python Polars 1.37.1</div>
                             <div class="release-version ">
                                 py-1.37.1
@@ -1432,55 +1477,6 @@
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/pola-rs/polars/releases/tag/py-1.36.0" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">Python Polars 1.36.0-beta.2</div>
-                            <div class="release-version prerelease">
-                                py-1.36.0-beta.2
-                                 (Pre-release)
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-12-02 12:42 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="highlights"><a class="toclink" href="#highlights">🏆 Highlights</a></h4>
-<ul>
-<li>Add Extension types (<a href="https://github.com/owner/repo/issues/25322">#25322</a>)</li>
-</ul>
-<h4 id="enhancements"><a class="toclink" href="#enhancements">✨ Enhancements</a></h4>
-<ul>
-<li>Add SQL support for <code>ROW_NUMBER</code>, <code>RANK</code>, and <code>DENSE_RANK</code> functions (<a href="https://github.com/owner/repo/issues/25409">#25409</a>)</li>
-<li>Add SQL support for named <code>WINDOW</code> references (<a href="https://github.com/owner/repo/issues/25400">#25400</a>)</li>
-<li>Add <code>BIT_NOT</code> support to the SQL interface (<a href="https://github.com/owner/repo/issues/25094">#25094</a>)</li>
-<li>Add <code>LazyFrame.pivot</code> (<a href="https://github.com/owner/repo/issues/25016">#25016</a>)</li>
-<li>Add <code>allow_empty</code> flag to <code>item</code> (<a href="https://github.com/owner/repo/issues/25048">#25048</a>)</li>
-<li>Add <code>empty_as_null</code> and <code>keep_nulls</code> flags to <code>Expr.explode</code> (<a href="https://github.com/owner/repo/issues/25289">#25289</a>)</li>
-<li>Add <code>empty_as_null</code> and <code>keep_nulls</code> to <code>{Lazy,Data}Frame.explode</code> (<a href="https://github.com/owner/repo/issues/25369">#25369</a>)</li>
-<li>Add <code>having</code> to <code>group_by</code> context (<a href="https://github.com/owner/repo/issues/23550">#23550</a>)</li>
-<li>Add <code>ignore_nulls</code> to <code>first</code> / <code>last</code> (<a href="https://github.com/owner/repo/issues/25105">#25105</a>)</li>
-<li>Add <code>maintain_order</code> to <code>Expr.mode</code> (<a href="https://github.com/owner/repo/issues/25377">#25377</a>)</li>
-<li>Add <code>quantile</code> for missing temporals (<a href="https://github.com/owner/repo/issues/25464">#25464</a>)</li>
-<li>Add leftmost option to <code>str.replace_many / str.find_many / str.extract_many</code> (<a href="https://github.com/owner/repo/issues/25398">#25398</a>)</li>
-<li>Add strict parameter to pl.concat(how='horizontal') (<a href="https://github.com/owner/repo/issues/25452">#25452</a>)</li>
-<li>Add support for <code>Float16</code> dtype (<a href="https://github.com/owner/repo/issues/25185">#25185</a>)</li>
-<li>Add unstable <code>Schema.to_arrow</code> (<a href="https://github.com/owner/repo/issues/25149">#25149</a>)</li>
-<li>Allow <code>Expr.rolling</code> in aggregation contexts (<a href="https://github.com/owner/repo/issues/25258">#25258</a>)</li>
-<li>Allow <code>Expr.unique</code> on <code>List</code>/<code>Array</code> with non-numeric types (<a href="https://github.com/owner/repo/issues/25285">#25285</a>)</li>
-<li>Allow <code>glimpse</code> to return a <code>DataFrame</code> (<a href="https://github.com/owner/repo/issues/24803">#24803</a>)</li>
-<li>Allow `h</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/pola-rs/polars/releases/tag/py-1.36.0-beta.2" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2169,6 +2165,79 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.9.30</div>
+                            <div class="release-version ">
+                                0.9.30
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-04 21:49 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2026-02-04.</p>
+<h5 id="python"><a class="toclink" href="#python">Python</a></h5>
+<ul>
+<li>Add CPython 3.14.3 and 3.13.12 (<a href="https://github.com/astral-sh/uv/pull/17849">[#17849](https://github.com/owner/repo/issues/17849)</a>)</li>
+</ul>
+<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
+<ul>
+<li>Allow comma-separated values for <code>--extra</code> option (<a href="https://github.com/astral-sh/uv/pull/17525">[#17525](https://github.com/owner/repo/issues/17525)</a>)</li>
+<li>Check all files during a dry-run publish instead of stopping at the first failure (<a href="https://github.com/astral-sh/uv/pull/17785">[#17785](https://github.com/owner/repo/issues/17785)</a>)</li>
+<li>Clarify <code>UV_HTTP_TIMEOUT</code> error message (<a href="https://github.com/astral-sh/uv/pull/17493">[#17493](https://github.com/owner/repo/issues/17493)</a>)</li>
+</ul>
+<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
+<ul>
+<li>Use relocatable virtual environments by default (<a href="https://github.com/astral-sh/uv/pull/17770">[#17770](https://github.com/owner/repo/issues/17770)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>Fix deadlock on token refresh in <code>uv publish</code> when using pyx (<a href="https://github.com/astral-sh/uv/pull/17832">[#17832](https://github.com/owner/repo/issues/17832)</a>)</li>
+<li>Ignore global Python pins when incompatible with project (<a href="https://github.com/astral-sh/uv/pull/15473">[#15473](https://github.com/owner/repo/issues/15473)</a>)</li>
+</ul>
+<h4 id="install-uv-0930"><a class="toclink" href="#install-uv-0930">Install uv 0.9.30</a></h4>
+<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
+<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.9.30/uv-installer.sh | sh
+</code></pre>
+<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
+<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -c &quot;irm https://github.com/astral-sh/uv/releases/download/0.9.30/uv-installer.ps1 | iex&quot;
+</code></pre>
+<h4 id="download-uv-0930"><a class="toclink" href="#download-uv-0930">Download uv 0.9.30</a></h4>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Platform</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.30/uv-aarch64-apple-darwin.tar.gz">uv-aarch64-apple-darwin.tar.gz</a></td>
+<td>Apple Silicon macOS</td>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.30/uv-aarch64-apple-darwin.tar.gz.sha256">checksum</a></td>
+</tr>
+<tr>
+<td>[uv-x86_64-apple-darwin.tar.gz](https://github.com/astral-sh/uv</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.30" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.9.29</div>
                             <div class="release-version ">
                                 0.9.29
@@ -2395,61 +2464,6 @@
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.9.25</div>
-                            <div class="release-version ">
-                                0.9.25
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2026-01-13 23:24 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2026-01-13.</p>
-<h5 id="python"><a class="toclink" href="#python">Python</a></h5>
-<ul>
-<li>Add CPython 3.15.0a4</li>
-<li>Upgrade Tcl/Tk used by CPython to 9.0</li>
-</ul>
-<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
-<ul>
-<li>Add <code>--compile-bytecode</code> to <code>uv python install</code> and <code>uv python upgrade</code> to compile the standard library (<a href="https://github.com/astral-sh/uv/pull/17088">[#17088](https://github.com/owner/repo/issues/17088)</a>)</li>
-<li>Allow disabling <code>exclude-newer</code> per package (<a href="https://github.com/astral-sh/uv/pull/16854">[#16854](https://github.com/owner/repo/issues/16854)</a>)</li>
-<li>Broadcast <code>WM_SETTINGCHANGE</code> on <code>uv tool update-shell</code> (<a href="https://github.com/astral-sh/uv/pull/17404">[#17404](https://github.com/owner/repo/issues/17404)</a>)</li>
-</ul>
-<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
-<ul>
-<li>Detect workspace from <code>uv run</code> target (<a href="https://github.com/astral-sh/uv/pull/17423">[#17423](https://github.com/owner/repo/issues/17423)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Avoid unwrapping size for file responses (<a href="https://github.com/astral-sh/uv/pull/17434">[#17434](https://github.com/owner/repo/issues/17434)</a>)</li>
-<li>Use keyring authentication when retrieving <code>tool[@latest](https://github.com/latest)</code> version (<a href="https://github.com/astral-sh/uv/pull/17448">[#17448](https://github.com/owner/repo/issues/17448)</a>)</li>
-<li>Use latest Pyodide version for each python version (<a href="https://github.com/astral-sh/uv/pull/17372">[#17372](https://github.com/owner/repo/issues/17372)</a>)</li>
-<li>Improve trampoline file handle closing (<a href="https://github.com/astral-sh/uv/pull/17374">[#17374](https://github.com/owner/repo/issues/17374)</a>)</li>
-<li>Fix error message when installing musl python on armv7 (<a href="https://github.com/astral-sh/uv/pull/17213">[#17213](https://github.com/owner/repo/issues/17213)</a>)</li>
-</ul>
-<h4 id="install-uv-0925"><a class="toclink" href="#install-uv-0925">Install uv 0.9.25</a></h4>
-<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
-<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.9.25/uv-installer.sh | sh
-</code></pre>
-<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
-<p>```sh<br />
-powershell -ExecutionPolicy Bypass -c "irm https://github.com/astral-sh/uv/releases/download/0.9.25/uv-installer.ps1 | </p>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.25" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -2471,6 +2485,63 @@ powershell -ExecutionPolicy Bypass -c "irm https://github.com/astral-sh/uv/relea
                 <div class="releases">
                     <h3 class="releases-title">Latest Releases</h3>
 
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">v0.15.1</div>
+                            <div class="release-version ">
+                                0.15.1
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-04 20:48 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><p>v0.15.1 is a patch release with security fixes, RTX Blackwell GPU fixes support, and bug fixes.</p>
+<h4 id="security"><a class="toclink" href="#security">Security</a></h4>
+<ul>
+<li><strong>CVE-2025-69223</strong>: Updated aiohttp dependency (<a href="https://github.com/owner/repo/issues/33621">#33621</a>)</li>
+<li><strong>CVE-2026-0994</strong>: Updated Protobuf dependency (<a href="https://github.com/owner/repo/issues/33619">#33619</a>)</li>
+</ul>
+<h4 id="highlights"><a class="toclink" href="#highlights">Highlights</a></h4>
+<h5 id="bugfix-hardware-support"><a class="toclink" href="#bugfix-hardware-support">Bugfix Hardware Support</a></h5>
+<ul>
+<li><strong>RTX Blackwell (SM120)</strong>: Fixed NVFP4 MoE kernel support for RTX Blackwell workstation GPUs. Previously, NVFP4 MoE models would fail to load on these GPUs (<a href="https://github.com/owner/repo/issues/33417">#33417</a>)</li>
+<li><strong>FP8 kernel selection</strong>: Fixed FP8 CUTLASS group GEMM to properly fall back to Triton kernels on SM120 GPUs (<a href="https://github.com/owner/repo/issues/33285">#33285</a>)</li>
+</ul>
+<h5 id="model-support"><a class="toclink" href="#model-support">Model Support</a></h5>
+<ul>
+<li><strong>Step-3.5-Flash</strong>: New model support (<a href="https://github.com/owner/repo/issues/33523">#33523</a>)</li>
+</ul>
+<h5 id="bugfix-model-support"><a class="toclink" href="#bugfix-model-support">Bugfix Model Support</a></h5>
+<ul>
+<li><strong>Qwen3-VL-Reranker</strong>: Fixed model loading (<a href="https://github.com/owner/repo/issues/33298">#33298</a>)</li>
+<li><strong>Whisper</strong>: Fixed FlashAttention2 with full CUDA graphs (<a href="https://github.com/owner/repo/issues/33360">#33360</a>)</li>
+</ul>
+<h5 id="performance"><a class="toclink" href="#performance">Performance</a></h5>
+<ul>
+<li><strong>torch.compile cold-start</strong>: Fixed regression that increased cold-start compilation time (Llama3-70B: ~88s → ~22s) (<a href="https://github.com/owner/repo/issues/33441">#33441</a>)</li>
+<li><strong>MoE forward pass</strong>: Optimized by caching layer name computation (<a href="https://github.com/owner/repo/issues/33184">#33184</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug Fixes</a></h5>
+<ul>
+<li>Fixed prefix cache hit rate of 0% with GPT-OSS style hybrid attention models (<a href="https://github.com/owner/repo/issues/33524">#33524</a>)</li>
+<li>Enabled Triton MoE backend for FP8 per-tensor dynamic quantization (<a href="https://github.com/owner/repo/issues/33300">#33300</a>)</li>
+<li>Disabled unsupported Renormalize routing methods for TRTLLM per-tensor FP8 MoE (<a href="https://github.com/owner/repo/issues/33620">#33620</a>)</li>
+<li>Fixed speculative decoding metrics crash when no tokens generated (<a href="https://github.com/owner/repo/issues/33729">#33729</a>)</li>
+<li>Disabled fast MoE cold start </li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: khluu</span>
+                            <a href="https://github.com/vllm-project/vllm/releases/tag/v0.15.1" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
                     
                     <div class="release">
                         <div class="release-header">
@@ -2611,48 +2682,6 @@ powershell -ExecutionPolicy Bypass -c "irm https://github.com/astral-sh/uv/relea
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">v0.12.0</div>
-                            <div class="release-version ">
-                                0.12.0
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-12-03 09:36 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h3 id="vllm-v0120-release-notes-highlights"><a class="toclink" href="#vllm-v0120-release-notes-highlights">vLLM v0.12.0 Release Notes Highlights</a></h3>
-<h4 id="highlights"><a class="toclink" href="#highlights">Highlights</a></h4>
-<p>This release features 474 commits from 213 contributors (57 new)！</p>
-<p><strong>Breaking Changes</strong>: This release includes PyTorch 2.9.0 upgrade (CUDA 12.9), V0 deprecations including <code>xformers</code> backend, and scheduled removals - please review the changelog carefully.</p>
-<p><strong>Major Features</strong>:<br />
-* <strong>EAGLE Speculative Decoding Improvements</strong>: Multi-step CUDA graph support (<a href="https://github.com/owner/repo/issues/29559">#29559</a>), DP&gt;1 support (<a href="https://github.com/owner/repo/issues/26086">#26086</a>), and multimodal support with Qwen3VL (<a href="https://github.com/owner/repo/issues/29594">#29594</a>).<br />
-* <strong>Significant Performance Optimizations</strong>: 18.1% throughput improvement from batch invariant BMM (<a href="https://github.com/owner/repo/issues/29345">#29345</a>), 2.2% throughput improvement from shared experts overlap (<a href="https://github.com/owner/repo/issues/28879">#28879</a>).<br />
-* <strong>AMD ROCm Expansion</strong>: DeepSeek v3.2 + SparseMLA support (<a href="https://github.com/owner/repo/issues/26670">#26670</a>), FP8 MLA decode (<a href="https://github.com/owner/repo/issues/28032">#28032</a>), AITER attention backend (<a href="https://github.com/owner/repo/issues/28701">#28701</a>).</p>
-<h5 id="model-support"><a class="toclink" href="#model-support">Model Support</a></h5>
-<ul>
-<li><strong>New model families</strong>: PLaMo-3 (<a href="https://github.com/owner/repo/issues/28834">#28834</a>), OpenCUA-7B (<a href="https://github.com/owner/repo/issues/29068">#29068</a>), HunyuanOCR (<a href="https://github.com/owner/repo/issues/29327">#29327</a>), Mistral Large 3 and Ministral 3 (<a href="https://github.com/owner/repo/issues/29757">#29757</a>).</li>
-<li><strong>Format support</strong>: Gemma3 GGUF multimodal support (<a href="https://github.com/owner/repo/issues/27772">#27772</a>).</li>
-<li><strong>Multimodal enhancements</strong>: Qwen3 Omni audio-in-video support (<a href="https://github.com/owner/repo/issues/27721">#27721</a>), Eagle3 multimodal support for Qwen3VL (<a href="https://github.com/owner/repo/issues/29594">#29594</a>).</li>
-<li><strong>Performance</strong>: QwenVL cos/sin cache optimization (<a href="https://github.com/owner/repo/issues/28798">#28798</a>).</li>
-</ul>
-<h5 id="engine-core"><a class="toclink" href="#engine-core">Engine Core</a></h5>
-<ul>
-<li>**GPU Model Runner V2 (Experimen</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: khluu</span>
-                            <a href="https://github.com/vllm-project/vllm/releases/tag/v0.12.0" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -2661,7 +2690,7 @@ powershell -ExecutionPolicy Bypass -c "irm https://github.com/astral-sh/uv/relea
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2026-02-04 06:21 UTC
+                Last updated: 2026-02-05 06:25 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
