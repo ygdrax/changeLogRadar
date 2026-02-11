@@ -395,6 +395,49 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.128.7</div>
+                            <div class="release-version ">
+                                0.128.7
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-10 12:25 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="features"><a class="toclink" href="#features">Features</a></h5>
+<ul>
+<li>✨ Show a clear error on attempt to include router into itself. PR <a href="https://github.com/fastapi/fastapi/pull/14258">[#14258](https://github.com/owner/repo/issues/14258)</a> by <a href="https://github.com/JavierSanchezCastro">[@JavierSanchezCastro](https://github.com/JavierSanchezCastro)</a>.</li>
+<li>✨ Replace <code>dict</code> by <code>Mapping</code> on <code>HTTPException.headers</code>. PR <a href="https://github.com/fastapi/fastapi/pull/12997">[#12997](https://github.com/owner/repo/issues/12997)</a> by <a href="https://github.com/rijenkii">[@rijenkii](https://github.com/rijenkii)</a>.</li>
+</ul>
+<h5 id="refactors"><a class="toclink" href="#refactors">Refactors</a></h5>
+<ul>
+<li>♻️ Simplify reading files in memory, do it sequentially instead of (fake) parallel. PR <a href="https://github.com/fastapi/fastapi/pull/14884">[#14884](https://github.com/owner/repo/issues/14884)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+</ul>
+<h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
+<ul>
+<li>📝 Use <code>dfn</code> tag for definitions instead of <code>abbr</code> in docs. PR <a href="https://github.com/fastapi/fastapi/pull/14744">[#14744](https://github.com/owner/repo/issues/14744)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
+</ul>
+<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
+<ul>
+<li>✅ Tweak comment in test to reference PR. PR <a href="https://github.com/fastapi/fastapi/pull/14885">[#14885](https://github.com/owner/repo/issues/14885)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+<li>🔧 Update LLM-prompt for <code>abbr</code> and <code>dfn</code> tags. PR <a href="https://github.com/fastapi/fastapi/pull/14747">[#14747](https://github.com/owner/repo/issues/14747)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
+<li>✅ Test order for the submitted byte Files. PR <a href="https://github.com/fastapi/fastapi/pull/14828">[#14828](https://github.com/owner/repo/issues/14828)</a> by <a href="https://github.com/valentinDruzhinin">[@valentinDruzhinin](https://github.com/valentinDruzhinin)</a>.</li>
+<li>🔧 Configure <code>test</code> workflow to run tests with <code>inline-snapshot=review</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14876">[#14876](https://github.com/owner/repo/issues/14876)</a></li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.128.7" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.128.6</div>
                             <div class="release-version ">
                                 0.128.6
@@ -530,50 +573,6 @@
                         <div class="release-meta">
                             <span>Author: tiangolo</span>
                             <a href="https://github.com/fastapi/fastapi/releases/tag/0.128.3" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.128.2</div>
-                            <div class="release-version ">
-                                0.128.2
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2026-02-05 19:47 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h5 id="features"><a class="toclink" href="#features">Features</a></h5>
-<ul>
-<li>✨ Add support for PEP695 <code>TypeAliasType</code>. PR <a href="https://github.com/fastapi/fastapi/pull/13920">[#13920](https://github.com/owner/repo/issues/13920)</a> by <a href="https://github.com/cstruct">[@cstruct](https://github.com/cstruct)</a>.</li>
-<li>✨ Allow <code>Response</code> type hint as dependency annotation. PR <a href="https://github.com/fastapi/fastapi/pull/14794">[#14794](https://github.com/owner/repo/issues/14794)</a> by <a href="https://github.com/jonathan-fulton">[@jonathan](https://github.com/jonathan)-fulton</a>.</li>
-</ul>
-<h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
-<ul>
-<li>🐛 Fix using <code>Json[list[str]]</code> type (issue <a href="https://github.com/owner/repo/issues/10997">#10997</a>). PR <a href="https://github.com/fastapi/fastapi/pull/14616">[#14616](https://github.com/owner/repo/issues/14616)</a> by <a href="https://github.com/mkanetsuna">[@mkanetsuna](https://github.com/mkanetsuna)</a>.</li>
-</ul>
-<h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
-<ul>
-<li>📝 Update docs for translations. PR <a href="https://github.com/fastapi/fastapi/pull/14830">[#14830](https://github.com/owner/repo/issues/14830)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-<li>📝 Fix duplicate word in <code>advanced-dependencies.md</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14815">[#14815](https://github.com/owner/repo/issues/14815)</a> by <a href="https://github.com/Rayyan-Oumlil">[@Rayyan](https://github.com/Rayyan)-Oumlil</a>.</li>
-</ul>
-<h5 id="translations"><a class="toclink" href="#translations">Translations</a></h5>
-<ul>
-<li>🌐 Enable Traditional Chinese translations. PR <a href="https://github.com/fastapi/fastapi/pull/14842">[#14842](https://github.com/owner/repo/issues/14842)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-<li>🌐 Enable French docs translations. PR <a href="https://github.com/fastapi/fastapi/pull/14841">[#14841](https://github.com/owner/repo/issues/14841)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-<li>🌐 Update translations for fr (translate-page). PR <a href="https://github.com/fastapi/fastapi/pull/14837">[#14837](https://github.com/owner/repo/issues/14837)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-<li>🌐 Update translations for de (u</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.128.2" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -1085,6 +1084,102 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">v1.35.1</div>
+                            <div class="release-version ">
+                                1.35.1
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-10 19:03 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><p>See <a href="https://groups.google.com/forum/#!forum/kubernetes-announce">kubernetes-announce@</a>. Additional binary downloads are linked in the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md">CHANGELOG</a>.</p>
+<p>See the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md">CHANGELOG</a> for more details.</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: k8s-release-robot</span>
+                            <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.35.1" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">v1.34.4</div>
+                            <div class="release-version ">
+                                1.34.4
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-10 19:04 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><p>See <a href="https://groups.google.com/forum/#!forum/kubernetes-announce">kubernetes-announce@</a>. Additional binary downloads are linked in the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md">CHANGELOG</a>.</p>
+<p>See the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md">CHANGELOG</a> for more details.</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: k8s-release-robot</span>
+                            <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.34.4" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">v1.33.8</div>
+                            <div class="release-version ">
+                                1.33.8
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-10 19:05 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><p>See <a href="https://groups.google.com/forum/#!forum/kubernetes-announce">kubernetes-announce@</a>. Additional binary downloads are linked in the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md">CHANGELOG</a>.</p>
+<p>See the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md">CHANGELOG</a> for more details.</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: k8s-release-robot</span>
+                            <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.33.8" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">v1.32.12</div>
+                            <div class="release-version ">
+                                1.32.12
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-10 19:06 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><p>See <a href="https://groups.google.com/forum/#!forum/kubernetes-announce">kubernetes-announce@</a>. Additional binary downloads are linked in the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md">CHANGELOG</a>.</p>
+<p>See the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md">CHANGELOG</a> for more details.</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: k8s-release-robot</span>
+                            <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.32.12" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">v1.36.0-alpha.1</div>
                             <div class="release-version prerelease">
                                 1.36.0-alpha.1
@@ -1104,102 +1199,6 @@
                         <div class="release-meta">
                             <span>Author: k8s-release-robot</span>
                             <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.36.0-alpha.1" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">Kubernetes v1.35.0</div>
-                            <div class="release-version ">
-                                1.35.0
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-12-17 20:01 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><p>See <a href="https://groups.google.com/forum/#!forum/kubernetes-announce">kubernetes-announce@</a>. Additional binary downloads are linked in the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md">CHANGELOG</a>.</p>
-<p>See the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md">CHANGELOG</a> for more details.</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: k8s-release-robot</span>
-                            <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.35.0" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">Kubernetes v1.32.11</div>
-                            <div class="release-version ">
-                                1.32.11
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-12-16 21:28 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><p>See <a href="https://groups.google.com/forum/#!forum/kubernetes-announce">kubernetes-announce@</a>. Additional binary downloads are linked in the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md">CHANGELOG</a>.</p>
-<p>See the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md">CHANGELOG</a> for more details.</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: k8s-release-robot</span>
-                            <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.32.11" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">Kubernetes v1.35.0-rc.1</div>
-                            <div class="release-version prerelease">
-                                1.35.0-rc.1
-                                 (Pre-release)
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-12-09 19:13 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><p>See <a href="https://groups.google.com/forum/#!forum/kubernetes-announce">kubernetes-announce@</a>. Additional binary downloads are linked in the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md">CHANGELOG</a>.</p>
-<p>See the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md">CHANGELOG</a> for more details.</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: k8s-release-robot</span>
-                            <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.35.0-rc.1" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">Kubernetes v1.34.3</div>
-                            <div class="release-version ">
-                                1.34.3
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-12-10 01:13 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><p>See <a href="https://groups.google.com/forum/#!forum/kubernetes-announce">kubernetes-announce@</a>. Additional binary downloads are linked in the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md">CHANGELOG</a>.</p>
-<p>See the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md">CHANGELOG</a> for more details.</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: k8s-release-robot</span>
-                            <a href="https://github.com/kubernetes/kubernetes/releases/tag/v1.34.3" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -1778,6 +1777,50 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.21.2</div>
+                            <div class="release-version ">
+                                0.21.2
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-10 19:33 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
+<ul>
+<li>🐛 Fix highlighting of optional variadic argument metavars. PR <a href="https://github.com/fastapi/typer/pull/1508">[#1508](https://github.com/owner/repo/issues/1508)</a> by <a href="https://github.com/BenjyWiener">[@BenjyWiener](https://github.com/BenjyWiener)</a>.</li>
+<li>🐛 Fix <code>--help</code> text alignment when using <code>typer.style()</code> in option descriptions. PR <a href="https://github.com/fastapi/typer/pull/1356">[#1356](https://github.com/owner/repo/issues/1356)</a> by <a href="https://github.com/mahimairaja">[@mahimairaja](https://github.com/mahimairaja)</a>.</li>
+</ul>
+<h5 id="refactors"><a class="toclink" href="#refactors">Refactors</a></h5>
+<ul>
+<li>🎨 Update types and errors, comment ty for now. PR <a href="https://github.com/fastapi/typer/pull/1531">[#1531](https://github.com/owner/repo/issues/1531)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+</ul>
+<h5 id="upgrades"><a class="toclink" href="#upgrades">Upgrades</a></h5>
+<ul>
+<li>➖ Drop <code>typing-extensions</code> as external dependency. PR <a href="https://github.com/fastapi/typer/pull/1467">[#1467](https://github.com/owner/repo/issues/1467)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
+</ul>
+<h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
+<ul>
+<li>📝 Add reference (code API) docs. PR <a href="https://github.com/fastapi/typer/pull/1504">[#1504](https://github.com/owner/repo/issues/1504)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
+<li>📝 Update the "Building a Package" tutorial to use <code>uv</code> instead of <code>poetry</code>. PR <a href="https://github.com/fastapi/typer/pull/1474">[#1474](https://github.com/owner/repo/issues/1474)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
+<li>📝 Update <code>management-tasks.md</code> to be in line with <code>management-tasks.md</code> in FastAPI repo. PR <a href="https://github.com/fastapi/typer/pull/1519">[#1519](https://github.com/owner/repo/issues/1519)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
+<li>📝 Add link to Typer developer survey. PR <a href="https://github.com/fastapi/typer/pull/1514">[#1514](https://github.com/owner/repo/issues/1514)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+<li>📝 Ad</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/typer/releases/tag/0.21.2" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.21.1</div>
                             <div class="release-version ">
                                 0.21.1
@@ -1935,42 +1978,6 @@
                         <div class="release-meta">
                             <span>Author: tiangolo</span>
                             <a href="https://github.com/fastapi/typer/releases/tag/0.20.0" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.19.2</div>
-                            <div class="release-version ">
-                                0.19.2
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-09-23 09:47 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
-<ul>
-<li>🐛  Fix list convertor with an empty list default factory . PR <a href="https://github.com/fastapi/typer/pull/1350">[#1350](https://github.com/owner/repo/issues/1350)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
-</ul>
-<h5 id="refactors"><a class="toclink" href="#refactors">Refactors</a></h5>
-<ul>
-<li>🔥 Drop support for Python 3.7. PR <a href="https://github.com/fastapi/typer/pull/830">[#830](https://github.com/owner/repo/issues/830)</a> by <a href="https://github.com/kinuax">[@kinuax](https://github.com/kinuax)</a>.</li>
-</ul>
-<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
-<ul>
-<li>⬆ Bump ruff from 0.13.0 to 0.13.1. PR <a href="https://github.com/fastapi/typer/pull/1339">[#1339](https://github.com/owner/repo/issues/1339)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
-<li>⬆ [pre-commit.ci] pre-commit autoupdate. PR <a href="https://github.com/fastapi/typer/pull/1351">[#1351](https://github.com/owner/repo/issues/1351)</a> by <a href="https://github.com/apps/pre-commit-ci">[@pre](https://github.com/pre)-commit-ci[bot]</a>.</li>
-<li>⬆ Bump markdown-include-variants from 0.0.4 to 0.0.5. PR <a href="https://github.com/fastapi/typer/pull/1348">[#1348](https://github.com/owner/repo/issues/1348)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
-</ul></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/typer/releases/tag/0.19.2" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2158,6 +2165,157 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.10.2</div>
+                            <div class="release-version ">
+                                0.10.2
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-10 19:20 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2026-02-10.</p>
+<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
+<ul>
+<li>Deprecate unexpected ZIP compression methods (<a href="https://github.com/astral-sh/uv/pull/17946">[#17946](https://github.com/owner/repo/issues/17946)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>Fix <code>cargo-install</code> failing due to missing <code>uv-test</code> dependency (<a href="https://github.com/astral-sh/uv/pull/17954">[#17954](https://github.com/owner/repo/issues/17954)</a>)</li>
+</ul>
+<h4 id="install-uv-0102"><a class="toclink" href="#install-uv-0102">Install uv 0.10.2</a></h4>
+<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
+<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.10.2/uv-installer.sh | sh
+</code></pre>
+<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
+<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -c &quot;irm https://github.com/astral-sh/uv/releases/download/0.10.2/uv-installer.ps1 | iex&quot;
+</code></pre>
+<h4 id="download-uv-0102"><a class="toclink" href="#download-uv-0102">Download uv 0.10.2</a></h4>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Platform</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.2/uv-aarch64-apple-darwin.tar.gz">uv-aarch64-apple-darwin.tar.gz</a></td>
+<td>Apple Silicon macOS</td>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.2/uv-aarch64-apple-darwin.tar.gz.sha256">checksum</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.2/uv-x86_64-apple-darwin.tar.gz">uv-x86_64-apple-darwin.tar.gz</a></td>
+<td>Intel macOS</td>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.2/uv-x86_64-apple-darwin.tar.gz.sha256">checksum</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.2/uv-aarch64-pc-windows-msvc.zip">uv-aarch64-pc-windows-msvc.zip</a></td>
+<td>ARM64 Windows</td>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.2/uv-aarch64-pc-windows-msvc.zip.sha256">checksum</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.2/uv-i686-pc-windows-msvc.zip">uv-i686-pc-windows-msvc.zip</a></td>
+<td>x86 Windows</td>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.2/uv-i686-pc-windows-msvc.zip.sha256">checksum</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.2/uv-x86_64-pc-windows-msvc.zip">uv-x86_64-pc-windows-msvc.zip</a></td>
+<td>x64 Windows</td>
+<td>[</td>
+</tr>
+</tbody>
+</table>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/uv/releases/tag/0.10.2" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">0.10.1</div>
+                            <div class="release-version ">
+                                0.10.1
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-10 11:50 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2026-02-10.</p>
+<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
+<ul>
+<li>Don't panic on metadata read errors (<a href="https://github.com/astral-sh/uv/pull/17904">[#17904](https://github.com/owner/repo/issues/17904)</a>)</li>
+<li>Skip empty workspace members instead of failing (<a href="https://github.com/astral-sh/uv/pull/17901">[#17901](https://github.com/owner/repo/issues/17901)</a>)</li>
+<li>Don't fail creating a read-only <code>sdist-vX/.git</code> if it already exists (<a href="https://github.com/astral-sh/uv/pull/17825">[#17825](https://github.com/owner/repo/issues/17825)</a>)</li>
+</ul>
+<h5 id="documentation"><a class="toclink" href="#documentation">Documentation</a></h5>
+<ul>
+<li>Suggest <code>uv python update-shell</code> over <code>uv tool update-shell</code> in Python docs (<a href="https://github.com/astral-sh/uv/pull/17941">[#17941](https://github.com/owner/repo/issues/17941)</a>)</li>
+</ul>
+<h4 id="install-uv-0101"><a class="toclink" href="#install-uv-0101">Install uv 0.10.1</a></h4>
+<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
+<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.10.1/uv-installer.sh | sh
+</code></pre>
+<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
+<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -c &quot;irm https://github.com/astral-sh/uv/releases/download/0.10.1/uv-installer.ps1 | iex&quot;
+</code></pre>
+<h4 id="download-uv-0101"><a class="toclink" href="#download-uv-0101">Download uv 0.10.1</a></h4>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Platform</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.1/uv-aarch64-apple-darwin.tar.gz">uv-aarch64-apple-darwin.tar.gz</a></td>
+<td>Apple Silicon macOS</td>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.1/uv-aarch64-apple-darwin.tar.gz.sha256">checksum</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.1/uv-x86_64-apple-darwin.tar.gz">uv-x86_64-apple-darwin.tar.gz</a></td>
+<td>Intel macOS</td>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.1/uv-x86_64-apple-darwin.tar.gz.sha256">checksum</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.1/uv-aarch64-pc-windows-msvc.zip">uv-aarch64-pc-windows-msvc.zip</a></td>
+<td>ARM64 Windows</td>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.1/uv-aarch64-pc-windows-msvc.zip.sha256">checksum</a></td>
+</tr>
+<tr>
+<td>[uv-i686-pc-windows-msvc.zip](https://github.co</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/uv/releases/tag/0.10.1" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.10.0</div>
                             <div class="release-version ">
                                 0.10.0
@@ -2312,128 +2470,6 @@
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/astral-sh/uv/releases/tag/0.9.29" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.9.28</div>
-                            <div class="release-version ">
-                                0.9.28
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2026-01-29 20:19 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2026-01-29.</p>
-<h5 id="python"><a class="toclink" href="#python">Python</a></h5>
-<ul>
-<li>Update CPython to use <a href="https://github.com/openssl/openssl/releases/tag/openssl-3.5.5">OpenSSL 3.5.5</a> which includes fixes for high severity CVEs (<a href="https://github.com/astral-sh/python-build-standalone/pull/960">python-build-standalone[#960](https://github.com/owner/repo/issues/960)</a>)</li>
-</ul>
-<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
-<ul>
-<li>Add support for Pyodide interpreter on Windows (<a href="https://github.com/astral-sh/uv/pull/17658">[#17658](https://github.com/owner/repo/issues/17658)</a>)</li>
-<li>Warn if multiple indexes include <code>default = true</code> (<a href="https://github.com/astral-sh/uv/pull/17713">[#17713](https://github.com/owner/repo/issues/17713)</a>)</li>
-<li>Skip uploads when validation reports 'Already uploaded' (<a href="https://github.com/astral-sh/uv/pull/17412">[#17412](https://github.com/owner/repo/issues/17412)</a>)</li>
-</ul>
-<h5 id="configuration"><a class="toclink" href="#configuration">Configuration</a></h5>
-<ul>
-<li>Add a reflink alias for the "clone" link mode (<a href="https://github.com/astral-sh/uv/pull/17724">[#17724](https://github.com/owner/repo/issues/17724)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Ensure <code>uv.exe</code> exits when <code>uvw.exe</code> or <code>uvx.exe</code> is killed (<a href="https://github.com/astral-sh/uv/pull/17500">[#17500](https://github.com/owner/repo/issues/17500)</a>)</li>
-</ul>
-<h4 id="install-uv-0928"><a class="toclink" href="#install-uv-0928">Install uv 0.9.28</a></h4>
-<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
-<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.9.28/uv-installer.sh | sh
-</code></pre>
-<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
-<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -c &quot;irm https://github.com/astral-sh/uv/releases/download/0.9.28/uv-installer.ps1 | iex&quot;
-</code></pre>
-<h4 id="download-uv-0928"><a class="toclink" href="#download-uv-0928">Download uv 0.9.28</a></h4>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Platform</th>
-<th>Checksum</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.28/uv-aarch64-apple-darwin.tar.gz">uv-aarch64-apple-darwin.tar.gz</a></td>
-<td>Apple Silicon macOS</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.28/uv-aarch64-apple-darwin.tar.gz.sha256">checksum</a></td>
-</tr>
-<tr>
-<td>[uv-x86_64-apple-darwin.tar.gz](https://github.com/astral-sh/uv/releases/download/0.9.28/uv-x86_</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.28" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.9.27</div>
-                            <div class="release-version ">
-                                0.9.27
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2026-01-26 23:30 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2026-01-26.</p>
-<h5 id="python"><a class="toclink" href="#python">Python</a></h5>
-<ul>
-<li>Upgrade Pyodide to 0.29.2 (<a href="https://github.com/astral-sh/uv/pull/17652">[#17652](https://github.com/owner/repo/issues/17652)</a>)</li>
-<li>Upgrade to GraalPy 25.0.2 (<a href="https://github.com/astral-sh/uv/pull/17634">[#17634](https://github.com/owner/repo/issues/17634)</a>)</li>
-</ul>
-<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
-<ul>
-<li>Add <code>-t</code> shortform for <code>--target</code> to <code>uv pip</code> subcommands (<a href="https://github.com/astral-sh/uv/pull/17501">[#17501](https://github.com/owner/repo/issues/17501)</a>)</li>
-<li>Add support for ROCm 7.0 and 7.1 accelerator backends (<a href="https://github.com/astral-sh/uv/pull/17681">[#17681](https://github.com/owner/repo/issues/17681)</a>)</li>
-<li>Further improve free-threading ABI incompatibility errors (<a href="https://github.com/astral-sh/uv/pull/17491">[#17491](https://github.com/owner/repo/issues/17491)</a>)</li>
-<li>Implement <code>uv pip freeze --exclude</code> flag (<a href="https://github.com/astral-sh/uv/pull/17045">[#17045](https://github.com/owner/repo/issues/17045)</a>)</li>
-<li>Improve warnings for <code>--system</code> and <code>--no-system</code> in <code>uv venv</code> (<a href="https://github.com/astral-sh/uv/pull/17647">[#17647](https://github.com/owner/repo/issues/17647)</a>)</li>
-<li>Make <code>uv pip compile</code> attempt to download a specified <code>--python-version</code> if it can. (<a href="https://github.com/astral-sh/uv/pull/17249">[#17249](https://github.com/owner/repo/issues/17249)</a>)</li>
-<li>Support Trusted Publishing with pyx (<a href="https://github.com/astral-sh/uv/pull/17438">[#17438](https://github.com/owner/repo/issues/17438)</a>)</li>
-<li>Fix JSON schema for <code>exclude-newer-package</code> (<a href="https://github.com/astral-sh/uv/pull/17665">[#17665](https://github.com/owner/repo/issues/17665)</a>)</li>
-</ul>
-<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
-<ul>
-<li>Better detection for conflicting packages (<a href="https://github.com/astral-sh/uv/pull/17623">[#17623](https://github.com/owner/repo/issues/17623)</a>)</li>
-<li>Upgrade based on outdated build versions in <code>uv python upgrade</code> (<a href="https://github.com/astral-sh/uv/pull/17653">[#17653](https://github.com/owner/repo/issues/17653)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Change chocolatey system test to ensure uv uses the r</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.27" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2663,7 +2699,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2026-02-10 06:30 UTC
+                Last updated: 2026-02-11 06:29 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
