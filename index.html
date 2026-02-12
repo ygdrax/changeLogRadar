@@ -395,6 +395,37 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.128.8</div>
+                            <div class="release-version ">
+                                0.128.8
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-11 15:18 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
+<ul>
+<li>📝 Fix grammar in <code>docs/en/docs/tutorial/first-steps.md</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14708">[#14708](https://github.com/owner/repo/issues/14708)</a> by <a href="https://github.com/SanjanaS10">[@SanjanaS10](https://github.com/SanjanaS10)</a>.</li>
+</ul>
+<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
+<ul>
+<li>🔨 Tweak PDM hook script. PR <a href="https://github.com/fastapi/fastapi/pull/14895">[#14895](https://github.com/owner/repo/issues/14895)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+<li>♻️ Update build setup for <code>fastapi-slim</code>, deprecate it, and make it only depend on <code>fastapi</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14894">[#14894](https://github.com/owner/repo/issues/14894)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+</ul></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.128.8" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.128.7</div>
                             <div class="release-version ">
                                 0.128.7
@@ -534,45 +565,6 @@
                         <div class="release-meta">
                             <span>Author: tiangolo</span>
                             <a href="https://github.com/fastapi/fastapi/releases/tag/0.128.4" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.128.3</div>
-                            <div class="release-version ">
-                                0.128.3
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2026-02-06 16:46 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h5 id="refactors"><a class="toclink" href="#refactors">Refactors</a></h5>
-<ul>
-<li>♻️ Re-implement <code>on_event</code> in FastAPI for compatibility with the next Starlette, while keeping backwards compatibility. PR <a href="https://github.com/fastapi/fastapi/pull/14851">[#14851](https://github.com/owner/repo/issues/14851)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-</ul>
-<h5 id="upgrades"><a class="toclink" href="#upgrades">Upgrades</a></h5>
-<ul>
-<li>⬆️ Upgrade Starlette supported version range to <code>starlette&gt;=0.40.0,&lt;1.0.0</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14853">[#14853](https://github.com/owner/repo/issues/14853)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-</ul>
-<h5 id="translations"><a class="toclink" href="#translations">Translations</a></h5>
-<ul>
-<li>🌐 Update translations for ru (update-outdated). PR <a href="https://github.com/fastapi/fastapi/pull/14834">[#14834](https://github.com/owner/repo/issues/14834)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-</ul>
-<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
-<ul>
-<li>👷 Run tests with Starlette from git. PR <a href="https://github.com/fastapi/fastapi/pull/14849">[#14849](https://github.com/owner/repo/issues/14849)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-<li>👷 Run tests with lower bound uv sync, upgrade <code>fastapi[all]</code> minimum dependencies: <code>ujson &gt;=5.8.0</code>, <code>orjson &gt;=3.9.3</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14846">[#14846](https://github.com/owner/repo/issues/14846)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-</ul></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.128.3" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -1777,6 +1769,68 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.23.0</div>
+                            <div class="release-version ">
+                                0.23.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-11 15:22 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="breaking-changes"><a class="toclink" href="#breaking-changes">Breaking Changes</a></h5>
+<ul>
+<li>♻️ When printing error tracebacks with Rich, default to not showing locals, which are sometimes verbose. PR <a href="https://github.com/fastapi/typer/pull/1072">[#1072](https://github.com/owner/repo/issues/1072)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+</ul>
+<h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
+<ul>
+<li>📝 Add more explicit deprecation note in shell packages. PR <a href="https://github.com/fastapi/typer/pull/1534">[#1534](https://github.com/owner/repo/issues/1534)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+</ul>
+<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
+<ul>
+<li>⬆ Bump cryptography from 46.0.4 to 46.0.5. PR <a href="https://github.com/fastapi/typer/pull/1532">[#1532](https://github.com/owner/repo/issues/1532)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>🔨 Tweak PDM hook script, remove unnecessary default. PR <a href="https://github.com/fastapi/typer/pull/1536">[#1536](https://github.com/owner/repo/issues/1536)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+<li>♻️ Simplify build setup scripts and configs for deprecated wrapper packages. PR <a href="https://github.com/fastapi/typer/pull/1535">[#1535](https://github.com/owner/repo/issues/1535)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+</ul></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/typer/releases/tag/0.23.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">0.22.0</div>
+                            <div class="release-version ">
+                                0.22.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-11 11:00 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="breaking-changes"><a class="toclink" href="#breaking-changes">Breaking Changes</a></h5>
+<ul>
+<li>💥 Make <code>typer-slim</code> a shallow wrapper around <code>typer</code>, always requiring <code>rich</code> and <code>shellingham</code>. PR <a href="https://github.com/fastapi/typer/pull/1522">[#1522](https://github.com/owner/repo/issues/1522)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
+</ul></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/typer/releases/tag/0.22.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.21.2</div>
                             <div class="release-version ">
                                 0.21.2
@@ -1894,90 +1948,6 @@
                         <div class="release-meta">
                             <span>Author: tiangolo</span>
                             <a href="https://github.com/fastapi/typer/releases/tag/0.21.0" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.20.1</div>
-                            <div class="release-version ">
-                                0.20.1
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-12-19 16:48 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h5 id="features"><a class="toclink" href="#features">Features</a></h5>
-<ul>
-<li>✨ Add support for standard tracebacks via the env <code>TYPER_STANDARD_TRACEBACK</code>. PR <a href="https://github.com/fastapi/typer/pull/1299">[#1299](https://github.com/owner/repo/issues/1299)</a> by <a href="https://github.com/colin-nolan">[@colin](https://github.com/colin)-nolan</a>.</li>
-</ul>
-<h5 id="fixes"><a class="toclink" href="#fixes">Fixes</a></h5>
-<ul>
-<li>🐛 Ensure that <code>options_metavar</code> is passed through correctly. PR <a href="https://github.com/fastapi/typer/pull/816">[#816](https://github.com/owner/repo/issues/816)</a> by <a href="https://github.com/gar1t">[@gar1t](https://github.com/gar1t)</a>.</li>
-<li>🐛 Ensure an optional argument is shown in brackets, even when <code>metavar</code> is set. PR <a href="https://github.com/fastapi/typer/pull/1409">[#1409](https://github.com/owner/repo/issues/1409)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
-<li>🐛 Ensure that the default <code>rich_markup_mode</code> is interpreted correctly. PR <a href="https://github.com/fastapi/typer/pull/1304">[#1304](https://github.com/owner/repo/issues/1304)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
-</ul>
-<h5 id="refactors"><a class="toclink" href="#refactors">Refactors</a></h5>
-<ul>
-<li>♻️ Refactor the handling of <code>shellingham</code>. PR <a href="https://github.com/fastapi/typer/pull/1347">[#1347](https://github.com/owner/repo/issues/1347)</a> by <a href="https://github.com/nathanjmcdougall">[@nathanjmcdougall](https://github.com/nathanjmcdougall)</a>.</li>
-</ul>
-<h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
-<ul>
-<li>📝 Ensure that bold letters are rendered correctly in <code>printing.md</code>. PR <a href="https://github.com/fastapi/typer/pull/1365">[#1365](https://github.com/owner/repo/issues/1365)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
-<li>🩺 Update test badge to only reflect pushes to <code>master</code>. PR <a href="https://github.com/fastapi/typer/pull/1414">[#1414](https://github.com/owner/repo/issues/1414)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
-<li>📝 Update console output on the Rich help formatting page. PR <a href="https://github.com/fastapi/typer/pull/1430">[#1430](https://github.com/owner/repo/issues/1430)</a> by [<a href="https://github.com/svlandeg">@svlandeg</a>](https</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/typer/releases/tag/0.20.1" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.20.0</div>
-                            <div class="release-version ">
-                                0.20.0
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2025-10-20 17:03 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h5 id="features"><a class="toclink" href="#features">Features</a></h5>
-<ul>
-<li>✨ Enable command suggestions on typo by default. PR <a href="https://github.com/fastapi/typer/pull/1371">[#1371](https://github.com/owner/repo/issues/1371)</a> by <a href="https://github.com/savannahostrowski">[@savannahostrowski](https://github.com/savannahostrowski)</a>.</li>
-</ul>
-<h5 id="upgrades"><a class="toclink" href="#upgrades">Upgrades</a></h5>
-<ul>
-<li>⬆️ Add support for Python 3.14. PR <a href="https://github.com/fastapi/typer/pull/1372">[#1372](https://github.com/owner/repo/issues/1372)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
-</ul>
-<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
-<ul>
-<li>👷 Add nightly workflow to run tests against CPython main branch. PR <a href="https://github.com/fastapi/typer/pull/1374">[#1374](https://github.com/owner/repo/issues/1374)</a> by <a href="https://github.com/savannahostrowski">[@savannahostrowski](https://github.com/savannahostrowski)</a>.</li>
-<li>⬆ Bump mkdocs-material from 9.6.21 to 9.6.22. PR <a href="https://github.com/fastapi/typer/pull/1377">[#1377](https://github.com/owner/repo/issues/1377)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
-<li>🔧 Configure reminder for <code>waiting</code> label in <code>issue-manager</code>. PR <a href="https://github.com/fastapi/typer/pull/1378">[#1378](https://github.com/owner/repo/issues/1378)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
-<li>⬆ Bump ruff from 0.13.3 to 0.14.0. PR <a href="https://github.com/fastapi/typer/pull/1368">[#1368](https://github.com/owner/repo/issues/1368)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
-<li>⬆ [pre-commit.ci] pre-commit autoupdate. PR <a href="https://github.com/fastapi/typer/pull/1376">[#1376](https://github.com/owner/repo/issues/1376)</a> by <a href="https://github.com/apps/pre-commit-ci">[@pre](https://github.com/pre)-commit-ci[bot]</a>.</li>
-<li>⬆ Bump mkdocs-macros-plugin from 1.3.9 to 1.4.0. PR <a href="https://github.com/fastapi/typer/pull/1354">[#1354](https://github.com/owner/repo/issues/1354)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
-<li>⬆ Bump mkdocs</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/typer/releases/tag/0.20.0" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2699,7 +2669,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2026-02-11 06:29 UTC
+                Last updated: 2026-02-12 06:29 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
