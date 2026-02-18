@@ -2110,6 +2110,76 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.10.4</div>
+                            <div class="release-version ">
+                                0.10.4
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-17 22:04 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2026-02-17.</p>
+<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
+<ul>
+<li>Remove duplicate references to the affected paths when showing <code>uv python</code> errors (<a href="https://github.com/astral-sh/uv/pull/18008">[#18008](https://github.com/owner/repo/issues/18008)</a>)</li>
+<li>Skip discovery of workspace members that contain only git-ignored files, including in sub-directories (<a href="https://github.com/astral-sh/uv/pull/18051">[#18051](https://github.com/owner/repo/issues/18051)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>Don't panic when initialising a package at the filesystem root (e.g. <code>uv init / --name foo</code>) (<a href="https://github.com/astral-sh/uv/pull/17983">[#17983](https://github.com/owner/repo/issues/17983)</a>)</li>
+<li>Fix permissions on <code>wheel</code> and <code>sdist</code> files produced by the <code>uv_build</code> build backend (<a href="https://github.com/astral-sh/uv/pull/18020">[#18020](https://github.com/owner/repo/issues/18020)</a>)</li>
+<li>Revert locked file change to fix locked files on NFS mounts (<a href="https://github.com/astral-sh/uv/pull/18071">[#18071](https://github.com/owner/repo/issues/18071)</a>)</li>
+</ul>
+<h4 id="install-uv-0104"><a class="toclink" href="#install-uv-0104">Install uv 0.10.4</a></h4>
+<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
+<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.10.4/uv-installer.sh | sh
+</code></pre>
+<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
+<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -c &quot;irm https://github.com/astral-sh/uv/releases/download/0.10.4/uv-installer.ps1 | iex&quot;
+</code></pre>
+<h4 id="download-uv-0104"><a class="toclink" href="#download-uv-0104">Download uv 0.10.4</a></h4>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Platform</th>
+<th>Checksum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.4/uv-aarch64-apple-darwin.tar.gz">uv-aarch64-apple-darwin.tar.gz</a></td>
+<td>Apple Silicon macOS</td>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.4/uv-aarch64-apple-darwin.tar.gz.sha256">checksum</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.4/uv-x86_64-apple-darwin.tar.gz">uv-x86_64-apple-darwin.tar.gz</a></td>
+<td>Intel macOS</td>
+<td><a href="https://github.com/astral-sh/uv/releases/download/0.10.4/uv-x86_64-apple-darwin.tar.gz.sha256">checksum</a></td>
+</tr>
+<tr>
+<td>[uv-a</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/uv/releases/tag/0.10.4" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.10.3</div>
                             <div class="release-version ">
                                 0.10.3
@@ -2349,79 +2419,6 @@
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.9.30</div>
-                            <div class="release-version ">
-                                0.9.30
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2026-02-04 21:49 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2026-02-04.</p>
-<h5 id="python"><a class="toclink" href="#python">Python</a></h5>
-<ul>
-<li>Add CPython 3.14.3 and 3.13.12 (<a href="https://github.com/astral-sh/uv/pull/17849">[#17849](https://github.com/owner/repo/issues/17849)</a>)</li>
-</ul>
-<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
-<ul>
-<li>Allow comma-separated values for <code>--extra</code> option (<a href="https://github.com/astral-sh/uv/pull/17525">[#17525](https://github.com/owner/repo/issues/17525)</a>)</li>
-<li>Check all files during a dry-run publish instead of stopping at the first failure (<a href="https://github.com/astral-sh/uv/pull/17785">[#17785](https://github.com/owner/repo/issues/17785)</a>)</li>
-<li>Clarify <code>UV_HTTP_TIMEOUT</code> error message (<a href="https://github.com/astral-sh/uv/pull/17493">[#17493](https://github.com/owner/repo/issues/17493)</a>)</li>
-</ul>
-<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
-<ul>
-<li>Use relocatable virtual environments by default (<a href="https://github.com/astral-sh/uv/pull/17770">[#17770](https://github.com/owner/repo/issues/17770)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Fix deadlock on token refresh in <code>uv publish</code> when using pyx (<a href="https://github.com/astral-sh/uv/pull/17832">[#17832](https://github.com/owner/repo/issues/17832)</a>)</li>
-<li>Ignore global Python pins when incompatible with project (<a href="https://github.com/astral-sh/uv/pull/15473">[#15473](https://github.com/owner/repo/issues/15473)</a>)</li>
-</ul>
-<h4 id="install-uv-0930"><a class="toclink" href="#install-uv-0930">Install uv 0.9.30</a></h4>
-<h5 id="install-prebuilt-binaries-via-shell-script"><a class="toclink" href="#install-prebuilt-binaries-via-shell-script">Install prebuilt binaries via shell script</a></h5>
-<pre><code class="language-sh">curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.9.30/uv-installer.sh | sh
-</code></pre>
-<h5 id="install-prebuilt-binaries-via-powershell-script"><a class="toclink" href="#install-prebuilt-binaries-via-powershell-script">Install prebuilt binaries via powershell script</a></h5>
-<pre><code class="language-sh">powershell -ExecutionPolicy Bypass -c &quot;irm https://github.com/astral-sh/uv/releases/download/0.9.30/uv-installer.ps1 | iex&quot;
-</code></pre>
-<h4 id="download-uv-0930"><a class="toclink" href="#download-uv-0930">Download uv 0.9.30</a></h4>
-<table>
-<thead>
-<tr>
-<th>File</th>
-<th>Platform</th>
-<th>Checksum</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.30/uv-aarch64-apple-darwin.tar.gz">uv-aarch64-apple-darwin.tar.gz</a></td>
-<td>Apple Silicon macOS</td>
-<td><a href="https://github.com/astral-sh/uv/releases/download/0.9.30/uv-aarch64-apple-darwin.tar.gz.sha256">checksum</a></td>
-</tr>
-<tr>
-<td>[uv-x86_64-apple-darwin.tar.gz](https://github.com/astral-sh/uv</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/uv/releases/tag/0.9.30" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -2646,7 +2643,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2026-02-17 06:25 UTC
+                Last updated: 2026-02-18 06:28 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
