@@ -1490,6 +1490,55 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.15.2</div>
+                            <div class="release-version ">
+                                0.15.2
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-19 22:33 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2026-02-19.</p>
+<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
+<ul>
+<li>
+<p>Expand the default rule set (<a href="https://github.com/astral-sh/ruff/pull/23385">[#23385](https://github.com/owner/repo/issues/23385)</a>)</p>
+<p>In preview, Ruff now enables a significantly expanded default rule set of 412 rules, up from the stable default set of 59 rules. The new rules are mostly a superset of the stable defaults, with the exception of these rules, which are removed from the preview defaults:</p>
+<ul>
+<li><a href="https://docs.astral.sh/ruff/rules/multiple-imports-on-one-line"><code>multiple-imports-on-one-line</code></a> (<code>E401</code>)</li>
+<li><a href="https://docs.astral.sh/ruff/rules/module-import-not-at-top-of-file"><code>module-import-not-at-top-of-file</code></a> (<code>E402</code>)</li>
+<li><a href="https://docs.astral.sh/ruff/rules/module-import-not-at-top-of-file"><code>module-import-not-at-top-of-file</code></a> (<code>E701</code>)</li>
+<li><a href="https://docs.astral.sh/ruff/rules/multiple-statements-on-one-line-semicolon"><code>multiple-statements-on-one-line-semicolon</code></a> (<code>E702</code>)</li>
+<li><a href="https://docs.astral.sh/ruff/rules/useless-semicolon"><code>useless-semicolon</code></a> (<code>E703</code>)</li>
+<li><a href="https://docs.astral.sh/ruff/rules/none-comparison"><code>none-comparison</code></a> (<code>E711</code>)</li>
+<li><a href="https://docs.astral.sh/ruff/rules/true-false-comparison"><code>true-false-comparison</code></a> (<code>E712</code>)</li>
+<li><a href="https://docs.astral.sh/ruff/rules/not-in-test"><code>not-in-test</code></a> (<code>E713</code>)</li>
+<li><a href="https://docs.astral.sh/ruff/rules/not-is-test"><code>not-is-test</code></a> (<code>E714</code>)</li>
+<li><a href="https://docs.astral.sh/ruff/rules/type-comparison"><code>type-comparison</code></a> (<code>E721</code>)</li>
+<li><a href="https://docs.astral.sh/ruff/rules/lambda-assignment"><code>lambda-assignment</code></a> (<code>E731</code>)</li>
+<li><a href="https://docs.astral.sh/ruff/rules/ambiguous-variable-name"><code>ambiguous-variable-name</code></a> (<code>E741</code>)</li>
+<li><a href="https://docs.astral.sh/ruff/rules/ambiguous-class-name"><code>ambiguous-class-name</code></a> (<code>E742</code>)</li>
+<li><a href="https://docs.astral.sh/ruff/rules/ambiguous-function-name"><code>ambiguous-function-name</code></a> (<code>E743</code>)</li>
+<li>[<code>undefined-local-with-import-star</code>](https://docs.astral.sh/ruff/rules/undefined-local-with-import-st</li>
+</ul>
+</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.15.2" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.15.1</div>
                             <div class="release-version ">
                                 0.15.1
@@ -1689,52 +1738,6 @@
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.13" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.14.11</div>
-                            <div class="release-version ">
-                                0.14.11
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2026-01-08 19:20 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Released on 2026-01-08.</p>
-<h5 id="preview-features"><a class="toclink" href="#preview-features">Preview features</a></h5>
-<ul>
-<li>Consolidate diagnostics for matched disable/enable suppression comments (<a href="https://github.com/astral-sh/ruff/pull/22099">[#22099](https://github.com/owner/repo/issues/22099)</a>)</li>
-<li>Report diagnostics for invalid/unmatched range suppression comments (<a href="https://github.com/astral-sh/ruff/pull/21908">[#21908](https://github.com/owner/repo/issues/21908)</a>)</li>
-<li>[<code>airflow</code>] Passing positional argument into <code>airflow.lineage.hook.HookLineageCollector.create_asset</code> is not allowed (<code>AIR303</code>) (<a href="https://github.com/astral-sh/ruff/pull/22046">[#22046](https://github.com/owner/repo/issues/22046)</a>)</li>
-<li>[<code>refurb</code>] Mark <code>FURB192</code> fix as always unsafe (<a href="https://github.com/astral-sh/ruff/pull/22210">[#22210](https://github.com/owner/repo/issues/22210)</a>)</li>
-<li>[<code>ruff</code>] Add <code>non-empty-init-module</code> (<code>RUF067</code>) (<a href="https://github.com/astral-sh/ruff/pull/22143">[#22143](https://github.com/owner/repo/issues/22143)</a>)</li>
-</ul>
-<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
-<ul>
-<li>Fix GitHub format for multi-line diagnostics (<a href="https://github.com/astral-sh/ruff/pull/22108">[#22108](https://github.com/owner/repo/issues/22108)</a>)</li>
-<li>[<code>flake8-unused-arguments</code>] Mark <code>**kwargs</code> in <code>TypeVar</code> as used (<code>ARG001</code>) (<a href="https://github.com/astral-sh/ruff/pull/22214">[#22214](https://github.com/owner/repo/issues/22214)</a>)</li>
-</ul>
-<h5 id="rule-changes"><a class="toclink" href="#rule-changes">Rule changes</a></h5>
-<ul>
-<li>Add <code>help:</code> subdiagnostics for several Ruff rules that can sometimes appear to disagree with <code>ty</code> (<a href="https://github.com/astral-sh/ruff/pull/22331">[#22331](https://github.com/owner/repo/issues/22331)</a>)</li>
-<li>[<code>pylint</code>] Demote <code>PLW1510</code> fix to display-only (<a href="https://github.com/astral-sh/ruff/pull/22318">[#22318](https://github.com/owner/repo/issues/22318)</a>)</li>
-<li>[<code>pylint</code>] Ignore identical members (<code>PLR1714</code>) (<a href="https://github.com/astral-sh/ruff/pull/22220">[#22220](https://github.com/owner/repo/issues/22220)</a>)</li>
-<li>[<code>pylint</code>] Improve diagnostic range for <code>PLC0206</code> (<a href="https://github.com/astral-sh/ruff/pull/22312">[#22312](https://github.com/owner/repo/issues/22312)</a>)</li>
-<li>\</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/ruff/releases/tag/0.14.11" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2643,7 +2646,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2026-02-19 06:27 UTC
+                Last updated: 2026-02-20 06:23 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
