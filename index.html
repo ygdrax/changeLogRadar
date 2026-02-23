@@ -395,6 +395,62 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.131.0</div>
+                            <div class="release-version ">
+                                0.131.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-22 16:37 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="breaking-changes"><a class="toclink" href="#breaking-changes">Breaking Changes</a></h5>
+<ul>
+<li>🗑️ Deprecate <code>ORJSONResponse</code> and <code>UJSONResponse</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14964">[#14964](https://github.com/owner/repo/issues/14964)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+</ul></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.131.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
+                            <div class="release-name">0.130.0</div>
+                            <div class="release-version ">
+                                0.130.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-22 16:19 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="features"><a class="toclink" href="#features">Features</a></h5>
+<ul>
+<li>✨ Serialize JSON response with Pydantic (in Rust), when there's a Pydantic return type or response model. PR <a href="https://github.com/fastapi/fastapi/pull/14962"><a href="https://github.com/owner/repo/issues/14962">#14962</a></a> by <a href="https://github.com/tiangolo"><a href="https://github.com/tiangolo">@tiangolo</a></a>.<ul>
+<li>This results in 2x (or more) performance increase for JSON responses.</li>
+<li>New docs: <a href="https://fastapi.tiangolo.com/advanced/custom-response/#json-performance">Custom Response - JSON Performance</a>.</li>
+</ul>
+</li>
+</ul></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.130.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.129.2</div>
                             <div class="release-version ">
                                 0.129.2
@@ -498,80 +554,6 @@
                         <div class="release-meta">
                             <span>Author: tiangolo</span>
                             <a href="https://github.com/fastapi/fastapi/releases/tag/0.129.0" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.128.8</div>
-                            <div class="release-version ">
-                                0.128.8
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2026-02-11 15:18 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
-<ul>
-<li>📝 Fix grammar in <code>docs/en/docs/tutorial/first-steps.md</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14708">[#14708](https://github.com/owner/repo/issues/14708)</a> by <a href="https://github.com/SanjanaS10">[@SanjanaS10](https://github.com/SanjanaS10)</a>.</li>
-</ul>
-<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
-<ul>
-<li>🔨 Tweak PDM hook script. PR <a href="https://github.com/fastapi/fastapi/pull/14895">[#14895](https://github.com/owner/repo/issues/14895)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-<li>♻️ Update build setup for <code>fastapi-slim</code>, deprecate it, and make it only depend on <code>fastapi</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14894">[#14894](https://github.com/owner/repo/issues/14894)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-</ul></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.128.8" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.128.7</div>
-                            <div class="release-version ">
-                                0.128.7
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2026-02-10 12:25 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h5 id="features"><a class="toclink" href="#features">Features</a></h5>
-<ul>
-<li>✨ Show a clear error on attempt to include router into itself. PR <a href="https://github.com/fastapi/fastapi/pull/14258">[#14258](https://github.com/owner/repo/issues/14258)</a> by <a href="https://github.com/JavierSanchezCastro">[@JavierSanchezCastro](https://github.com/JavierSanchezCastro)</a>.</li>
-<li>✨ Replace <code>dict</code> by <code>Mapping</code> on <code>HTTPException.headers</code>. PR <a href="https://github.com/fastapi/fastapi/pull/12997">[#12997](https://github.com/owner/repo/issues/12997)</a> by <a href="https://github.com/rijenkii">[@rijenkii](https://github.com/rijenkii)</a>.</li>
-</ul>
-<h5 id="refactors"><a class="toclink" href="#refactors">Refactors</a></h5>
-<ul>
-<li>♻️ Simplify reading files in memory, do it sequentially instead of (fake) parallel. PR <a href="https://github.com/fastapi/fastapi/pull/14884">[#14884](https://github.com/owner/repo/issues/14884)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-</ul>
-<h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
-<ul>
-<li>📝 Use <code>dfn</code> tag for definitions instead of <code>abbr</code> in docs. PR <a href="https://github.com/fastapi/fastapi/pull/14744">[#14744](https://github.com/owner/repo/issues/14744)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
-</ul>
-<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
-<ul>
-<li>✅ Tweak comment in test to reference PR. PR <a href="https://github.com/fastapi/fastapi/pull/14885">[#14885](https://github.com/owner/repo/issues/14885)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-<li>🔧 Update LLM-prompt for <code>abbr</code> and <code>dfn</code> tags. PR <a href="https://github.com/fastapi/fastapi/pull/14747">[#14747](https://github.com/owner/repo/issues/14747)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
-<li>✅ Test order for the submitted byte Files. PR <a href="https://github.com/fastapi/fastapi/pull/14828">[#14828](https://github.com/owner/repo/issues/14828)</a> by <a href="https://github.com/valentinDruzhinin">[@valentinDruzhinin](https://github.com/valentinDruzhinin)</a>.</li>
-<li>🔧 Configure <code>test</code> workflow to run tests with <code>inline-snapshot=review</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14876">[#14876](https://github.com/owner/repo/issues/14876)</a></li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.128.7" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2642,7 +2624,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2026-02-22 06:19 UTC
+                Last updated: 2026-02-23 06:30 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
