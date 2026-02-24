@@ -395,6 +395,45 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.132.0</div>
+                            <div class="release-version ">
+                                0.132.0
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-23 17:55 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h5 id="breaking-changes"><a class="toclink" href="#breaking-changes">Breaking Changes</a></h5>
+<ul>
+<li>🔒️ Add <code>strict_content_type</code> checking for JSON requests. PR <a href="https://github.com/fastapi/fastapi/pull/14978"><a href="https://github.com/owner/repo/issues/14978">#14978</a></a> by <a href="https://github.com/tiangolo"><a href="https://github.com/tiangolo">@tiangolo</a></a>.<ul>
+<li>Now FastAPI checks, by default, that JSON requests have a <code>Content-Type</code> header with a valid JSON value, like <code>application/json</code>, and rejects requests that don't.</li>
+<li>If the clients for your app don't send a valid <code>Content-Type</code> header you can disable this with <code>strict_content_type=False</code>.</li>
+<li>Check the new docs: <a href="https://fastapi.tiangolo.com/advanced/strict-content-type/">Strict Content-Type Checking</a>.</li>
+</ul>
+</li>
+</ul>
+<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
+<ul>
+<li>⬆ Bump flask from 3.1.2 to 3.1.3. PR <a href="https://github.com/fastapi/fastapi/pull/14949">[#14949](https://github.com/owner/repo/issues/14949)</a> by <a href="https://github.com/apps/dependabot">[@dependabot](https://github.com/dependabot)[bot]</a>.</li>
+<li>⬆ Update all dependencies to use <code>griffelib</code> instead of <code>griffe</code>. PR <a href="https://github.com/fastapi/fastapi/pull/14973">[#14973](https://github.com/owner/repo/issues/14973)</a> by <a href="https://github.com/svlandeg">[@svlandeg](https://github.com/svlandeg)</a>.</li>
+<li>🔨 Fix <code>FastAPI People</code> workflow. PR <a href="https://github.com/fastapi/fastapi/pull/14951">[#14951](https://github.com/owner/repo/issues/14951)</a> by <a href="https://github.com/YuriiMotov">[@YuriiMotov](https://github.com/YuriiMotov)</a>.</li>
+<li>👷 Do not run codspeed with coverage as it's not tracked. PR <a href="https://github.com/fastapi/fastapi/pull/14966">[#14966](https://github.com/owner/repo/issues/14966)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+<li>👷 Do not include benchmark tests in coverage to speed up coverage processing. PR <a href="https://github.com/fastapi/fastapi/pull/14965">[#14965](https://github.com/owner/repo/issues/14965)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
+</ul></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: tiangolo</span>
+                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.132.0" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.131.0</div>
                             <div class="release-version ">
                                 0.131.0
@@ -515,45 +554,6 @@
                         <div class="release-meta">
                             <span>Author: tiangolo</span>
                             <a href="https://github.com/fastapi/fastapi/releases/tag/0.129.1" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.129.0</div>
-                            <div class="release-version ">
-                                0.129.0
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2026-02-12 13:54 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h5 id="breaking-changes"><a class="toclink" href="#breaking-changes">Breaking Changes</a></h5>
-<ul>
-<li>➖ Drop support for Python 3.9. PR <a href="https://github.com/fastapi/fastapi/pull/14897">[#14897](https://github.com/owner/repo/issues/14897)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-</ul>
-<h5 id="refactors"><a class="toclink" href="#refactors">Refactors</a></h5>
-<ul>
-<li>🎨 Update internal types for Python 3.10. PR <a href="https://github.com/fastapi/fastapi/pull/14898">[#14898](https://github.com/owner/repo/issues/14898)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-</ul>
-<h5 id="docs"><a class="toclink" href="#docs">Docs</a></h5>
-<ul>
-<li>📝 Update highlights in webhooks docs. PR <a href="https://github.com/fastapi/fastapi/pull/14905">[#14905](https://github.com/owner/repo/issues/14905)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-<li>📝 Update source examples and docs from Python 3.9 to 3.10. PR <a href="https://github.com/fastapi/fastapi/pull/14900">[#14900](https://github.com/owner/repo/issues/14900)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-</ul>
-<h5 id="internal"><a class="toclink" href="#internal">Internal</a></h5>
-<ul>
-<li>🔨 Update docs.py scripts to migrate Python 3.9 to Python 3.10. PR <a href="https://github.com/fastapi/fastapi/pull/14906">[#14906](https://github.com/owner/repo/issues/14906)</a> by <a href="https://github.com/tiangolo">[@tiangolo](https://github.com/tiangolo)</a>.</li>
-</ul></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: tiangolo</span>
-                            <a href="https://github.com/fastapi/fastapi/releases/tag/0.129.0" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -841,6 +841,46 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">5.0.15</div>
+                            <div class="release-version ">
+                                5.0.15
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-23 09:02 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="whats-changed"><a class="toclink" href="#whats-changed">What's Changed</a></h4>
+<ul>
+<li>Remove unnecessary <code>T.let</code> from literal declarations by <a href="https://github.com/dduugg">@dduugg</a> in https://github.com/Homebrew/brew/pull/21542</li>
+<li>bump-cask-pr: add basic throttle handling by <a href="https://github.com/samford">@samford</a> in https://github.com/Homebrew/brew/pull/21548</li>
+<li>Enable strict typing in Homebrew::TestBot, redux by <a href="https://github.com/dduugg">@dduugg</a> in https://github.com/Homebrew/brew/pull/21539</li>
+<li>Avoid consecutive spaces in a message by <a href="https://github.com/muzimuzhi">@muzimuzhi</a> in https://github.com/Homebrew/brew/pull/21541</li>
+<li>refactor(bundle): read Brewfile once in run() by <a href="https://github.com/AbdelrahmanHafez">@AbdelrahmanHafez</a> in https://github.com/Homebrew/brew/pull/21537</li>
+<li>Revert "Enable strict typing in Homebrew::TestBot, redux" by <a href="https://github.com/bevanjkay">@bevanjkay</a> in https://github.com/Homebrew/brew/pull/21549</li>
+<li>Respect <code>SimulateSystem</code> in <code>FormulaStructGenerator</code> by <a href="https://github.com/Rylan12">@Rylan12</a> in https://github.com/Homebrew/brew/pull/21552</li>
+<li>cask/cask: rescue with no method by <a href="https://github.com/bevanjkay">@bevanjkay</a> in https://github.com/Homebrew/brew/pull/21553</li>
+<li>Remove legacy CLI parser fallbacks and streamline command handling by <a href="https://github.com/hyuraku">@hyuraku</a> in https://github.com/Homebrew/brew/pull/21546</li>
+<li>Bundle: use full formula name for upgrade checks by <a href="https://github.com/ooye">@ooye</a>-sanket in https://github.com/Homebrew/brew/pull/21554</li>
+<li>docs: Modernize GitHub Pages deployment by <a href="https://github.com/p">@p</a>-linnane in https://github.com/Homebrew/brew/pull/21555</li>
+<li>ast_constants: add <code>compatibility_version</code> by <a href="https://github.com/p">@p</a>-linnane in https://github.com/Homebrew/brew/pull/21561</li>
+<li>build(deps): bump the github-actions group with 2 updates by <a href="https://github.com/dependabot">@dependabot</a>[bot] in https://github.com/Homebrew/brew/pull/21563</li>
+<li>docs: fix missing Governance link titles by <a href="https://github.com/p">@p</a>-linnane in https://github.com/Homebrew/brew/pull/2157</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/Homebrew/brew/releases/tag/5.0.15" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">5.0.14</div>
                             <div class="release-version ">
                                 5.0.14
@@ -998,46 +1038,6 @@
                         <div class="release-meta">
                             <span>Author: github-actions[bot]</span>
                             <a href="https://github.com/Homebrew/brew/releases/tag/5.0.11" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">5.0.10</div>
-                            <div class="release-version ">
-                                5.0.10
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2026-01-12 14:42 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="whats-changed"><a class="toclink" href="#whats-changed">What's Changed</a></h4>
-<ul>
-<li>rubocops: Add HTTP URL check for formulae and casks by <a href="https://github.com/p">@p</a>-linnane in https://github.com/Homebrew/brew/pull/21316</li>
-<li>Add <code>--no-exit-code</code> to <code>generate-man-completions</code> by <a href="https://github.com/Rylan12">@Rylan12</a> in https://github.com/Homebrew/brew/pull/21361</li>
-<li>brew.sh: fix sporadic SIGPIPE in CPU feature check (Fixes <a href="https://github.com/owner/repo/issues/21365">#21365</a>) by <a href="https://github.com/fourdollars">@fourdollars</a> in https://github.com/Homebrew/brew/pull/21366</li>
-<li>bundle/commands/exec: add HOMEBREW_INSIDE_BUNDLE. by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21360</li>
-<li>Extract symlink creation to shared helper method by <a href="https://github.com/ooye">@ooye</a>-sanket in https://github.com/Homebrew/brew/pull/21367</li>
-<li>fix: cleanup removing shared resources needed by multiple formulas by <a href="https://github.com/ooye">@ooye</a>-sanket in https://github.com/Homebrew/brew/pull/21358</li>
-<li>cmd/tap-info: revert exit code changes to <code>--json</code> only by <a href="https://github.com/Bo98">@Bo98</a> in https://github.com/Homebrew/brew/pull/21370</li>
-<li>patch: <code>typed: strict</code> by <a href="https://github.com/botantony">@botantony</a> in https://github.com/Homebrew/brew/pull/21289</li>
-<li>build(deps): bump urllib3 from 2.6.2 to 2.6.3 in /Library/Homebrew/formula-analytics by <a href="https://github.com/dependabot">@dependabot</a>[bot] in https://github.com/Homebrew/brew/pull/21372</li>
-<li>cask/dsl: <code>typed: strict</code> by <a href="https://github.com/botantony">@botantony</a> in https://github.com/Homebrew/brew/pull/21371</li>
-<li>cmd/shellenv: improve detection of shell name.  by <a href="https://github.com/MikeMcQuaid">@MikeMcQuaid</a> in https://github.com/Homebrew/brew/pull/21374</li>
-<li>Handle more nilable cask struct attributes by <a href="https://github.com/Rylan12">@Rylan12</a> in https://github.com/Homebrew/brew/pull/21376</li>
-<li>Use <code>new</code> instead of <code>from_hash</code> for formula and cask structs by <a href="https://github.com/Rylan12">@Rylan12</a> in https://github.com/Homebrew/brew/pull/21377</li>
-<li>build(deps-dev): bump th</li>
-</ul>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/Homebrew/brew/releases/tag/5.0.10" class="release-link" target="_blank">View Release →</a>
                         </div>
                     </div>
                     
@@ -2091,6 +2091,53 @@
                     
                     <div class="release">
                         <div class="release-header">
+                            <div class="release-name">0.10.5</div>
+                            <div class="release-version ">
+                                0.10.5
+                                
+                            </div>
+                        </div>
+
+                        <div class="release-date">
+                            Published: 2026-02-24 04:06 UTC
+                        </div>
+
+                        
+                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
+<p>Released on 2026-02-23.</p>
+<h5 id="enhancements"><a class="toclink" href="#enhancements">Enhancements</a></h5>
+<ul>
+<li>Add hint when named index is found in a parent config file (<a href="https://github.com/astral-sh/uv/pull/18087">[#18087](https://github.com/owner/repo/issues/18087)</a>)</li>
+<li>Add warning for <code>uv lock --frozen</code> (<a href="https://github.com/astral-sh/uv/pull/17859">[#17859](https://github.com/owner/repo/issues/17859)</a>)</li>
+<li>Attempt to use reflinks by default on Linux (<a href="https://github.com/astral-sh/uv/pull/18117">[#18117](https://github.com/owner/repo/issues/18117)</a>)</li>
+<li>Fallback to hardlinks after reflink failure before copying (<a href="https://github.com/astral-sh/uv/pull/18104">[#18104](https://github.com/owner/repo/issues/18104)</a>)</li>
+<li>Filter <code>pylock.toml</code> wheels by tags and <code>requires-python</code> (<a href="https://github.com/astral-sh/uv/pull/18081">[#18081](https://github.com/owner/repo/issues/18081)</a>)</li>
+<li>Validate wheel filenames are normalized during <code>uv publish</code> (<a href="https://github.com/astral-sh/uv/pull/17783">[#17783](https://github.com/owner/repo/issues/17783)</a>)</li>
+<li>Fix message when <code>exclude-newer</code> invalidates the lock file (<a href="https://github.com/astral-sh/uv/pull/18100">[#18100](https://github.com/owner/repo/issues/18100)</a>)</li>
+<li>Change the missing files log level to debug (<a href="https://github.com/astral-sh/uv/pull/18075">[#18075](https://github.com/owner/repo/issues/18075)</a>)</li>
+</ul>
+<h5 id="performance"><a class="toclink" href="#performance">Performance</a></h5>
+<ul>
+<li>Improve performance of repeated conflicts with an extra (<a href="https://github.com/astral-sh/uv/pull/18094">[#18094](https://github.com/owner/repo/issues/18094)</a>)</li>
+</ul>
+<h5 id="bug-fixes"><a class="toclink" href="#bug-fixes">Bug fixes</a></h5>
+<ul>
+<li>Fix <code>--no-emit-workspace</code> with <code>--all-packages</code> on single-member workspaces (<a href="https://github.com/astral-sh/uv/pull/18098">[#18098](https://github.com/owner/repo/issues/18098)</a>)</li>
+<li>Fix <code>UV_NO_DEFAULT_GROUPS</code> rejecting truthy values like <code>1</code> (<a href="https://github.com/astral-sh/uv/pull/18057">[#18057](https://github.com/owner/repo/issues/18057)</a>)</li>
+<li>Fix iOS detection (<a href="https://github.com/astral-sh/uv/pull/17973">[#17973](https://github.com/owner/repo/issues/17973)</a>)</li>
+<li>Propagate project-level conflicts to pa</li>
+</ul>
+<p>... (content truncated)</p></div>
+                        
+
+                        <div class="release-meta">
+                            <span>Author: github-actions[bot]</span>
+                            <a href="https://github.com/astral-sh/uv/releases/tag/0.10.5" class="release-link" target="_blank">View Release →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="release">
+                        <div class="release-header">
                             <div class="release-name">0.10.4</div>
                             <div class="release-version ">
                                 0.10.4
@@ -2363,43 +2410,6 @@
                         </div>
                     </div>
                     
-                    <div class="release">
-                        <div class="release-header">
-                            <div class="release-name">0.10.0</div>
-                            <div class="release-version ">
-                                0.10.0
-                                
-                            </div>
-                        </div>
-
-                        <div class="release-date">
-                            Published: 2026-02-05 21:01 UTC
-                        </div>
-
-                        
-                        <div class="release-body"><h4 id="release-notes"><a class="toclink" href="#release-notes">Release Notes</a></h4>
-<p>Since we released uv <a href="https://github.com/astral-sh/uv/releases/tag/0.9.0">0.9.0</a> in October of 2025, we've accumulated various changes that improve correctness and user experience, but could break some workflows. This release contains those changes; many have been marked as breaking out of an abundance of caution. We expect most users to be able to upgrade without making changes.</p>
-<p>This release also includes the stabilization of preview features. Python upgrades are now stable, including the <code>uv python upgrade</code> command, <code>uv python install --upgrade</code>, and automatically upgrading Python patch versions in virtual environments when a new version is installed. The <code>add-bounds</code> and <code>extra-build-dependencies</code> settings are now stable. Finally, the <code>uv workspace dir</code> and <code>uv workspace list</code> utilities for writing scripts against workspace members are now stable.</p>
-<h5 id="breaking-changes"><a class="toclink" href="#breaking-changes">Breaking changes</a></h5>
-<ul>
-<li><strong>Require <code>--clear</code> to remove existing virtual environments in <code>uv venv</code></strong> (<a href="https://github.com/astral-sh/uv/pull/17757">[#17757](https://github.com/owner/repo/issues/17757)</a>)</li>
-</ul>
-<p>Previously, <code>uv venv</code> would prompt for confirmation before removing an existing virtual environment in interactive contexts, and remove it without confirmation in non-interactive contexts. Now, <code>uv venv</code> requires the <code>--clear</code> flag to remove an existing virtual environment. A warning for this change was added in <a href="https://github.com/astral-sh/uv/blob/main/changelogs/0.8.x.md#breaking-changes">uv 0.8</a>.</p>
-<p>You can opt out of this behavior by passing the <code>--clear</code> flag or setting <code>UV_VENV_CLEAR=1</code>.</p>
-<ul>
-<li><strong>Error if multiple indexes include <code>default = true</code></strong> (<a href="https://github.com/astral-sh/uv/pull/17011">[#17011](https://github.com/owner/repo/issues/17011)</a>)</li>
-</ul>
-<p>Previously, uv would silently accept multiple indexes with <code>default = true</code> and use the first one. Now, uv will error if multiple indexes are marked as the default.</p>
-<p>You cannot opt out of this behavior. Remove <code>default = true</code> from </p>
-<p>... (content truncated)</p></div>
-                        
-
-                        <div class="release-meta">
-                            <span>Author: github-actions[bot]</span>
-                            <a href="https://github.com/astral-sh/uv/releases/tag/0.10.0" class="release-link" target="_blank">View Release →</a>
-                        </div>
-                    </div>
-                    
                 </div>
                 
             </div>
@@ -2624,7 +2634,7 @@
 
         <footer class="footer">
             <div class="generated-at">
-                Last updated: 2026-02-23 06:30 UTC
+                Last updated: 2026-02-24 06:26 UTC
             </div>
             <div style="margin-top: 10px;">
                 Built by ChangeLog Radar
